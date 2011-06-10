@@ -16,8 +16,7 @@ public class SessionInfo implements Serializable {
 
     }
 
-    public SessionInfo(String session, String userId, String email, boolean signedIn, boolean admin, UserName userName,
-            long timestamp, String lastError, AccountInfo accountInfo) {
+    public SessionInfo(String session, boolean signedIn, long timestamp, String lastError, AccountInfo accountInfo) {
         setId(session);
         setSignedIn(signedIn);
         setTimestamp(timestamp);

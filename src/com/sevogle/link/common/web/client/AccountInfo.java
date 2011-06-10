@@ -15,6 +15,12 @@ public class AccountInfo implements Serializable {
 
     }
 
+    public AccountInfo(String id, UserName name, boolean admin) {
+        setId(id);
+        setName(name);
+        setAdmin(admin);
+    }
+
     public String getId() {
         return _id;
     }
