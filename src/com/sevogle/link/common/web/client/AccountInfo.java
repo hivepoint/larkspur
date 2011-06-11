@@ -9,7 +9,7 @@ public class AccountInfo implements Serializable {
     private String _id;
     private UserName name;
     private boolean admin;
-    private List<Extension> extensions = new ArrayList<Extension>();
+    private final List<Extension> extensions = new ArrayList<Extension>();
 
     public AccountInfo() {
 
