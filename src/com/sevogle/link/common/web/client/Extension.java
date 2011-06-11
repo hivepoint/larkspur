@@ -8,10 +8,7 @@ public class Extension implements Serializable {
 
     private String _id;
     public static final String ID = "_id";
-
     private String typeId;
-    public static final String TYPE_ID = "typeId";
-
     private String typeName;
     private String name;
     private ExtensionStatus status;
@@ -22,13 +19,15 @@ public class Extension implements Serializable {
     private String configReturnUrl;
     private List<Channel> channels;
     private boolean enabled = false;
+    private String userId;
+    public static final String USERID = "userId";
 
     public Extension() {
 
     }
 
-    public Extension(String id, String typeId, String typeName, String name, ExtensionStatus status, String lastError,
-            long lastUpdated, String config, String configUrl, String configReturnUrl, boolean enabled) {
+    public Extension(String id, String userId, String typeId, String typeName, String name, ExtensionStatus status,
+            String lastError, long lastUpdated, String config, String configUrl, String configReturnUrl, boolean enabled) {
         setId(id);
         setTypeId(typeId);
         setTypeName(typeName);
@@ -40,6 +39,7 @@ public class Extension implements Serializable {
         setConfigUrl(configUrl);
         setConfigReturnUrl(configReturnUrl);
         setEnabled(enabled);
+        setUserId(userId);
     }
 
     public String getId() {
@@ -132,6 +132,14 @@ public class Extension implements Serializable {
 
     public void setEnabled(boolean enabled) {
         this.enabled = enabled;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
 }
