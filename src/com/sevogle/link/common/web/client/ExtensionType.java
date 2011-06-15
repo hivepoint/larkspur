@@ -13,16 +13,19 @@ public class ExtensionType implements Serializable {
     private String description;
     private String urlBase;
     private String urlExtension = "extension";
+    private String token;
+    public static final String TOKEN = "token";
     private final List<Capability> capabilities = new ArrayList<Capability>();
 
     public ExtensionType() {
     }
 
-    public ExtensionType(String id, String name, String description, String urlBase) {
+    public ExtensionType(String id, String name, String description, String urlBase, String token) {
         _id = id;
         this.name = name;
         this.description = description;
         this.urlBase = urlBase;
+        this.token = token;
     }
 
     public String getId() {
@@ -67,6 +70,14 @@ public class ExtensionType implements Serializable {
 
     public List<Capability> getCapabilities() {
         return capabilities;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
     }
 
 }
