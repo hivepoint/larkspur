@@ -13,7 +13,7 @@ public class Message {
     private String _id = "";
     public static final String ID = "_id";
 
-    private String protocalSpecificId;
+    private String protocolSpecificId;
 
     private MessageSource messageSource;
 
@@ -36,144 +36,31 @@ public class Message {
 
     private AddressDescriptor replyTo;
 
-    private List<AddressDescriptor> to = new ArrayList<Message.AddressDescriptor>();
+    private List<AddressDescriptor> to = new ArrayList<AddressDescriptor>();
 
-    private List<AddressDescriptor> cc = new ArrayList<Message.AddressDescriptor>();
+    private List<AddressDescriptor> cc = new ArrayList<AddressDescriptor>();
 
-    private List<AddressDescriptor> bcc = new ArrayList<Message.AddressDescriptor>();
+    private List<AddressDescriptor> bcc = new ArrayList<AddressDescriptor>();
 
     private String subjectNormalized;
     private String subjectRaw;
 
-    private List<NormativeBlockDescriptor> normalizedMessage = new ArrayList<Message.NormativeBlockDescriptor>();
+    private List<NormativeBlockDescriptor> normalizedMessage = new ArrayList<NormativeBlockDescriptor>();
 
-    private List<ContentDescriptor> contentObjects = new ArrayList<Message.ContentDescriptor>();
-
-    public class NormativeBlockDescriptor implements Serializable {
-        private static final long serialVersionUID = 1427773323283986046L;
-        private String id;
-        private long sizeBytes;
-        private BlockType type;
-
-        public String getId() {
-            return id;
-        }
-
-        public void setId(String id) {
-            this.id = id;
-        }
-
-        public long getSizeBytes() {
-            return sizeBytes;
-        }
-
-        public void setSizeBytes(long sizeBytes) {
-            this.sizeBytes = sizeBytes;
-        }
-
-        public BlockType getType() {
-            return type;
-        }
-
-        public void setType(BlockType type) {
-            this.type = type;
-        }
-
-    }
+    private List<MessageContentDescriptor> contentObjects = new ArrayList<MessageContentDescriptor>();
 
     public enum BlockType {
         BODY, QUOTED, NESTED_QUOTED;
-    }
-
-    public class ContentDescriptor implements Serializable {
-        private static final long serialVersionUID = -959748997080357708L;
-        private String linkContentId;
-        private String contentID;
-        private String contentType;
-        private ContentDisposition disposition;
-        private long sizeBytes;
-
-        public String getLinkContentId() {
-            return linkContentId;
-        }
-
-        public void setLinkContentId(String linkContentId) {
-            this.linkContentId = linkContentId;
-        }
-
-        public String getContentID() {
-            return contentID;
-        }
-
-        public void setContentID(String contentID) {
-            this.contentID = contentID;
-        }
-
-        public String getContentType() {
-            return contentType;
-        }
-
-        public void setContentType(String contentType) {
-            this.contentType = contentType;
-        }
-
-        public ContentDisposition getDisposition() {
-            return disposition;
-        }
-
-        public void setDisposition(ContentDisposition disposition) {
-            this.disposition = disposition;
-        }
-
-        public long getSizeBytes() {
-            return sizeBytes;
-        }
-
-        public void setSizeBytes(long sizeBytes) {
-            this.sizeBytes = sizeBytes;
-        }
     }
 
     public enum ContentDisposition {
         NONE, EMBEDDED, ATTACHED;
     }
 
-    public class AddressDescriptor implements Serializable {
-        private static final long serialVersionUID = 7142344285861383648L;
-        private String contactURI;
-        private String linkContactId;
-        private String personalName;
-
-        public String getContactURI() {
-            return contactURI;
-        }
-
-        public void setContactURI(String contactURI) {
-            this.contactURI = contactURI;
-        }
-
-        public String getLinkContactId() {
-            return linkContactId;
-        }
-
-        public void setLinkContactId(String linkContactId) {
-            this.linkContactId = linkContactId;
-        }
-
-        public String getPersonalName() {
-            return personalName;
-        }
-
-        public void setPersonalName(String personalName) {
-            this.personalName = personalName;
-        }
-
-    }
-
     public class RelatedMessageDescriptor implements Serializable {
         private static final long serialVersionUID = -4348037062142063351L;
         private String linkMessageId;
-        private String protocalSpecificId;
+        private String protocolSpecificId;
 
         public String getLinkMessageId() {
             return linkMessageId;
@@ -183,12 +70,12 @@ public class Message {
             this.linkMessageId = linkMessageId;
         }
 
-        public String getProtocalSpecificId() {
-            return protocalSpecificId;
+        public String getProtocolSpecificId() {
+            return protocolSpecificId;
         }
 
-        public void setProtocalSpecificId(String protocalSpecificId) {
-            this.protocalSpecificId = protocalSpecificId;
+        public void setProtocolSpecificId(String protocolSpecificId) {
+            this.protocolSpecificId = protocolSpecificId;
         }
 
     }
@@ -201,12 +88,12 @@ public class Message {
         _id = id;
     }
 
-    public String getProtocalSpecificId() {
-        return protocalSpecificId;
+    public String getProtocolSpecificId() {
+        return protocolSpecificId;
     }
 
-    public void setProtocalSpecificId(String protocalSpecificId) {
-        this.protocalSpecificId = protocalSpecificId;
+    public void setProtocolSpecificId(String protocolSpecificId) {
+        this.protocolSpecificId = protocolSpecificId;
     }
 
     public MessageSource getMessageSource() {
@@ -301,7 +188,7 @@ public class Message {
         return normalizedMessage;
     }
 
-    public List<ContentDescriptor> getContentObjects() {
+    public List<MessageContentDescriptor> getContentObjects() {
         return contentObjects;
     }
 
