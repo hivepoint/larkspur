@@ -1,7 +1,6 @@
 package com.sevogle.link.common.web.client;
 
 import java.io.Serializable;
-import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -59,6 +58,31 @@ public class Message {
         private String id;
         private long sizeBytes;
         private BlockType type;
+
+        public String getId() {
+            return id;
+        }
+
+        public void setId(String id) {
+            this.id = id;
+        }
+
+        public long getSizeBytes() {
+            return sizeBytes;
+        }
+
+        public void setSizeBytes(long sizeBytes) {
+            this.sizeBytes = sizeBytes;
+        }
+
+        public BlockType getType() {
+            return type;
+        }
+
+        public void setType(BlockType type) {
+            this.type = type;
+        }
+
     }
 
     public enum BlockType {
@@ -72,6 +96,46 @@ public class Message {
         private String contentType;
         private ContentDisposition disposition;
         private long sizeBytes;
+
+        public String getLinkContentId() {
+            return linkContentId;
+        }
+
+        public void setLinkContentId(String linkContentId) {
+            this.linkContentId = linkContentId;
+        }
+
+        public String getContentID() {
+            return contentID;
+        }
+
+        public void setContentID(String contentID) {
+            this.contentID = contentID;
+        }
+
+        public String getContentType() {
+            return contentType;
+        }
+
+        public void setContentType(String contentType) {
+            this.contentType = contentType;
+        }
+
+        public ContentDisposition getDisposition() {
+            return disposition;
+        }
+
+        public void setDisposition(ContentDisposition disposition) {
+            this.disposition = disposition;
+        }
+
+        public long getSizeBytes() {
+            return sizeBytes;
+        }
+
+        public void setSizeBytes(long sizeBytes) {
+            this.sizeBytes = sizeBytes;
+        }
     }
 
     public enum ContentDisposition {
@@ -80,9 +144,33 @@ public class Message {
 
     public class AddressDescriptor implements Serializable {
         private static final long serialVersionUID = 7142344285861383648L;
-        private URI contactURI;
+        private String contactURI;
         private String linkContactId;
         private String personalName;
+
+        public String getContactURI() {
+            return contactURI;
+        }
+
+        public void setContactURI(String contactURI) {
+            this.contactURI = contactURI;
+        }
+
+        public String getLinkContactId() {
+            return linkContactId;
+        }
+
+        public void setLinkContactId(String linkContactId) {
+            this.linkContactId = linkContactId;
+        }
+
+        public String getPersonalName() {
+            return personalName;
+        }
+
+        public void setPersonalName(String personalName) {
+            this.personalName = personalName;
+        }
 
     }
 
@@ -90,14 +178,31 @@ public class Message {
         private static final long serialVersionUID = -4348037062142063351L;
         private String linkMessageId;
         private String protocalSpecificId;
+
+        public String getLinkMessageId() {
+            return linkMessageId;
+        }
+
+        public void setLinkMessageId(String linkMessageId) {
+            this.linkMessageId = linkMessageId;
+        }
+
+        public String getProtocalSpecificId() {
+            return protocalSpecificId;
+        }
+
+        public void setProtocalSpecificId(String protocalSpecificId) {
+            this.protocalSpecificId = protocalSpecificId;
+        }
+
     }
 
-    public String get_id() {
+    public String getId() {
         return _id;
     }
 
-    public void set_id(String _id) {
-        this._id = _id;
+    public void setId(String id) {
+        _id = id;
     }
 
     public String getProtocalSpecificId() {
