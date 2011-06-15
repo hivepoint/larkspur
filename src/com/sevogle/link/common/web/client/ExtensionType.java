@@ -32,7 +32,7 @@ public class ExtensionType implements Serializable {
         return _id;
     }
 
-    public void set_id(String id) {
+    public void setId(String id) {
         _id = id;
     }
 
