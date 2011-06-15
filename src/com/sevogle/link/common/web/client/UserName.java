@@ -9,7 +9,6 @@ public class UserName implements Serializable, Comparable<UserName> {
     private String initials;
 
     public UserName() {
-
     }
 
     public UserName(String fullName, String lastName, String initials) {

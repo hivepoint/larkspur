@@ -10,7 +10,7 @@ public class SessionInfo implements Serializable {
     private boolean signedIn;
     private long timestamp;
     private String lastError;
-    private AccountInfo accountInfo;
+    private AccountInfo accountInfo = new AccountInfo();
 
     public SessionInfo() {
 
