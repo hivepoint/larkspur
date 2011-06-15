@@ -11,17 +11,18 @@ public class ExtensionType implements Serializable {
     public static final String ID = "_id";
     private String name;
     private String description;
-    private String url;
+    private String urlBase;
+    private String urlExtension = "extension";
     private final List<Capability> capabilities = new ArrayList<Capability>();
 
     public ExtensionType() {
     }
 
-    public ExtensionType(String id, String name, String description, String url) {
+    public ExtensionType(String id, String name, String description, String urlBase) {
         _id = id;
         this.name = name;
         this.description = description;
-        this.url = url;
+        this.urlBase = urlBase;
     }
 
     public String getId() {
@@ -48,12 +49,20 @@ public class ExtensionType implements Serializable {
         this.description = description;
     }
 
-    public String getUrl() {
-        return url;
+    public String getUrlBase() {
+        return urlBase;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
+    public void setUrlBase(String url) {
+        urlBase = url;
+    }
+
+    public String getUrlExtension() {
+        return urlExtension;
+    }
+
+    public void setUrlExtension(String urlExtension) {
+        this.urlExtension = urlExtension;
     }
 
     public List<Capability> getCapabilities() {
