@@ -55,6 +55,7 @@ public class Message {
     private final List<ContentDescriptor> contentObjects = new ArrayList<Message.ContentDescriptor>();
 
     public class NormativeBlockDescriptor implements Serializable {
+        private static final long serialVersionUID = 1427773323283986046L;
         private String id;
         private long sizeBytes;
         private BlockType type;
@@ -65,6 +66,7 @@ public class Message {
     }
 
     public class ContentDescriptor implements Serializable {
+        private static final long serialVersionUID = -959748997080357708L;
         private String linkContentId;
         private String contentID;
         private String contentType;
@@ -77,6 +79,7 @@ public class Message {
     }
 
     public class AddressDescriptor implements Serializable {
+        private static final long serialVersionUID = 7142344285861383648L;
         private URI contactURI;
         private String linkContactId;
         private String personalName;
@@ -84,6 +87,7 @@ public class Message {
     }
 
     public class RelatedMessageDescriptor implements Serializable {
+        private static final long serialVersionUID = -4348037062142063351L;
         private String linkMessageId;
         private String protocalSpecificId;
     }
