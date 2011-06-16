@@ -142,4 +142,118 @@ public class Extension implements Serializable {
         this.userId = userId;
     }
 
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((_id == null) ? 0 : _id.hashCode());
+        result = prime * result + ((channels == null) ? 0 : channels.hashCode());
+        result = prime * result + ((config == null) ? 0 : config.hashCode());
+        result = prime * result + ((configReturnUrl == null) ? 0 : configReturnUrl.hashCode());
+        result = prime * result + ((configUrl == null) ? 0 : configUrl.hashCode());
+        result = prime * result + (enabled ? 1231 : 1237);
+        result = prime * result + ((lastError == null) ? 0 : lastError.hashCode());
+        result = prime * result + (int) (lastUpdated ^ (lastUpdated >>> 32));
+        result = prime * result + ((name == null) ? 0 : name.hashCode());
+        result = prime * result + ((status == null) ? 0 : status.hashCode());
+        result = prime * result + ((typeId == null) ? 0 : typeId.hashCode());
+        result = prime * result + ((typeName == null) ? 0 : typeName.hashCode());
+        result = prime * result + ((userId == null) ? 0 : userId.hashCode());
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        Extension other = (Extension) obj;
+        if (_id == null) {
+            if (other._id != null) {
+                return false;
+            }
+        } else if (!_id.equals(other._id)) {
+            return false;
+        }
+        if (channels == null) {
+            if (other.channels != null) {
+                return false;
+            }
+        } else if (!channels.equals(other.channels)) {
+            return false;
+        }
+        if (config == null) {
+            if (other.config != null) {
+                return false;
+            }
+        } else if (!config.equals(other.config)) {
+            return false;
+        }
+        if (configReturnUrl == null) {
+            if (other.configReturnUrl != null) {
+                return false;
+            }
+        } else if (!configReturnUrl.equals(other.configReturnUrl)) {
+            return false;
+        }
+        if (configUrl == null) {
+            if (other.configUrl != null) {
+                return false;
+            }
+        } else if (!configUrl.equals(other.configUrl)) {
+            return false;
+        }
+        if (enabled != other.enabled) {
+            return false;
+        }
+        if (lastError == null) {
+            if (other.lastError != null) {
+                return false;
+            }
+        } else if (!lastError.equals(other.lastError)) {
+            return false;
+        }
+        if (lastUpdated != other.lastUpdated) {
+            return false;
+        }
+        if (name == null) {
+            if (other.name != null) {
+                return false;
+            }
+        } else if (!name.equals(other.name)) {
+            return false;
+        }
+        if (status != other.status) {
+            return false;
+        }
+        if (typeId == null) {
+            if (other.typeId != null) {
+                return false;
+            }
+        } else if (!typeId.equals(other.typeId)) {
+            return false;
+        }
+        if (typeName == null) {
+            if (other.typeName != null) {
+                return false;
+            }
+        } else if (!typeName.equals(other.typeName)) {
+            return false;
+        }
+        if (userId == null) {
+            if (other.userId != null) {
+                return false;
+            }
+        } else if (!userId.equals(other.userId)) {
+            return false;
+        }
+        return true;
+    }
+
 }
