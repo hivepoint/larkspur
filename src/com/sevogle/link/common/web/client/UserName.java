@@ -5,14 +5,16 @@ import java.io.Serializable;
 public class UserName implements Serializable, Comparable<UserName> {
     private static final long serialVersionUID = 7403965352458072211L;
     private String fullName;
+    private String firstName;
     private String lastName;
     private String initials;
 
     public UserName() {
     }
 
-    public UserName(String fullName, String lastName, String initials) {
+    public UserName(String fullName, String firstName, String lastName, String initials) {
         this.fullName = fullName;
+        this.firstName = firstName;
         this.lastName = lastName;
         this.initials = initials;
     }
@@ -33,6 +35,7 @@ public class UserName implements Serializable, Comparable<UserName> {
             // inverted name, e.g., Smith, John A.
             String parts[] = fullName.split("\\,", 2);
             this.fullName = parts[1].trim() + " " + parts[0];
+            firstName = parts[1];
             lastName = parts[0];
         } else {
             // normal forward order name
@@ -45,6 +48,15 @@ public class UserName implements Serializable, Comparable<UserName> {
                 String part = parts[i];
                 if (part.length() > 0 && Character.isLetter(part.charAt(0))) {
                     lastName = part;
+                    break;
+                }
+            }
+        }
+        if (firstName == null) {
+            for (int i = 0; i < parts.length; i++) {
+                String part = parts[i];
+                if (part.length() > 0 && Character.isLetter(part.charAt(0))) {
+                    firstName = part;
                     break;
                 }
             }
@@ -65,6 +77,10 @@ public class UserName implements Serializable, Comparable<UserName> {
 
     public void setShortFormName(String shortFormName) {
         lastName = shortFormName;
+    }
+
+    public String getFirstName() {
+        return firstName;
     }
 
     public String getLastName() {
@@ -130,5 +146,12 @@ public class UserName implements Serializable, Comparable<UserName> {
     @Override
     public String toString() {
         return getBestFullName();
+    }
+
+    public String getBestFirstName() {
+        if (firstName == null || firstName.isEmpty()) {
+            return getBestLastName();
+        }
+        return firstName;
     }
 }

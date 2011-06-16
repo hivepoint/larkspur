@@ -9,6 +9,7 @@ public class AddressDescriptor implements Serializable {
     private String personalName;
     //TODO Kingston 6/15/2011:  Perhaps not the right long-term way of determining whether this represents the current user?
     private boolean me;
+    private UserName name;
 
     public AddressDescriptor() {
 
@@ -17,7 +18,7 @@ public class AddressDescriptor implements Serializable {
     public AddressDescriptor(String contactURI, String linkContactId, String personalName, boolean me) {
         this.contactURI = contactURI;
         this.linkContactId = linkContactId;
-        this.personalName = personalName;
+        setPersonalName(personalName);
         this.me = me;
     }
 
@@ -43,6 +44,17 @@ public class AddressDescriptor implements Serializable {
 
     public void setPersonalName(String personalName) {
         this.personalName = personalName;
+    }
+
+    public void setName(UserName name) {
+        this.name = name;
+    }
+
+    public UserName getName() {
+        if (name == null) {
+            return new UserName(personalName);
+        }
+        return name;
     }
 
     public boolean isMe() {
