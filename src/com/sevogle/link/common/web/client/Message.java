@@ -25,7 +25,7 @@ public class Message {
 
     private RelatedMessageDescriptor parent;
 
-    private List<String> children = new ArrayList<String>();
+    private final List<String> children = new ArrayList<String>();
 
     /**
      * 
@@ -36,18 +36,18 @@ public class Message {
 
     private AddressDescriptor replyTo;
 
-    private List<AddressDescriptor> to = new ArrayList<AddressDescriptor>();
+    private final List<AddressDescriptor> to = new ArrayList<AddressDescriptor>();
 
-    private List<AddressDescriptor> cc = new ArrayList<AddressDescriptor>();
+    private final List<AddressDescriptor> cc = new ArrayList<AddressDescriptor>();
 
-    private List<AddressDescriptor> bcc = new ArrayList<AddressDescriptor>();
+    private final List<AddressDescriptor> bcc = new ArrayList<AddressDescriptor>();
 
     private String subjectNormalized;
     private String subjectRaw;
 
-    private List<NormativeBlockDescriptor> normalizedMessage = new ArrayList<NormativeBlockDescriptor>();
+    private final List<NormativeBlockDescriptor> normalizedMessage = new ArrayList<NormativeBlockDescriptor>();
 
-    private List<MessageContentDescriptor> contentObjects = new ArrayList<MessageContentDescriptor>();
+    private final List<MessageContentDescriptor> contentObjects = new ArrayList<MessageContentDescriptor>();
 
     public enum BlockType {
         BODY, QUOTED, NESTED_QUOTED;
