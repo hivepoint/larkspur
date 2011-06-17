@@ -2,13 +2,11 @@ package com.sevogle.link.common.web.client;
 
 import java.io.Serializable;
 
-import com.sevogle.link.common.web.client.Message.BlockType;
-
 public class NormativeBlockDescriptor implements Serializable {
     private static final long serialVersionUID = 1427773323283986046L;
     private String id;
     private long sizeBytes;
-    private BlockType type;
+    private MessageBockType type;
 
     public String getId() {
         return id;
@@ -26,11 +24,11 @@ public class NormativeBlockDescriptor implements Serializable {
         this.sizeBytes = sizeBytes;
     }
 
-    public BlockType getType() {
+    public MessageBockType getType() {
         return type;
     }
 
-    public void setType(BlockType type) {
+    public void setType(MessageBockType type) {
         this.type = type;
     }
 

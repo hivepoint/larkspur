@@ -2,14 +2,12 @@ package com.sevogle.link.common.web.client;
 
 import java.io.Serializable;
 
-import com.sevogle.link.common.web.client.Message.ContentDisposition;
-
 public class MessageContentDescriptor implements Serializable {
     private static final long serialVersionUID = -959748997080357708L;
     private String linkContentId;
     private String contentID;
     private String contentType;
-    private ContentDisposition disposition;
+    private MessageContentDisposition disposition;
     private long sizeBytes;
 
     public String getLinkContentId() {
@@ -36,11 +34,11 @@ public class MessageContentDescriptor implements Serializable {
         this.contentType = contentType;
     }
 
-    public ContentDisposition getDisposition() {
+    public MessageContentDisposition getDisposition() {
         return disposition;
     }
 
-    public void setDisposition(ContentDisposition disposition) {
+    public void setDisposition(MessageContentDisposition disposition) {
         this.disposition = disposition;
     }
 
