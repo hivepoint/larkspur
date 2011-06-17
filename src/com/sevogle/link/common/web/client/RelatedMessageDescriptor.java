@@ -4,23 +4,23 @@ import java.io.Serializable;
 
 public class RelatedMessageDescriptor implements Serializable {
     private static final long serialVersionUID = -4348037062142063351L;
-    private String linkMessageId;
+    private String messageId;
     private String protocolSpecificId;
 
     public RelatedMessageDescriptor() {
     }
 
-    public RelatedMessageDescriptor(String linkMessageId, String protocolSpecificId) {
-        this.linkMessageId = linkMessageId;
+    public RelatedMessageDescriptor(String messageId, String protocolSpecificId) {
+        this.messageId = messageId;
         this.protocolSpecificId = protocolSpecificId;
     }
 
     public String getLinkMessageId() {
-        return linkMessageId;
+        return messageId;
     }
 
     public void setLinkMessageId(String linkMessageId) {
-        this.linkMessageId = linkMessageId;
+        this.messageId = linkMessageId;
     }
 
     public String getProtocolSpecificId() {
