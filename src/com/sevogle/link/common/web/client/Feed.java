@@ -1,8 +1,6 @@
 package com.sevogle.link.common.web.client;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Feed implements Serializable {
     private static final long serialVersionUID = -6542447577539679695L;
@@ -12,8 +10,6 @@ public class Feed implements Serializable {
     private String userId;
     private String name;
     private FeedStyle style;
-    private final List<Message> messages = new ArrayList<Message>();
-    private final List<Conversation> conversations = new ArrayList<Conversation>();
 
     public Feed() {
     }
@@ -56,14 +52,6 @@ public class Feed implements Serializable {
 
     public void setStyle(FeedStyle style) {
         this.style = style;
-    }
-
-    public List<Message> getMessages() {
-        return messages;
-    }
-
-    public List<Conversation> getConversations() {
-        return conversations;
     }
 
 }
