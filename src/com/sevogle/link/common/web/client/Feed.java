@@ -13,8 +13,10 @@ public class Feed implements Serializable {
     private String name;
     private FeedStyle style;
     private final List<Message> messages = new ArrayList<Message>();
+    private final List<Conversation> conversations = new ArrayList<Conversation>();
 
-    // TODO: add conversations here when Kingston checks in the Conversation object
+    public Feed() {
+    }
 
     public Feed(String _id, String userId, String name, FeedStyle style) {
         super();
@@ -58,6 +60,10 @@ public class Feed implements Serializable {
 
     public List<Message> getMessages() {
         return messages;
+    }
+
+    public List<Conversation> getConversations() {
+        return conversations;
     }
 
 }
