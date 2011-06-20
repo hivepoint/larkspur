@@ -18,6 +18,7 @@ public class Extension implements Serializable {
     private String configUrl;
     private String configReturnUrl;
     private List<Channel> channels;
+    public static final String CHANNEL_ID = "channels.typeId";
     private boolean enabled = false;
     private String userId;
     public static final String USERID = "userId";

@@ -11,6 +11,7 @@ public class MessageDB implements Serializable {
     public static final String ID = "_id";
     private MessageState state;
     private String channelId;
+    private String userId;
     private String protocolSpecificId;
     private MessageSource messageSource;
     private long sent; // timestamp
@@ -31,7 +32,7 @@ public class MessageDB implements Serializable {
     public MessageDB() {
     }
 
-    public MessageDB(String _id, MessageState state, String channelId, String protocolSpecificId,
+    public MessageDB(String _id, String userId, MessageState state, String channelId, String protocolSpecificId,
             MessageSource messageSource, long sent, long received, String subjectNormalized, String subjectRaw,
             RelatedMessageDescriptor parent, AddressDescriptor from, AddressDescriptor replyTo) {
         this._id = _id;
@@ -46,6 +47,7 @@ public class MessageDB implements Serializable {
         this.parent = parent;
         this.from = from;
         this.replyTo = replyTo;
+        this.userId = userId;
     }
 
     public String getId() {
@@ -162,6 +164,14 @@ public class MessageDB implements Serializable {
 
     public List<MessageContentDescriptor> getContentObjects() {
         return contentObjects;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
 }
