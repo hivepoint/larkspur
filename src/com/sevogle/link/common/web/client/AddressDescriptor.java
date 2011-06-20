@@ -75,4 +75,59 @@ public class AddressDescriptor implements Serializable {
             return personalName;
         }
     }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((contactURI == null) ? 0 : contactURI.hashCode());
+        result = prime * result + ((linkContactId == null) ? 0 : linkContactId.hashCode());
+        result = prime * result + ((name == null) ? 0 : name.hashCode());
+        result = prime * result + ((personalName == null) ? 0 : personalName.hashCode());
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        AddressDescriptor other = (AddressDescriptor) obj;
+        if (contactURI == null) {
+            if (other.contactURI != null) {
+                return false;
+            }
+        } else if (!contactURI.equals(other.contactURI)) {
+            return false;
+        }
+        if (linkContactId == null) {
+            if (other.linkContactId != null) {
+                return false;
+            }
+        } else if (!linkContactId.equals(other.linkContactId)) {
+            return false;
+        }
+        if (name == null) {
+            if (other.name != null) {
+                return false;
+            }
+        } else if (!name.equals(other.name)) {
+            return false;
+        }
+        if (personalName == null) {
+            if (other.personalName != null) {
+                return false;
+            }
+        } else if (!personalName.equals(other.personalName)) {
+            return false;
+        }
+        return true;
+    }
+
 }
