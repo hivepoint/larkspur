@@ -23,11 +23,11 @@ public class MessageDB implements Serializable {
     public static final String PARENT = "parent.messageId";
     private AddressDescriptor from;
     private AddressDescriptor replyTo;
-    private final List<AddressDescriptor> to = new ArrayList<AddressDescriptor>();
-    private final List<AddressDescriptor> cc = new ArrayList<AddressDescriptor>();
-    private final List<AddressDescriptor> bcc = new ArrayList<AddressDescriptor>();
-    private final List<NormativeBlockDescriptor> normalizedMessage = new ArrayList<NormativeBlockDescriptor>();
-    private final List<MessageContentDescriptor> contentObjects = new ArrayList<MessageContentDescriptor>();
+    private List<AddressDescriptor> to = new ArrayList<AddressDescriptor>();
+    private List<AddressDescriptor> cc = new ArrayList<AddressDescriptor>();
+    private List<AddressDescriptor> bcc = new ArrayList<AddressDescriptor>();
+    private List<NormativeBlockDescriptor> normalizedMessage = new ArrayList<NormativeBlockDescriptor>();
+    private List<MessageContentDescriptor> contentObjects = new ArrayList<MessageContentDescriptor>();
 
     public MessageDB() {
     }
