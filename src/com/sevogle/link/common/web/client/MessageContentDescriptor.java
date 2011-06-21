@@ -10,8 +10,21 @@ public class MessageContentDescriptor implements Serializable {
     private MessageContentDisposition disposition;
     private long sizeBytes;
 
+    public MessageContentDescriptor() {
+
+    }
+
     public String getLinkContentId() {
         return linkContentId;
+    }
+
+    public MessageContentDescriptor(String linkContentId, String contentID, String contentType,
+            MessageContentDisposition disposition, long sizeBytes) {
+        this.linkContentId = linkContentId;
+        this.contentID = contentID;
+        this.contentType = contentType;
+        this.disposition = disposition;
+        this.sizeBytes = sizeBytes;
     }
 
     public void setLinkContentId(String linkContentId) {

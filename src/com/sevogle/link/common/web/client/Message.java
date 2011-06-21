@@ -13,9 +13,9 @@ public class Message extends MessageDB {
 
     public Message(String _id, String userId, String channelId, String protocolSpecificId, MessageSource messageSource,
             long sent, long received, String subjectNormalized, String subjectRaw, RelatedMessageDescriptor parent,
-            AddressDescriptor from, AddressDescriptor replyTo) {
+            AddressDescriptor from, AddressDescriptor replyTo, String preamble) {
         super(_id, userId, MessageState.DRAFT, channelId, protocolSpecificId, messageSource, sent, received,
-                subjectNormalized, subjectRaw, parent, from, replyTo);
+                subjectNormalized, subjectRaw, parent, from, replyTo, preamble);
     }
 
     public List<String> getChildren() {

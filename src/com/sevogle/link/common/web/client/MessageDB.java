@@ -28,13 +28,14 @@ public class MessageDB implements Serializable {
     private List<AddressDescriptor> bcc = new ArrayList<AddressDescriptor>();
     private List<NormativeBlockDescriptor> normalizedMessage = new ArrayList<NormativeBlockDescriptor>();
     private List<MessageContentDescriptor> contentObjects = new ArrayList<MessageContentDescriptor>();
+    private String preamble;
 
     public MessageDB() {
     }
 
     public MessageDB(String _id, String userId, MessageState state, String channelId, String protocolSpecificId,
             MessageSource messageSource, long sent, long received, String subjectNormalized, String subjectRaw,
-            RelatedMessageDescriptor parent, AddressDescriptor from, AddressDescriptor replyTo) {
+            RelatedMessageDescriptor parent, AddressDescriptor from, AddressDescriptor replyTo, String preamble) {
         this._id = _id;
         this.state = state;
         this.channelId = channelId;
@@ -48,6 +49,7 @@ public class MessageDB implements Serializable {
         this.from = from;
         this.replyTo = replyTo;
         this.userId = userId;
+        this.preamble = preamble;
     }
 
     public String getId() {
@@ -172,6 +174,14 @@ public class MessageDB implements Serializable {
 
     public void setUserId(String userId) {
         this.userId = userId;
+    }
+
+    public void setPreamble(String preamble) {
+        this.preamble = preamble;
+    }
+
+    public String getPreamble() {
+        return preamble;
     }
 
 }
