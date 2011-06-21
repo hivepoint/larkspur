@@ -12,7 +12,7 @@ public class ExtensionType implements Serializable {
     private String name;
     private String description;
     private String urlBase;
-    private String urlExtension = "extension";
+    private String urlExtension = "extensions";
     private String token;
     public static final String TOKEN = "token";
     private final List<Capability> capabilities = new ArrayList<Capability>();

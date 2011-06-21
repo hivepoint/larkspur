@@ -16,6 +16,10 @@ public class GmailCredentials implements Serializable {
 
     private CredentialType type = CredentialType.OAUTH;
     private Credentials credentials = null;
+    private String emailAddress = null;
+    private int port = 0;
+    private String server = null;
+    private boolean useSSL = true;
 
     public CredentialType getType() {
         return type;
@@ -33,4 +37,35 @@ public class GmailCredentials implements Serializable {
         this.credentials = credentials;
     }
 
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
+    }
+
+    public void setServer(String server) {
+        this.server = server;
+    }
+
+    public String getServer() {
+        return server;
+    }
+
+    public void setPort(int port) {
+        this.port = port;
+    }
+
+    public int getPort() {
+        return port;
+    }
+
+    public void setUseSSL(boolean useSSL) {
+        this.useSSL = useSSL;
+    }
+
+    public boolean isUseSSL() {
+        return useSSL;
+    }
 }
