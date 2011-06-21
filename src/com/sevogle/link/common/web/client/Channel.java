@@ -6,6 +6,8 @@ import java.util.List;
 public class Channel implements Serializable {
     private static final long serialVersionUID = 6468974880246528492L;
 
+    private String _id;
+    public static final String ID = "_id";
     private String typeId;
     private String typeName;
     private String userName;
@@ -73,6 +75,14 @@ public class Channel implements Serializable {
 
     public List<Capability> getCapabilities() {
         return capabilities;
+    }
+
+    public String getId() {
+        return _id;
+    }
+
+    public void setId(String id) {
+        _id = id;
     }
 
 }
