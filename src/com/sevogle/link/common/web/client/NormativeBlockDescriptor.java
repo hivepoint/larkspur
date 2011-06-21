@@ -8,6 +8,16 @@ public class NormativeBlockDescriptor implements Serializable {
     private long sizeBytes;
     private MessageBockType type;
 
+    public NormativeBlockDescriptor() {
+
+    }
+
+    public NormativeBlockDescriptor(String id, long sizeBytes, MessageBockType type) {
+        this.id = id;
+        this.sizeBytes = sizeBytes;
+        this.type = type;
+    }
+
     public String getId() {
         return id;
     }
