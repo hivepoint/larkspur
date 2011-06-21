@@ -7,7 +7,7 @@ public class AddressDescriptor implements Serializable {
     private String contactURI;
     private String linkContactId;
     private String personalName;
-    //TODO Kingston 6/15/2011:  Perhaps not the right long-term way of determining whether this represents the current user?
+    //TODO kduffie: 6/15/2011:  Perhaps not the right long-term way of determining whether this represents the current user?
     private boolean me;
     private UserName name;
 
