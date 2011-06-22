@@ -1,6 +1,7 @@
 package com.sevogle.link.common.web.client;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Extension implements Serializable {
@@ -17,7 +18,7 @@ public class Extension implements Serializable {
     private String config;
     private String configUrl;
     private String configReturnUrl;
-    private List<Channel> channels;
+    private List<Channel> channels = new ArrayList<Channel>();
     public static final String CHANNEL_ID = "channels.typeId";
     private boolean enabled = false;
     private String userId;

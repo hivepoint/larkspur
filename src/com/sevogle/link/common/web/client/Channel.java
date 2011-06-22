@@ -1,6 +1,7 @@
 package com.sevogle.link.common.web.client;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Channel implements Serializable {
@@ -15,7 +16,23 @@ public class Channel implements Serializable {
     private String status;
     private String lastError;
     private String config;
-    private List<Capability> capabilities;
+    private List<Capability> capabilities = new ArrayList<Capability>();
+
+    public Channel() {
+    }
+
+    public Channel(String _id, String typeId, String typeName, String userName, String address, String status,
+            String lastError, String config) {
+        super();
+        this._id = _id;
+        this.typeId = typeId;
+        this.typeName = typeName;
+        this.userName = userName;
+        this.address = address;
+        this.status = status;
+        this.lastError = lastError;
+        this.config = config;
+    }
 
     public String getTypeId() {
         return typeId;
