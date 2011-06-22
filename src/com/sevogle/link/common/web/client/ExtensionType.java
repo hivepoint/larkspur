@@ -15,7 +15,7 @@ public class ExtensionType implements Serializable {
     private String urlExtension = "extensions";
     private String token;
     public static final String TOKEN = "token";
-    private final List<Capability> capabilities = new ArrayList<Capability>();
+    private List<Capability> capabilities = new ArrayList<Capability>();
 
     public ExtensionType() {
     }
