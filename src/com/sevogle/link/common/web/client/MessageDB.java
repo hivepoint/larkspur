@@ -20,6 +20,7 @@ public class MessageDB implements Serializable {
     private String subjectNormalized;
     private String subjectRaw;
     private RelatedMessageDescriptor parent;
+    private RelatedMessageDescriptor inReplyTo;
     public static final String PARENT = "parent.messageId";
     private AddressDescriptor from;
     private AddressDescriptor replyTo;
@@ -28,7 +29,9 @@ public class MessageDB implements Serializable {
     private List<AddressDescriptor> bcc = new ArrayList<AddressDescriptor>();
     private List<NormativeBlockDescriptor> normalizedMessage = new ArrayList<NormativeBlockDescriptor>();
     private List<MessageContentDescriptor> contentObjects = new ArrayList<MessageContentDescriptor>();
+    private List<NameValuePair> headers = new ArrayList<NameValuePair>();
     private String preamble;
+    private boolean seen;
 
     public MessageDB() {
     }
@@ -182,6 +185,26 @@ public class MessageDB implements Serializable {
 
     public String getPreamble() {
         return preamble;
+    }
+
+    public List<NameValuePair> getHeaders() {
+        return headers;
+    }
+
+    public boolean isSeen() {
+        return seen;
+    }
+
+    public void setSeen(boolean seen) {
+        this.seen = seen;
+    }
+
+    public RelatedMessageDescriptor getInReplyTo() {
+        return inReplyTo;
+    }
+
+    public void setInReplyTo(RelatedMessageDescriptor inReplyTo) {
+        this.inReplyTo = inReplyTo;
     }
 
 }

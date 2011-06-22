@@ -21,4 +21,16 @@ public enum MessageContentDisposition {
         }
         throw new IllegalArgumentException(v);
     }
+
+    public static MessageContentDisposition fromAttachmentDisposition(String disposition) {
+        if (disposition == null || disposition.isEmpty()) {
+            return NONE;
+        }
+        try {
+            MessageContentDisposition valueOf = valueOf(disposition.toLowerCase());
+            return valueOf;
+        } catch (IllegalArgumentException e) {
+        }
+        return NONE;
+    }
 }
