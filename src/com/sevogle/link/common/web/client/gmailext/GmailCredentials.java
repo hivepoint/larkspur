@@ -4,9 +4,7 @@ import java.io.Serializable;
 
 import com.sevogle.link.common.web.client.Credentials;
 
-/**
- * TODO: abovill: 2011-07-01 this class should go away or somewhere else.
- */
+/** TODO: abovill: 2011-07-01 this class should go away or somewhere else. */
 public class GmailCredentials implements Serializable {
     private static final long serialVersionUID = -7383395744013722090L;
 
@@ -20,6 +18,21 @@ public class GmailCredentials implements Serializable {
     private int port = 0;
     private String server = null;
     private boolean useSSL = true;
+
+    public GmailCredentials() {
+
+    }
+
+    public GmailCredentials(CredentialType type, Credentials credentials, String emailAddress, int port, String server,
+            boolean useSSL) {
+        super();
+        this.type = type;
+        this.credentials = credentials;
+        this.emailAddress = emailAddress;
+        this.port = port;
+        this.server = server;
+        this.useSSL = useSSL;
+    }
 
     public CredentialType getType() {
         return type;
