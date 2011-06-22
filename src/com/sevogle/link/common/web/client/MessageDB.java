@@ -88,6 +88,10 @@ public class MessageDB implements Serializable {
     }
 
     public MessageSource getMessageSource() {
+        if (messageSource == null) {
+            //TODO: abovill 6/20/2011: Needs to be set appropriately by channel
+            return MessageSource.INBOUND;
+        }
         return messageSource;
     }
 
