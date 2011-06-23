@@ -6,13 +6,7 @@ public class DirectiveParameter implements Serializable {
     private static final long serialVersionUID = -4508569758042493930L;
 
     public enum Type {
-        BOOLEAN(Boolean.class), DOUBLE(Double.class), INTEGER(Integer.class), LONG(Long.class), STRING(String.class);
-
-        private final Class<?> clazz;
-
-        private Type(Class<?> clazz) {
-            this.clazz = clazz;
-        }
+        BOOLEAN, DOUBLE, INTEGER, LONG, STRING;
 
     }
 
