@@ -212,4 +212,9 @@ public class MessageDB implements Serializable {
         this.inReplyTo = inReplyTo;
     }
 
+    @Override
+    public String toString() {
+        return "MessageDB: id = " + _id + " 1st normative block id: "
+                + ((normalizedMessage.size() > 0) ? normalizedMessage.get(0) : " none");
+    }
 }
