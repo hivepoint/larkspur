@@ -5,6 +5,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Extension implements Serializable {
+    @Override
+    public String toString() {
+        return "Extension [_id=" + _id + ", typeId=" + typeId + ", typeName=" + typeName + ", name=" + name + ", status="
+                + status + ", lastError=" + lastError + ", lastUpdated=" + lastUpdated + ", config=" + config
+                + ", configUrl=" + configUrl + ", configReturnUrl=" + configReturnUrl + ", enabled=" + enabled + ", userId="
+                + userId + "]";
+    }
+
     private static final long serialVersionUID = -7108123887499099278L;
 
     private String _id;

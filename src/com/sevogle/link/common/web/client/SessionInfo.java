@@ -3,6 +3,12 @@ package com.sevogle.link.common.web.client;
 import java.io.Serializable;
 
 public class SessionInfo implements Serializable {
+    @Override
+    public String toString() {
+        return "SessionInfo [_id=" + _id + ", signedIn=" + signedIn + ", timestamp=" + timestamp + ", lastError="
+                + lastError + ", accountInfo=" + accountInfo + "]";
+    }
+
     private static final long serialVersionUID = 1113551276001860924L;
 
     private String _id;

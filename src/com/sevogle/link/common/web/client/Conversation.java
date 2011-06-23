@@ -5,6 +5,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Conversation implements Serializable {
+    @Override
+    public String toString() {
+        return "Conversation [_id=" + _id + ", lastSubject=" + lastSubject + ", lastMessage=" + lastMessage
+                + ", lastSenderIndex=" + lastSenderIndex + ", lastMessagePreamble=" + lastMessagePreamble
+                + ", numberUnread=" + numberUnread + ", numberMessages=" + numberMessages + "]";
+    }
+
     private static final long serialVersionUID = -4294189562436423685L;
     private String _id;
     private List<AddressDescriptor> participants = new ArrayList<AddressDescriptor>();

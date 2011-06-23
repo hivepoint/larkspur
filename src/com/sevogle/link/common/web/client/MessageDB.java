@@ -214,7 +214,11 @@ public class MessageDB implements Serializable {
 
     @Override
     public String toString() {
-        return "MessageDB: id = " + _id + " 1st normative block id: "
-                + ((normalizedMessage.size() > 0) ? normalizedMessage.get(0) : " none");
+        return "MessageDB [_id=" + _id + ", state=" + state + ", channelId=" + channelId + ", userId=" + userId
+                + ", protocolSpecificId=" + protocolSpecificId + ", messageSource=" + messageSource + ", sent=" + sent
+                + ", received=" + received + ", subjectNormalized=" + subjectNormalized + ", subjectRaw=" + subjectRaw
+                + ", parent=" + parent + ", inReplyTo=" + inReplyTo + ", from=" + from + ", replyTo=" + replyTo + ", to="
+                + to + ", cc=" + cc + ", bcc=" + bcc + ", preamble=" + preamble + ", seen=" + seen + "]";
     }
+
 }
