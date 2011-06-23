@@ -42,4 +42,8 @@ public class NormativeBlockDescriptor implements Serializable {
         this.type = type;
     }
 
+    @Override
+    public String toString() {
+        return "NormativeBlockDescriptor: " + id;
+    }
 }
