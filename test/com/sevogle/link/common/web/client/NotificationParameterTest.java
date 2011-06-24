@@ -5,16 +5,16 @@ import java.util.Random;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.sevogle.link.common.web.client.DirectiveParameter.InvalidTypeException;
+import com.sevogle.link.common.web.client.NotificationParameter.InvalidTypeException;
 
-public class DirectiveParameterTest {
+public class NotificationParameterTest {
     private Random rand = new Random();
 
     @Test
     public void testGetBool() {
         boolean exp = rand.nextBoolean();
         String name = "bool value";
-        DirectiveParameter value = DirectiveParameter.createParameter(name, exp);
+        NotificationParameter value = NotificationParameter.createParameter(name, exp);
         Assert.assertEquals(exp, value.getBoolValue());
         Assert.assertEquals("" + exp, value.toString());
         Assert.assertEquals(name, value.getName());
@@ -45,7 +45,7 @@ public class DirectiveParameterTest {
     @Test
     public void testGetDouble() {
         double exp = rand.nextDouble();
-        DirectiveParameter value = DirectiveParameter.createParameter("double value", exp);
+        NotificationParameter value = NotificationParameter.createParameter("double value", exp);
         Assert.assertEquals(exp, value.getDoubleValue(), 0.0001);
         Assert.assertEquals("" + exp, value.toString());
 
@@ -75,7 +75,7 @@ public class DirectiveParameterTest {
     @Test
     public void testGetInt() {
         int exp = rand.nextInt();
-        DirectiveParameter value = DirectiveParameter.createParameter("int value", exp);
+        NotificationParameter value = NotificationParameter.createParameter("int value", exp);
         Assert.assertEquals(exp, value.getIntValue());
         Assert.assertEquals("" + exp, value.toString());
 
@@ -105,7 +105,7 @@ public class DirectiveParameterTest {
     @Test
     public void testGetLong() {
         long exp = rand.nextLong();
-        DirectiveParameter value = DirectiveParameter.createParameter("long value", exp);
+        NotificationParameter value = NotificationParameter.createParameter("long value", exp);
         Assert.assertEquals(exp, value.getLongValue());
         Assert.assertEquals("" + exp, value.toString());
 
@@ -135,7 +135,7 @@ public class DirectiveParameterTest {
     @Test
     public void testGetString() {
         String exp = rand.nextDouble() + " " + rand.nextInt();
-        DirectiveParameter value = DirectiveParameter.createParameter("string value", exp);
+        NotificationParameter value = NotificationParameter.createParameter("string value", exp);
         Assert.assertEquals(exp, value.getStringValue());
         Assert.assertEquals("" + exp, value.toString());
 
@@ -165,43 +165,43 @@ public class DirectiveParameterTest {
     @Test
     public void testInvalidInput() throws Exception {
         try {
-            DirectiveParameter.createParameter(null, rand.nextBoolean());
+            NotificationParameter.createParameter(null, rand.nextBoolean());
             Assert.fail("Shouldn't reach here bool");
         } catch (IllegalArgumentException e) {
             Assert.assertEquals("Name cannot be null.", e.getMessage());
         }
         try {
-            DirectiveParameter.createParameter(null, rand.nextDouble());
+            NotificationParameter.createParameter(null, rand.nextDouble());
             Assert.fail("Shouldn't reach here double");
         } catch (IllegalArgumentException e) {
             Assert.assertEquals("Name cannot be null.", e.getMessage());
         }
         try {
-            DirectiveParameter.createParameter(null, rand.nextInt());
+            NotificationParameter.createParameter(null, rand.nextInt());
             Assert.fail("Shouldn't reach here int");
         } catch (IllegalArgumentException e) {
             Assert.assertEquals("Name cannot be null.", e.getMessage());
         }
         try {
-            DirectiveParameter.createParameter(null, rand.nextLong());
+            NotificationParameter.createParameter(null, rand.nextLong());
             Assert.fail("Shouldn't reach here long");
         } catch (IllegalArgumentException e) {
             Assert.assertEquals("Name cannot be null.", e.getMessage());
         }
         try {
-            DirectiveParameter.createParameter(null, rand.nextBoolean() + " " + rand.nextDouble());
+            NotificationParameter.createParameter(null, rand.nextBoolean() + " " + rand.nextDouble());
             Assert.fail("Shouldn't reach here string");
         } catch (IllegalArgumentException e) {
             Assert.assertEquals("Name cannot be null.", e.getMessage());
         }
         try {
-            DirectiveParameter.createParameter(null, null);
+            NotificationParameter.createParameter(null, null);
             Assert.fail("Shouldn't reach here long");
         } catch (IllegalArgumentException e) {
             Assert.assertEquals("Value cannot be null", e.getMessage());
         }
         try {
-            DirectiveParameter.createParameter("Trying", null);
+            NotificationParameter.createParameter("Trying", null);
             Assert.fail("Shouldn't reach here long");
         } catch (IllegalArgumentException e) {
             Assert.assertEquals("Value cannot be null", e.getMessage());

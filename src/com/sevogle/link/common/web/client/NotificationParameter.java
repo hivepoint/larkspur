@@ -2,7 +2,7 @@ package com.sevogle.link.common.web.client;
 
 import java.io.Serializable;
 
-public class DirectiveParameter implements Serializable {
+public class NotificationParameter implements Serializable {
     private static final long serialVersionUID = -4508569758042493930L;
 
     public enum Type {
@@ -18,11 +18,11 @@ public class DirectiveParameter implements Serializable {
     private String vString = null;
     private String name;
 
-    public DirectiveParameter() {
+    public NotificationParameter() {
 
     }
 
-    private DirectiveParameter(String name, Type type) {
+    private NotificationParameter(String name, Type type) {
         if (name == null) {
             throw new IllegalArgumentException("Name cannot be null.");
         }
@@ -95,35 +95,35 @@ public class DirectiveParameter implements Serializable {
 
     }
 
-    public static DirectiveParameter createParameter(String name, boolean valueBool) {
-        DirectiveParameter dp = new DirectiveParameter(name, Type.BOOLEAN);
+    public static NotificationParameter createParameter(String name, boolean valueBool) {
+        NotificationParameter dp = new NotificationParameter(name, Type.BOOLEAN);
         dp.vBoolean = valueBool;
         return dp;
     }
 
-    public static DirectiveParameter createParameter(String name, double valueDouble) {
-        DirectiveParameter dp = new DirectiveParameter(name, Type.DOUBLE);
+    public static NotificationParameter createParameter(String name, double valueDouble) {
+        NotificationParameter dp = new NotificationParameter(name, Type.DOUBLE);
         dp.vDouble = valueDouble;
         return dp;
     }
 
-    public static DirectiveParameter createParameter(String name, int valueInt) {
-        DirectiveParameter dp = new DirectiveParameter(name, Type.INTEGER);
+    public static NotificationParameter createParameter(String name, int valueInt) {
+        NotificationParameter dp = new NotificationParameter(name, Type.INTEGER);
         dp.vInteger = valueInt;
         return dp;
     }
 
-    public static DirectiveParameter createParameter(String name, long valueLong) {
-        DirectiveParameter dp = new DirectiveParameter(name, Type.LONG);
+    public static NotificationParameter createParameter(String name, long valueLong) {
+        NotificationParameter dp = new NotificationParameter(name, Type.LONG);
         dp.vLong = valueLong;
         return dp;
     }
 
-    public static DirectiveParameter createParameter(String name, String valueString) {
+    public static NotificationParameter createParameter(String name, String valueString) {
         if (valueString == null) {
             throw new IllegalArgumentException("Value cannot be null");
         }
-        DirectiveParameter dp = new DirectiveParameter(name, Type.STRING);
+        NotificationParameter dp = new NotificationParameter(name, Type.STRING);
         dp.vString = valueString;
         return dp;
     }
