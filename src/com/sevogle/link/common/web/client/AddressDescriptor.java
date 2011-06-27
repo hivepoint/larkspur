@@ -82,8 +82,6 @@ public class AddressDescriptor implements Serializable {
         int result = 1;
         result = prime * result + ((contactURI == null) ? 0 : contactURI.hashCode());
         result = prime * result + ((linkContactId == null) ? 0 : linkContactId.hashCode());
-        result = prime * result + ((name == null) ? 0 : name.hashCode());
-        result = prime * result + ((personalName == null) ? 0 : personalName.hashCode());
         return result;
     }
 
@@ -111,20 +109,6 @@ public class AddressDescriptor implements Serializable {
                 return false;
             }
         } else if (!linkContactId.equals(other.linkContactId)) {
-            return false;
-        }
-        if (name == null) {
-            if (other.name != null) {
-                return false;
-            }
-        } else if (!name.equals(other.name)) {
-            return false;
-        }
-        if (personalName == null) {
-            if (other.personalName != null) {
-                return false;
-            }
-        } else if (!personalName.equals(other.personalName)) {
             return false;
         }
         return true;
