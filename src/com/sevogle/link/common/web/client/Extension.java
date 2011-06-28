@@ -18,6 +18,7 @@ public class Extension implements Serializable {
     private String _id;
     public static final String ID = "_id";
     private String typeId;
+    public static final String TYPE_ID = "typeId";
     private String typeName;
     private String name;
     private ExtensionStatus status;
