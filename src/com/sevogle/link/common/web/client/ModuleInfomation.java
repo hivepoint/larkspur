@@ -12,6 +12,19 @@ public class ModuleInfomation implements Serializable {
     private String name;
     private String state;
 
+    public ModuleInfomation() {
+    }
+
+    public ModuleInfomation(int versionMajor, int versionMinor, int versionDot, String id, String name, String state) {
+        super();
+        this.versionMajor = versionMajor;
+        this.versionMinor = versionMinor;
+        this.versionDot = versionDot;
+        this.id = id;
+        this.name = name;
+        this.state = state;
+    }
+
     public int getVersionMajor() {
         return versionMajor;
     }
