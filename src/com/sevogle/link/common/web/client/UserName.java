@@ -28,9 +28,9 @@ public class UserName implements Serializable, Comparable<UserName> {
             this.fullName = null;
             return;
         }
-        if (fullName.matches("\\S+\\@\\S+")) {
+        if (fullName.matches("\\S+\\:\\S+\\@\\S+")) {
             // email address
-            this.fullName = fullName.substring(0, fullName.indexOf('@'));
+            this.fullName = fullName.substring(fullName.indexOf(':') + 1, fullName.indexOf('@'));
         } else if (fullName.matches("\\S+\\,\\s+\\S.*")) {
             // inverted name, e.g., Smith, John A.
             String parts[] = fullName.split("\\,", 2);
@@ -150,7 +150,11 @@ public class UserName implements Serializable, Comparable<UserName> {
 
     public String getBestFirstName() {
         if (firstName == null || firstName.isEmpty()) {
-            return getBestLastName();
+            if (lastName == null || lastName.isEmpty()) {
+
+            } else {
+                return lastName;
+            }
         }
         return firstName;
     }
