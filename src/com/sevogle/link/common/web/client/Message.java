@@ -7,6 +7,7 @@ public class Message extends MessageDB {
     private static final long serialVersionUID = 639004942928196861L;
 
     private List<String> children = new ArrayList<String>();
+    private List<String> conversations = new ArrayList<String>();
 
     public Message() {
     }
@@ -20,6 +21,10 @@ public class Message extends MessageDB {
 
     public List<String> getChildren() {
         return children;
+    }
+
+    public List<String> getConversations() {
+        return conversations;
     }
 
 }
