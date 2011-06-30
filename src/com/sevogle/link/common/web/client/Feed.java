@@ -10,16 +10,26 @@ public class Feed implements Serializable {
     private String userId;
     private String name;
     private FeedStyle style;
+    private boolean newChatDefault;
+
+    public boolean isNewChatDefault() {
+        return newChatDefault;
+    }
+
+    public void setNewChatDefault(boolean newChatDefault) {
+        this.newChatDefault = newChatDefault;
+    }
 
     public Feed() {
     }
 
-    public Feed(String _id, String userId, String name, FeedStyle style) {
+    public Feed(String _id, String userId, String name, FeedStyle style, boolean newChatDefault) {
         super();
         this._id = _id;
         this.userId = userId;
         this.name = name;
         this.style = style;
+        this.newChatDefault = newChatDefault;
     }
 
     public String getId() {
