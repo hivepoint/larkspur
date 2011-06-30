@@ -5,7 +5,7 @@ import java.util.Random;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.sevogle.link.common.web.client.NotificationParameter.InvalidTypeException;
+import com.sevogle.link.common.web.client.VariantParameter.InvalidTypeException;
 
 public class NotificationParameterTest {
     private Random rand = new Random();

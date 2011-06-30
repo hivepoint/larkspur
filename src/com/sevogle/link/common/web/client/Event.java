@@ -1,6 +1,8 @@
 package com.sevogle.link.common.web.client;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Event implements Serializable {
     private static final long serialVersionUID = 8896281957596120602L;
@@ -9,6 +11,8 @@ public class Event implements Serializable {
     public static final String ID = "_id";
     private long timestamp;
     private EventType eventType;
+    private List<EventParameter> parameters = new ArrayList<EventParameter>();
+
     private AccountInfo account;
     private Extension extension;
     private Feed feed;
@@ -18,7 +22,13 @@ public class Event implements Serializable {
     private Channel channel;
 
     public Event() {
+    }
 
+    public Event(String _id, long timestamp, EventType eventType) {
+        super();
+        this._id = _id;
+        this.timestamp = timestamp;
+        this.eventType = eventType;
     }
 
     public String getId() {
@@ -99,5 +109,9 @@ public class Event implements Serializable {
 
     public Channel getChannel() {
         return channel;
+    }
+
+    public List<EventParameter> getParameters() {
+        return parameters;
     }
 }
