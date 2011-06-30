@@ -17,6 +17,12 @@ public class MessageNotification implements Serializable {
         public static final String NEW_SEEN_VALUE_BOOLEAN = "newSeenValueBoolean";
     }
 
+    public static final class FromAddressUpdatedParams {
+        public static final String PERSONAL_NAME_STRING = "newFromPersonalName";
+        public static final String CONTACT_URI_STRING = "newContactURI";
+        public static final String IS_ME_BOOLEAN = "newIsMeFlag";
+    }
+
     private MessageNotificationType type;
     private NotificationParameter[] parameters;
 
