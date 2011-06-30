@@ -5,18 +5,10 @@ import java.io.Serializable;
 public class Event implements Serializable {
     private static final long serialVersionUID = 8896281957596120602L;
 
-    public enum EventType {
-        OBJECT_ADDED, OBJECT_UPDATED, OBJECT_REMOVED, MESSAGE_APPENDED_TO_FEED, MESSAGE_INSERTED_INTO_FEED, MESSAGES_REMOVED_FROM_FEED, CONVERSATION_INSERTED_INTO_FEED, CONVERSATION_MOVED_IN_FEED, CONVERSATION_REMOVED_FROM_FEED, MESSAGE_APPENDED_TO_CONVERSATION, MESSAGE_INSERTED_INTO_CONVERSATION, MESSAGE_REMOVED_FROM_CONVERSATION
-    }
-
-    public enum ObjectType {
-        NONE, ACCOUNT, EXTENSION, FEED, CONVERSATION, MESSAGE, SESSION
-    }
-
     private String _id;
+    public static final String ID = "_id";
     private long timestamp;
     private EventType eventType;
-    private ObjectType objectType;
     private AccountInfo account;
     private Extension extension;
     private Feed feed;
@@ -35,14 +27,6 @@ public class Event implements Serializable {
 
     public void setId(String _id) {
         this._id = _id;
-    }
-
-    public ObjectType getObjectType() {
-        return objectType;
-    }
-
-    public void setObjectType(ObjectType objectType) {
-        this.objectType = objectType;
     }
 
     public EventType getEventType() {
