@@ -14,6 +14,7 @@ public class MessageDB implements Serializable {
     private String userId;
     public static final String USERID = "userId";
     private String protocolSpecificId;
+    public static final String PROTOCOL_SPECIFIC_ID = "protocolSpecificId";
     private MessageSource messageSource;
     private long sent; // timestamp
     public static final String SENT = "sent";
