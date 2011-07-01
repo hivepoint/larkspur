@@ -25,7 +25,7 @@ public class MessageNotification implements Serializable {
     }
 
     private MessageNotificationType type;
-    private NotificationParameter[] parameters;
+    private NotificationParameter[] parameters = new NotificationParameter[0];
 
     public MessageNotification() {
 
