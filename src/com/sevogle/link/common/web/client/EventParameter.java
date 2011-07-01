@@ -6,7 +6,40 @@ public class EventParameter extends VariantParameter {
     public EventParameter() {
     }
 
-    public EventParameter(String name, Type type) {
+    private EventParameter(String name, Type type) {
         super(name, type);
+    }
+
+    public static EventParameter createParameter(String name, boolean valueBool) {
+        EventParameter dp = new EventParameter(name, Type.BOOLEAN);
+        dp.vBoolean = valueBool;
+        return dp;
+    }
+
+    public static EventParameter createParameter(String name, double valueDouble) {
+        EventParameter dp = new EventParameter(name, Type.DOUBLE);
+        dp.vDouble = valueDouble;
+        return dp;
+    }
+
+    public static EventParameter createParameter(String name, int valueInt) {
+        EventParameter dp = new EventParameter(name, Type.INTEGER);
+        dp.vInteger = valueInt;
+        return dp;
+    }
+
+    public static EventParameter createParameter(String name, long valueLong) {
+        EventParameter dp = new EventParameter(name, Type.LONG);
+        dp.vLong = valueLong;
+        return dp;
+    }
+
+    public static EventParameter createParameter(String name, String valueString) {
+        if (valueString == null) {
+            throw new IllegalArgumentException("Value cannot be null");
+        }
+        EventParameter dp = new EventParameter(name, Type.STRING);
+        dp.vString = valueString;
+        return dp;
     }
 }
