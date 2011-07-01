@@ -7,9 +7,11 @@ import java.util.List;
 public class Event implements Serializable {
     private static final long serialVersionUID = 8896281957596120602L;
 
-    private String _id;
+    private long _id;
     public static final String ID = "_id";
     private long timestamp;
+    public static final String TIMESTAMP = "timestamp";
+
     private EventType eventType;
     private List<EventParameter> parameters = new ArrayList<EventParameter>();
 
@@ -24,19 +26,19 @@ public class Event implements Serializable {
     public Event() {
     }
 
-    public Event(String _id, long timestamp, EventType eventType) {
+    public Event(long id, long timestamp, EventType eventType) {
         super();
-        this._id = _id;
+        _id = id;
         this.timestamp = timestamp;
         this.eventType = eventType;
     }
 
-    public String getId() {
+    public long getId() {
         return _id;
     }
 
-    public void setId(String _id) {
-        this._id = _id;
+    public void setId(long id) {
+        _id = id;
     }
 
     public EventType getEventType() {
