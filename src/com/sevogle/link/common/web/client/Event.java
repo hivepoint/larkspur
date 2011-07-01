@@ -20,7 +20,7 @@ public class Event implements Serializable {
     private Feed feed;
     private Conversation conversation;
     private Message message;
-    private SessionInfo session;
+    private UserSessionInfo session;
     private Channel channel;
 
     public Event() {
@@ -97,11 +97,11 @@ public class Event implements Serializable {
         this.message = message;
     }
 
-    public SessionInfo getSession() {
+    public UserSessionInfo getSession() {
         return session;
     }
 
-    public void setSession(SessionInfo session) {
+    public void setSession(UserSessionInfo session) {
         this.session = session;
     }
 

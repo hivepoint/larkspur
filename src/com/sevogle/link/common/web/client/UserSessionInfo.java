@@ -2,7 +2,7 @@ package com.sevogle.link.common.web.client;
 
 import java.io.Serializable;
 
-public class SessionInfo implements Serializable {
+public class UserSessionInfo implements Serializable {
     @Override
     public String toString() {
         return "SessionInfo [_id=" + _id + ", signedIn=" + signedIn + ", timestamp=" + timestamp + ", lastError="
@@ -18,11 +18,11 @@ public class SessionInfo implements Serializable {
     private String lastError;
     private AccountInfo accountInfo = new AccountInfo();
 
-    public SessionInfo() {
+    public UserSessionInfo() {
 
     }
 
-    public SessionInfo(String session, boolean signedIn, long timestamp, String lastError, AccountInfo accountInfo) {
+    public UserSessionInfo(String session, boolean signedIn, long timestamp, String lastError, AccountInfo accountInfo) {
         setId(session);
         setSignedIn(signedIn);
         setTimestamp(timestamp);
