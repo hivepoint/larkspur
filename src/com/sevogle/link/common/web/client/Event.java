@@ -12,6 +12,7 @@ public class Event implements Serializable {
     private long timestamp;
     public static final String TIMESTAMP = "timestamp";
 
+    private long generationId;
     private EventType eventType;
     private List<EventParameter> parameters = new ArrayList<EventParameter>();
 
@@ -23,12 +24,13 @@ public class Event implements Serializable {
     private UserSessionInfo session;
     private Channel channel;
 
+    // TODO: generation id
+
     public Event() {
     }
 
-    public Event(long id, long timestamp, EventType eventType) {
+    public Event(long timestamp, EventType eventType) {
         super();
-        _id = id;
         this.timestamp = timestamp;
         this.eventType = eventType;
     }
@@ -115,5 +117,13 @@ public class Event implements Serializable {
 
     public List<EventParameter> getParameters() {
         return parameters;
+    }
+
+    public long getGenerationId() {
+        return generationId;
+    }
+
+    public void setGenerationId(long generationId) {
+        this.generationId = generationId;
     }
 }

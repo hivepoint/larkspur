@@ -42,4 +42,16 @@ public class EventParameter extends VariantParameter {
         dp.vString = valueString;
         return dp;
     }
+
+    public final static class ExtensionEventParameters {
+        public final static String EXTENSION_ID = "extensionId";
+    }
+
+    public final static class MessageEventParameters {
+
+    }
+
+    public final static class ConversationEventParameters {
+
+    }
 }
