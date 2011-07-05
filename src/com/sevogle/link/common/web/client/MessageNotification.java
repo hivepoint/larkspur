@@ -6,7 +6,13 @@ public class MessageNotification implements Serializable {
     private static final long serialVersionUID = -768530870508302229L;
 
     public enum MessageNotificationType {
-        PROCESSING_COMPLETE, READY_FOR_PROCESSING, SEEN_UPDATED, PARENT_ID_UPDATED, FROM_UPDATED;
+        PROCESSING_COMPLETE, READY_FOR_PROCESSING, SEEN_UPDATED, PARENT_ID_UPDATED, FROM_UPDATED, DELIVERY_PROBLEMS;
+    }
+
+    public static final class DeliveryProblemParams {
+
+        public static final String DELIVERY_PROBLEM_MESSAGE = "msgDeliveryProblem";
+
     }
 
     public static final class ParentIdUpdatedParams {

@@ -18,6 +18,8 @@ public class GmailCredentials implements Serializable {
     private int port = 0;
     private String server = null;
     private boolean useSSL = true;
+    private String smtpHost = null;
+    private int smtpPort = 0;
 
     public GmailCredentials() {
 
@@ -80,5 +82,21 @@ public class GmailCredentials implements Serializable {
 
     public boolean isUseSSL() {
         return useSSL;
+    }
+
+    public void setSmtpHost(String smtpHost) {
+        this.smtpHost = smtpHost;
+    }
+
+    public String getSmtpHost() {
+        return smtpHost;
+    }
+
+    public void setSmtpPort(int smtpPort) {
+        this.smtpPort = smtpPort;
+    }
+
+    public int getSmtpPort() {
+        return smtpPort;
     }
 }
