@@ -1,1 +1,5 @@
 /war/WEB-INF/classes
+/war/WEB-INF/deploy
+/war/WEB-INF/lib
+/common_web.jar
+/common_web.war
