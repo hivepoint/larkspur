@@ -24,8 +24,6 @@ public class Event implements Serializable {
     private UserSessionInfo session;
     private Channel channel;
 
-    // TODO: generation id
-
     public Event() {
     }
 
