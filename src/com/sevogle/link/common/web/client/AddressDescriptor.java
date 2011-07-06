@@ -114,4 +114,17 @@ public class AddressDescriptor implements Serializable {
         return true;
     }
 
+    public String getFullDescription() {
+        StringBuilder sb = new StringBuilder();
+        if (name == null) {
+            if (personalName != null) {
+                sb.append(personalName + " ");
+            }
+        } else {
+            sb.append(name.toString() + " ");
+        }
+        sb.append("<" + contactURI + ">");
+        return sb.toString();
+    }
+
 }
