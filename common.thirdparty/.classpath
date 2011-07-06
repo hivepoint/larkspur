@@ -74,5 +74,10 @@
 			<attribute name="javadoc_location" value="jar:platform:/resource/common.thirdparty/javamail-1.4.4-javadocs.zip!/javadocs"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="gson-1.7.1.jar" sourcepath="gson-1.7.1-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/common.thirdparty/gson-1.7.1-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
