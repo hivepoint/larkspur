@@ -47,8 +47,23 @@ public class EventParameter extends VariantParameter {
         public final static String EXTENSION_ID = "extensionId";
     }
 
-    public final static class MessageEventParameters {
+    public final static class FeedEventParameters {
+        public static final String FEED_ID = "feedId";
+    }
 
+    public static final class MessageFeedEventParameters {
+        public static final String FEED_ID = "feedId";
+        public static final String MESSAGE_ID = "messageId";
+    }
+
+    public static final class ConversationFeedEventParameters {
+        public static final String FEED_ID = "feedId";
+        public static final String CONV_ID = "conversationId";
+    }
+
+    public final static class MessageConversationEventParameters {
+        public static final String MESSAGE_ID = "messageId";
+        public static final String CONV_ID = "conversationId";
     }
 
     public final static class ConversationEventParameters {
