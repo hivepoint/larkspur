@@ -53,4 +53,43 @@ public class Credentials implements Serializable {
     public void setEncodedPassword(String encodedPassword) {
         base64Password = encodedPassword;
     }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((base64Password == null) ? 0 : base64Password.hashCode());
+        result = prime * result + ((userid == null) ? 0 : userid.hashCode());
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        Credentials other = (Credentials) obj;
+        if (base64Password == null) {
+            if (other.base64Password != null) {
+                return false;
+            }
+        } else if (!base64Password.equals(other.base64Password)) {
+            return false;
+        }
+        if (userid == null) {
+            if (other.userid != null) {
+                return false;
+            }
+        } else if (!userid.equals(other.userid)) {
+            return false;
+        }
+        return true;
+    }
+
 }

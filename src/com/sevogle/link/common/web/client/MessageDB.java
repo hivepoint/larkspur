@@ -223,4 +223,182 @@ public class MessageDB implements Serializable {
                 + to + ", cc=" + cc + ", bcc=" + bcc + ", preamble=" + preamble + ", seen=" + seen + "]";
     }
 
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((_id == null) ? 0 : _id.hashCode());
+        result = prime * result + ((bcc == null) ? 0 : bcc.hashCode());
+        result = prime * result + ((cc == null) ? 0 : cc.hashCode());
+        result = prime * result + ((channelId == null) ? 0 : channelId.hashCode());
+        result = prime * result + ((contentObjects == null) ? 0 : contentObjects.hashCode());
+        result = prime * result + ((from == null) ? 0 : from.hashCode());
+        result = prime * result + ((headers == null) ? 0 : headers.hashCode());
+        result = prime * result + ((inReplyTo == null) ? 0 : inReplyTo.hashCode());
+        result = prime * result + ((messageSource == null) ? 0 : messageSource.hashCode());
+        result = prime * result + ((normalizedMessage == null) ? 0 : normalizedMessage.hashCode());
+        result = prime * result + ((parent == null) ? 0 : parent.hashCode());
+        result = prime * result + ((preamble == null) ? 0 : preamble.hashCode());
+        result = prime * result + ((protocolSpecificId == null) ? 0 : protocolSpecificId.hashCode());
+        result = prime * result + (int) (received ^ (received >>> 32));
+        result = prime * result + ((replyTo == null) ? 0 : replyTo.hashCode());
+        result = prime * result + (seen ? 1231 : 1237);
+        result = prime * result + (int) (sent ^ (sent >>> 32));
+        result = prime * result + ((state == null) ? 0 : state.hashCode());
+        result = prime * result + ((subjectNormalized == null) ? 0 : subjectNormalized.hashCode());
+        result = prime * result + ((subjectRaw == null) ? 0 : subjectRaw.hashCode());
+        result = prime * result + ((to == null) ? 0 : to.hashCode());
+        result = prime * result + ((userId == null) ? 0 : userId.hashCode());
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        MessageDB other = (MessageDB) obj;
+        if (_id == null) {
+            if (other._id != null) {
+                return false;
+            }
+        } else if (!_id.equals(other._id)) {
+            return false;
+        }
+        if (bcc == null) {
+            if (other.bcc != null) {
+                return false;
+            }
+        } else if (!bcc.equals(other.bcc)) {
+            return false;
+        }
+        if (cc == null) {
+            if (other.cc != null) {
+                return false;
+            }
+        } else if (!cc.equals(other.cc)) {
+            return false;
+        }
+        if (channelId == null) {
+            if (other.channelId != null) {
+                return false;
+            }
+        } else if (!channelId.equals(other.channelId)) {
+            return false;
+        }
+        if (contentObjects == null) {
+            if (other.contentObjects != null) {
+                return false;
+            }
+        } else if (!contentObjects.equals(other.contentObjects)) {
+            return false;
+        }
+        if (from == null) {
+            if (other.from != null) {
+                return false;
+            }
+        } else if (!from.equals(other.from)) {
+            return false;
+        }
+        if (headers == null) {
+            if (other.headers != null) {
+                return false;
+            }
+        } else if (!headers.equals(other.headers)) {
+            return false;
+        }
+        if (inReplyTo == null) {
+            if (other.inReplyTo != null) {
+                return false;
+            }
+        } else if (!inReplyTo.equals(other.inReplyTo)) {
+            return false;
+        }
+        if (messageSource != other.messageSource) {
+            return false;
+        }
+        if (normalizedMessage == null) {
+            if (other.normalizedMessage != null) {
+                return false;
+            }
+        } else if (!normalizedMessage.equals(other.normalizedMessage)) {
+            return false;
+        }
+        if (parent == null) {
+            if (other.parent != null) {
+                return false;
+            }
+        } else if (!parent.equals(other.parent)) {
+            return false;
+        }
+        if (preamble == null) {
+            if (other.preamble != null) {
+                return false;
+            }
+        } else if (!preamble.equals(other.preamble)) {
+            return false;
+        }
+        if (protocolSpecificId == null) {
+            if (other.protocolSpecificId != null) {
+                return false;
+            }
+        } else if (!protocolSpecificId.equals(other.protocolSpecificId)) {
+            return false;
+        }
+        if (received != other.received) {
+            return false;
+        }
+        if (replyTo == null) {
+            if (other.replyTo != null) {
+                return false;
+            }
+        } else if (!replyTo.equals(other.replyTo)) {
+            return false;
+        }
+        if (seen != other.seen) {
+            return false;
+        }
+        if (sent != other.sent) {
+            return false;
+        }
+        if (state != other.state) {
+            return false;
+        }
+        if (subjectNormalized == null) {
+            if (other.subjectNormalized != null) {
+                return false;
+            }
+        } else if (!subjectNormalized.equals(other.subjectNormalized)) {
+            return false;
+        }
+        if (subjectRaw == null) {
+            if (other.subjectRaw != null) {
+                return false;
+            }
+        } else if (!subjectRaw.equals(other.subjectRaw)) {
+            return false;
+        }
+        if (to == null) {
+            if (other.to != null) {
+                return false;
+            }
+        } else if (!to.equals(other.to)) {
+            return false;
+        }
+        if (userId == null) {
+            if (other.userId != null) {
+                return false;
+            }
+        } else if (!userId.equals(other.userId)) {
+            return false;
+        }
+        return true;
+    }
+
 }

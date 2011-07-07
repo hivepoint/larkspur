@@ -53,4 +53,50 @@ public abstract class SessionInfo implements Serializable {
         return lastError;
     }
 
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((_id == null) ? 0 : _id.hashCode());
+        result = prime * result + ((lastError == null) ? 0 : lastError.hashCode());
+        result = prime * result + (signedIn ? 1231 : 1237);
+        result = prime * result + (int) (timestamp ^ (timestamp >>> 32));
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        SessionInfo other = (SessionInfo) obj;
+        if (_id == null) {
+            if (other._id != null) {
+                return false;
+            }
+        } else if (!_id.equals(other._id)) {
+            return false;
+        }
+        if (lastError == null) {
+            if (other.lastError != null) {
+                return false;
+            }
+        } else if (!lastError.equals(other.lastError)) {
+            return false;
+        }
+        if (signedIn != other.signedIn) {
+            return false;
+        }
+        if (timestamp != other.timestamp) {
+            return false;
+        }
+        return true;
+    }
+
 }

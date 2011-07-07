@@ -27,4 +27,42 @@ public class Message extends MessageDB {
         return conversations;
     }
 
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = super.hashCode();
+        result = prime * result + ((children == null) ? 0 : children.hashCode());
+        result = prime * result + ((conversations == null) ? 0 : conversations.hashCode());
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!super.equals(obj)) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        Message other = (Message) obj;
+        if (children == null) {
+            if (other.children != null) {
+                return false;
+            }
+        } else if (!children.equals(other.children)) {
+            return false;
+        }
+        if (conversations == null) {
+            if (other.conversations != null) {
+                return false;
+            }
+        } else if (!conversations.equals(other.conversations)) {
+            return false;
+        }
+        return true;
+    }
+
 }

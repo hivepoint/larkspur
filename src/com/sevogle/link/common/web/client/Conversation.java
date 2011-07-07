@@ -101,4 +101,74 @@ public class Conversation implements Serializable {
     public void setLastMessagePreamble(String lastMessagePreamble) {
         this.lastMessagePreamble = lastMessagePreamble;
     }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((_id == null) ? 0 : _id.hashCode());
+        result = prime * result + (int) (lastMessage ^ (lastMessage >>> 32));
+        result = prime * result + ((lastMessagePreamble == null) ? 0 : lastMessagePreamble.hashCode());
+        result = prime * result + lastSenderIndex;
+        result = prime * result + ((lastSubject == null) ? 0 : lastSubject.hashCode());
+        result = prime * result + numberMessages;
+        result = prime * result + numberUnread;
+        result = prime * result + ((participants == null) ? 0 : participants.hashCode());
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        Conversation other = (Conversation) obj;
+        if (_id == null) {
+            if (other._id != null) {
+                return false;
+            }
+        } else if (!_id.equals(other._id)) {
+            return false;
+        }
+        if (lastMessage != other.lastMessage) {
+            return false;
+        }
+        if (lastMessagePreamble == null) {
+            if (other.lastMessagePreamble != null) {
+                return false;
+            }
+        } else if (!lastMessagePreamble.equals(other.lastMessagePreamble)) {
+            return false;
+        }
+        if (lastSenderIndex != other.lastSenderIndex) {
+            return false;
+        }
+        if (lastSubject == null) {
+            if (other.lastSubject != null) {
+                return false;
+            }
+        } else if (!lastSubject.equals(other.lastSubject)) {
+            return false;
+        }
+        if (numberMessages != other.numberMessages) {
+            return false;
+        }
+        if (numberUnread != other.numberUnread) {
+            return false;
+        }
+        if (participants == null) {
+            if (other.participants != null) {
+                return false;
+            }
+        } else if (!participants.equals(other.participants)) {
+            return false;
+        }
+        return true;
+    }
 }

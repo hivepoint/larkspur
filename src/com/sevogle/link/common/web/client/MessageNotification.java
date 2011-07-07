@@ -1,6 +1,7 @@
 package com.sevogle.link.common.web.client;
 
 import java.io.Serializable;
+import java.util.Arrays;
 
 public class MessageNotification implements Serializable {
     private static final long serialVersionUID = -768530870508302229L;
@@ -52,5 +53,35 @@ public class MessageNotification implements Serializable {
 
     public NotificationParameter[] getParameters() {
         return parameters;
+    }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + Arrays.hashCode(parameters);
+        result = prime * result + ((type == null) ? 0 : type.hashCode());
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        MessageNotification other = (MessageNotification) obj;
+        if (!Arrays.equals(parameters, other.parameters)) {
+            return false;
+        }
+        if (type != other.type) {
+            return false;
+        }
+        return true;
     }
 }

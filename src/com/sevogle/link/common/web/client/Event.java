@@ -124,4 +124,106 @@ public class Event implements Serializable {
     public void setGenerationId(long generationId) {
         this.generationId = generationId;
     }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + (int) (_id ^ (_id >>> 32));
+        result = prime * result + ((account == null) ? 0 : account.hashCode());
+        result = prime * result + ((channel == null) ? 0 : channel.hashCode());
+        result = prime * result + ((conversation == null) ? 0 : conversation.hashCode());
+        result = prime * result + ((eventType == null) ? 0 : eventType.hashCode());
+        result = prime * result + ((extension == null) ? 0 : extension.hashCode());
+        result = prime * result + ((feed == null) ? 0 : feed.hashCode());
+        result = prime * result + (int) (generationId ^ (generationId >>> 32));
+        result = prime * result + ((message == null) ? 0 : message.hashCode());
+        result = prime * result + ((parameters == null) ? 0 : parameters.hashCode());
+        result = prime * result + ((session == null) ? 0 : session.hashCode());
+        result = prime * result + (int) (timestamp ^ (timestamp >>> 32));
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        Event other = (Event) obj;
+        if (_id != other._id) {
+            return false;
+        }
+        if (account == null) {
+            if (other.account != null) {
+                return false;
+            }
+        } else if (!account.equals(other.account)) {
+            return false;
+        }
+        if (channel == null) {
+            if (other.channel != null) {
+                return false;
+            }
+        } else if (!channel.equals(other.channel)) {
+            return false;
+        }
+        if (conversation == null) {
+            if (other.conversation != null) {
+                return false;
+            }
+        } else if (!conversation.equals(other.conversation)) {
+            return false;
+        }
+        if (eventType != other.eventType) {
+            return false;
+        }
+        if (extension == null) {
+            if (other.extension != null) {
+                return false;
+            }
+        } else if (!extension.equals(other.extension)) {
+            return false;
+        }
+        if (feed == null) {
+            if (other.feed != null) {
+                return false;
+            }
+        } else if (!feed.equals(other.feed)) {
+            return false;
+        }
+        if (generationId != other.generationId) {
+            return false;
+        }
+        if (message == null) {
+            if (other.message != null) {
+                return false;
+            }
+        } else if (!message.equals(other.message)) {
+            return false;
+        }
+        if (parameters == null) {
+            if (other.parameters != null) {
+                return false;
+            }
+        } else if (!parameters.equals(other.parameters)) {
+            return false;
+        }
+        if (session == null) {
+            if (other.session != null) {
+                return false;
+            }
+        } else if (!session.equals(other.session)) {
+            return false;
+        }
+        if (timestamp != other.timestamp) {
+            return false;
+        }
+        return true;
+    }
 }

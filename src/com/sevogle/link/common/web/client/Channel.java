@@ -102,4 +102,98 @@ public class Channel implements Serializable {
         _id = id;
     }
 
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((_id == null) ? 0 : _id.hashCode());
+        result = prime * result + ((address == null) ? 0 : address.hashCode());
+        result = prime * result + ((capabilities == null) ? 0 : capabilities.hashCode());
+        result = prime * result + ((config == null) ? 0 : config.hashCode());
+        result = prime * result + ((lastError == null) ? 0 : lastError.hashCode());
+        result = prime * result + ((status == null) ? 0 : status.hashCode());
+        result = prime * result + ((typeId == null) ? 0 : typeId.hashCode());
+        result = prime * result + ((typeName == null) ? 0 : typeName.hashCode());
+        result = prime * result + ((userName == null) ? 0 : userName.hashCode());
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        Channel other = (Channel) obj;
+        if (_id == null) {
+            if (other._id != null) {
+                return false;
+            }
+        } else if (!_id.equals(other._id)) {
+            return false;
+        }
+        if (address == null) {
+            if (other.address != null) {
+                return false;
+            }
+        } else if (!address.equals(other.address)) {
+            return false;
+        }
+        if (capabilities == null) {
+            if (other.capabilities != null) {
+                return false;
+            }
+        } else if (!capabilities.equals(other.capabilities)) {
+            return false;
+        }
+        if (config == null) {
+            if (other.config != null) {
+                return false;
+            }
+        } else if (!config.equals(other.config)) {
+            return false;
+        }
+        if (lastError == null) {
+            if (other.lastError != null) {
+                return false;
+            }
+        } else if (!lastError.equals(other.lastError)) {
+            return false;
+        }
+        if (status == null) {
+            if (other.status != null) {
+                return false;
+            }
+        } else if (!status.equals(other.status)) {
+            return false;
+        }
+        if (typeId == null) {
+            if (other.typeId != null) {
+                return false;
+            }
+        } else if (!typeId.equals(other.typeId)) {
+            return false;
+        }
+        if (typeName == null) {
+            if (other.typeName != null) {
+                return false;
+            }
+        } else if (!typeName.equals(other.typeName)) {
+            return false;
+        }
+        if (userName == null) {
+            if (other.userName != null) {
+                return false;
+            }
+        } else if (!userName.equals(other.userName)) {
+            return false;
+        }
+        return true;
+    }
+
 }
