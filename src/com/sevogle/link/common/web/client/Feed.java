@@ -11,6 +11,7 @@ public class Feed implements Serializable {
     private String name;
     private FeedStyle style;
     private boolean newChatDefault;
+    private int feedIndex;
 
     public boolean isNewChatDefault() {
         return newChatDefault;
@@ -64,4 +65,11 @@ public class Feed implements Serializable {
         this.style = style;
     }
 
+    public int getFeedIndex() {
+        return feedIndex;
+    }
+
+    public void setFeedIndex(int feedIndex) {
+        this.feedIndex = feedIndex;
+    }
 }
