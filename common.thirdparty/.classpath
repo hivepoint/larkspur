@@ -12,7 +12,6 @@
 	<classpathentry exported="true" kind="lib" path="commons-httpclient-3.0.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="commons-httpclient-3.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="commons-logging-1.03.jar"/>
-	<classpathentry exported="true" kind="lib" path="gson-1.6.jar" sourcepath="gson-1.6-sources.jar"/>
 	<classpathentry exported="true" kind="lib" path="higgins-configuration-api.jar"/>
 	<classpathentry exported="true" kind="lib" path="higgins-sts-api.jar"/>
 	<classpathentry exported="true" kind="lib" path="higgins-sts-common.jar"/>
