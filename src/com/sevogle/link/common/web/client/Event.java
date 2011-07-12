@@ -117,6 +117,15 @@ public class Event implements Serializable {
         return parameters;
     }
 
+    public EventParameter getParameterByName(String name) {
+        for (EventParameter param : parameters) {
+            if (param.getName().equals(name)) {
+                return param;
+            }
+        }
+        return null;
+    }
+
     public long getGenerationId() {
         return generationId;
     }
