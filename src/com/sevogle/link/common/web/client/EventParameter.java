@@ -66,6 +66,12 @@ public class EventParameter extends VariantParameter {
         public static final String CONV_ID = "conversationId";
     }
 
+    public final static class MessageUpdatedParameters {
+        public static final String SEEN = "seen";
+        public static final String FROM = "from";
+        public static final String PARENT = "parent";
+    }
+
     public final static class ConversationEventParameters {
 
     }
