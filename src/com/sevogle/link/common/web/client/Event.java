@@ -235,4 +235,17 @@ public class Event implements Serializable {
         }
         return true;
     }
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Event [_id=" + _id + ", timestamp=" + timestamp
+				+ ", generationId=" + generationId + ", eventType=" + eventType
+				+ ", parameters=" + parameters + ", account=" + account
+				+ ", extension=" + extension + ", feed=" + feed
+				+ ", conversation=" + conversation + ", message=" + message
+				+ ", session=" + session + ", channel=" + channel + "]";
+	}
 }
