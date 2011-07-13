@@ -24,6 +24,7 @@ public class MessageDB implements Serializable {
     private RelatedMessageDescriptor parent;
     private RelatedMessageDescriptor inReplyTo;
     public static final String PARENT = "parent.messageId";
+    public static final String PARENT_PROTOCOL_SPECIFIC = "parent.protocolSpecificId";
     private AddressDescriptor from;
     private AddressDescriptor replyTo;
     private List<AddressDescriptor> to = new ArrayList<AddressDescriptor>();
