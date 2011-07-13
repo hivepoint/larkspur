@@ -28,7 +28,7 @@ public interface ServiceRegistry {
 
         @Override
         public String getLinkBaseURL() {
-            return "http://localhost:24000/";
+            return "http://localhost:24000";
         }
 
         @Override
