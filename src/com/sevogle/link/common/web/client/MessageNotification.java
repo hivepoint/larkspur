@@ -29,7 +29,7 @@ public class MessageNotification implements Serializable {
         public static final String PERSONAL_NAME_STRING = "newFromPersonalName";
         public static final String CONTACT_URI_STRING = "newContactURI";
         public static final String IS_ME_BOOLEAN = "newIsMeFlag";
-        public static final String CHANNEL_ID = "newChannelId";
+        public static final String PROTOCAL_SPECIFIC_ID = "newProtocolSpecificId";
     }
 
     private MessageNotificationType type;
