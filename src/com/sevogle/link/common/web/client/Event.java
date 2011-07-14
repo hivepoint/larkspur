@@ -4,6 +4,8 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.sevogle.link.common.web.client.EventParameter.EventParameterName;
+
 public class Event implements Serializable {
     private static final long serialVersionUID = 8896281957596120602L;
 
@@ -117,9 +119,10 @@ public class Event implements Serializable {
         return parameters;
     }
 
-    public EventParameter getParameterByName(String name) {
+    public EventParameter getParameterByName(EventParameterName name) {
+        String paramName = name.getParamName();
         for (EventParameter param : parameters) {
-            if (param.getName().equals(name)) {
+            if (param.getName().equals(paramName)) {
                 return param;
             }
         }

@@ -3,6 +3,8 @@ package com.sevogle.link.common.web.client;
 import java.io.Serializable;
 import java.util.Arrays;
 
+import com.sevogle.link.common.web.client.NotificationParameter.NotificationParameterName;
+
 public class MessageNotification implements Serializable {
     private static final long serialVersionUID = -768530870508302229L;
 
@@ -10,26 +12,65 @@ public class MessageNotification implements Serializable {
         PROCESSING_COMPLETE, READY_FOR_PROCESSING, SEEN_UPDATED, PARENT_ID_UPDATED, FROM_UPDATED, DELIVERY_PROBLEMS;
     }
 
-    public static final class DeliveryProblemParams {
+    public enum DeliveryProblemParams implements NotificationParameterName {
 
-        public static final String DELIVERY_PROBLEM_MESSAGE = "msgDeliveryProblem";
+        DELIVERY_PROBLEM_MESSAGE("msgDeliveryProblem");
 
+        String paramName;
+
+        private DeliveryProblemParams(String paramName) {
+            this.paramName = paramName;
+        }
+
+        @Override
+        public String getParamName() {
+            return paramName;
+        }
     }
 
-    public static final class ParentIdUpdatedParams {
-        public static final String NEW_PARENT_PROTOCAL_SPECIFIC_ID_STRING = "newParentProtocalId";
-        public static final String NEW_PARENT_LINK_ID_STRING = "newParentLinkId";
+    public enum ParentIdUpdatedParams implements NotificationParameterName {
+        NEW_PARENT_PROTOCAL_SPECIFIC_ID_STRING("newParentProtocalId"), NEW_PARENT_LINK_ID_STRING("newParentLinkId");
+
+        String paramName;
+
+        private ParentIdUpdatedParams(String paramName) {
+            this.paramName = paramName;
+        }
+
+        @Override
+        public String getParamName() {
+            return paramName;
+        }
     }
 
-    public static final class SeenUpdatedParams {
-        public static final String NEW_SEEN_VALUE_BOOLEAN = "newSeenValueBoolean";
+    public enum SeenUpdatedParams implements NotificationParameterName {
+        NEW_SEEN_VALUE_BOOLEAN("newSeenValueBoolean");
+        String paramName;
+
+        private SeenUpdatedParams(String paramName) {
+            this.paramName = paramName;
+        }
+
+        @Override
+        public String getParamName() {
+            return paramName;
+        }
     }
 
-    public static final class FromAddressUpdatedParams {
-        public static final String PERSONAL_NAME_STRING = "newFromPersonalName";
-        public static final String CONTACT_URI_STRING = "newContactURI";
-        public static final String IS_ME_BOOLEAN = "newIsMeFlag";
-        public static final String PROTOCAL_SPECIFIC_ID = "newProtocolSpecificId";
+    public enum FromAddressUpdatedParams implements NotificationParameterName {
+        PERSONAL_NAME_STRING("newFromPersonalName"), CONTACT_URI_STRING("newContactURI"), IS_ME_BOOLEAN("newIsMeFlag"), PROTOCAL_SPECIFIC_ID(
+                "newProtocolSpecificId");
+
+        String paramName;
+
+        private FromAddressUpdatedParams(String paramName) {
+            this.paramName = paramName;
+        }
+
+        @Override
+        public String getParamName() {
+            return paramName;
+        };
     }
 
     private MessageNotificationType type;

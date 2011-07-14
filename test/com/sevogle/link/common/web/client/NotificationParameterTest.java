@@ -5,6 +5,7 @@ import java.util.Random;
 import org.junit.Assert;
 import org.junit.Test;
 
+import com.sevogle.link.common.web.client.NotificationParameter.NotificationParameterName;
 import com.sevogle.link.common.web.client.VariantParameter.InvalidTypeException;
 
 public class NotificationParameterTest {
@@ -14,7 +15,7 @@ public class NotificationParameterTest {
     public void testGetBool() {
         boolean exp = rand.nextBoolean();
         String name = "bool value";
-        NotificationParameter value = NotificationParameter.createParameter(name, exp);
+        NotificationParameter value = NotificationParameter.createParameter(new NotificationParamTestName(name), exp);
         Assert.assertEquals(exp, value.getBoolValue());
         Assert.assertEquals("" + exp, value.toString());
         Assert.assertEquals(name, value.getName());
@@ -45,7 +46,8 @@ public class NotificationParameterTest {
     @Test
     public void testGetDouble() {
         double exp = rand.nextDouble();
-        NotificationParameter value = NotificationParameter.createParameter("double value", exp);
+        NotificationParameter value = NotificationParameter.createParameter(new NotificationParamTestName("double value"),
+                exp);
         Assert.assertEquals(exp, value.getDoubleValue(), 0.0001);
         Assert.assertEquals("" + exp, value.toString());
 
@@ -75,7 +77,7 @@ public class NotificationParameterTest {
     @Test
     public void testGetInt() {
         int exp = rand.nextInt();
-        NotificationParameter value = NotificationParameter.createParameter("int value", exp);
+        NotificationParameter value = NotificationParameter.createParameter(new NotificationParamTestName("int value"), exp);
         Assert.assertEquals(exp, value.getIntValue());
         Assert.assertEquals("" + exp, value.toString());
 
@@ -105,7 +107,8 @@ public class NotificationParameterTest {
     @Test
     public void testGetLong() {
         long exp = rand.nextLong();
-        NotificationParameter value = NotificationParameter.createParameter("long value", exp);
+        NotificationParameter value = NotificationParameter
+                .createParameter(new NotificationParamTestName("long value"), exp);
         Assert.assertEquals(exp, value.getLongValue());
         Assert.assertEquals("" + exp, value.toString());
 
@@ -135,7 +138,8 @@ public class NotificationParameterTest {
     @Test
     public void testGetString() {
         String exp = rand.nextDouble() + " " + rand.nextInt();
-        NotificationParameter value = NotificationParameter.createParameter("string value", exp);
+        NotificationParameter value = NotificationParameter.createParameter(new NotificationParamTestName("string value"),
+                exp);
         Assert.assertEquals(exp, value.getStringValue());
         Assert.assertEquals("" + exp, value.toString());
 
@@ -201,7 +205,7 @@ public class NotificationParameterTest {
             Assert.assertEquals("Value cannot be null", e.getMessage());
         }
         try {
-            NotificationParameter.createParameter("Trying", null);
+            NotificationParameter.createParameter(new NotificationParamTestName("Trying"), null);
             Assert.fail("Shouldn't reach here long");
         } catch (IllegalArgumentException e) {
             Assert.assertEquals("Value cannot be null", e.getMessage());
@@ -209,4 +213,19 @@ public class NotificationParameterTest {
 
     }
 
+    private class NotificationParamTestName implements NotificationParameterName {
+
+        private String name;
+
+        private NotificationParamTestName(String name) {
+            super();
+            this.name = name;
+        }
+
+        @Override
+        public String getParamName() {
+            return name;
+        }
+
+    }
 }

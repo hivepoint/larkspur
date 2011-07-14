@@ -20,11 +20,11 @@ public class VariantParameter implements Serializable {
     public VariantParameter() {
     }
 
-    protected VariantParameter(String name, Type type) {
+    protected VariantParameter(VariantParameter.ParamName name, Type type) {
         if (name == null) {
             throw new IllegalArgumentException("Name cannot be null.");
         }
-        this.name = name;
+        this.name = name.getParamName();
         this.type = type;
     }
 
@@ -90,6 +90,10 @@ public class VariantParameter implements Serializable {
         public InvalidTypeException(String message) {
             super(message);
         }
+    }
+
+    public interface ParamName {
+        String getParamName();
     }
 
     @Override
