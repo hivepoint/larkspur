@@ -9,7 +9,7 @@ public class MessageNotification implements Serializable {
     private static final long serialVersionUID = -768530870508302229L;
 
     public enum MessageNotificationType {
-        PROCESSING_COMPLETE, READY_FOR_PROCESSING, SEEN_UPDATED, PARENT_ID_UPDATED, FROM_UPDATED, DELIVERY_PROBLEMS;
+        PROCESSING_COMPLETE, READY_FOR_PROCESSING, MESSAGE_UPDATED, SEEN_UPDATED, PARENT_ID_UPDATED, FROM_UPDATED, DELIVERY_PROBLEMS;
     }
 
     public enum DeliveryProblemParams implements NotificationParameterName {
@@ -19,6 +19,27 @@ public class MessageNotification implements Serializable {
         String paramName;
 
         private DeliveryProblemParams(String paramName) {
+            this.paramName = paramName;
+        }
+
+        @Override
+        public String getParamName() {
+            return paramName;
+        }
+    }
+
+    public enum MessageUpdatedParam implements NotificationParameterName {
+        NEW_PARENT_PROTOCAL_SPECIFIC_ID_STRING("newParentProtocalId"), //
+        NEW_PARENT_LINK_ID_STRING("newParentLinkId"), //
+        PERSONAL_NAME_STRING("newFromPersonalName"), //
+        CONTACT_URI_STRING("newContactURI"), //
+        IS_ME_BOOLEAN("newIsMeFlag"), //
+        PROTOCAL_SPECIFIC_ID("newProtocolSpecificId"), //
+        NEW_SEEN_VALUE_BOOLEAN("newSeenValueBoolean");
+
+        String paramName;
+
+        private MessageUpdatedParam(String paramName) {
             this.paramName = paramName;
         }
 
