@@ -17,8 +17,8 @@ public class MessageNotification implements Serializable {
     }
 
     public static final class ParentIdUpdatedParams {
-        public static final String NEW_PARENT_ID_STRING = "newParentIdString";
-        public static final String NEW_LINK_PARENT_ID_STRING = "newLinkParentId";
+        public static final String NEW_PARENT_PROTOCAL_SPECIFIC_ID_STRING = "newParentProtocalId";
+        public static final String NEW_PARENT_LINK_ID_STRING = "newParentLinkId";
     }
 
     public static final class SeenUpdatedParams {

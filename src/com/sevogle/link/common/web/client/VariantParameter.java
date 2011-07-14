@@ -71,15 +71,15 @@ public class VariantParameter implements Serializable {
     public String toString() {
         switch (type) {
         case BOOLEAN:
-            return vBoolean.toString();
+            return name + ":" + vBoolean.toString();
         case DOUBLE:
-            return vDouble.toString();
+            return name + ":" + vDouble.toString();
         case INTEGER:
-            return vInteger.toString();
+            return name + ":" + vInteger.toString();
         case LONG:
-            return vLong.toString();
+            return name + ":" + vLong.toString();
         case STRING:
-            return vString;
+            return name + ":" + vString;
         }
         throw new IllegalStateException("Unknown type: " + type);
     }
