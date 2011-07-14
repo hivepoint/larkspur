@@ -69,4 +69,10 @@ public class RelatedMessageDescriptor implements Serializable {
         return true;
     }
 
+    @Override
+    public String toString() {
+        return "RelatedMessageDescriptor [" + (messageId != null ? "messageId=" + messageId + ", " : "")
+                + (protocolSpecificId != null ? "protocolSpecificId=" + protocolSpecificId : "") + "]";
+    }
+
 }
