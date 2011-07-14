@@ -71,8 +71,4 @@ public class EventParameter extends VariantParameter {
         public static final String FROM = "from";
         public static final String PARENT = "parent";
     }
-
-    public final static class ConversationEventParameters {
-
-    }
 }
