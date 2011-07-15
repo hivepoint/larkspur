@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.Arrays;
 
 import com.sevogle.link.common.web.client.NotificationParameter.NotificationParameterName;
+import com.sevogle.link.common.web.client.NotificationParameter.UnknownParamNameException;
 
 public class MessageNotification implements Serializable {
     private static final long serialVersionUID = -768530870508302229L;
@@ -52,6 +53,15 @@ public class MessageNotification implements Serializable {
         @Override
         public String getParamName() {
             return paramName;
+        }
+
+        public static MessageUpdatedParam parseFromParamName(String paramName) throws UnknownParamNameException {
+            for (MessageUpdatedParam param : MessageUpdatedParam.values()) {
+                if (param.getParamName().equals(paramName)) {
+                    return param;
+                }
+            }
+            throw new UnknownParamNameException(paramName);
         }
     }
 

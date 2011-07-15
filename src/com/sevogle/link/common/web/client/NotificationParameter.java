@@ -13,6 +13,14 @@ public class NotificationParameter extends VariantParameter implements Serializa
 
     }
 
+    public static class UnknownParamNameException extends Exception {
+        private static final long serialVersionUID = 6041015902309142545L;
+
+        public UnknownParamNameException(String paramName) {
+            super("Unknown parameter name:\"" + paramName + "\"");
+        }
+    }
+
     private NotificationParameter(NotificationParameterName name, Type type) {
         super(name, type);
     }
