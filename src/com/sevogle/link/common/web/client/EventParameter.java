@@ -117,7 +117,7 @@ public class EventParameter extends VariantParameter {
     }
 
     public enum MessageUpdatedParameters implements EventParameterName {
-        SEEN("seen"), FROM("from"), PARENT("parent");
+        SEEN("seen"), FROM("from"), PARENT("parent"), PROTOCOL_SPECIFIC_ID("protocolSpecificId");
         private final String paramName;
 
         private MessageUpdatedParameters(String paramName) {
