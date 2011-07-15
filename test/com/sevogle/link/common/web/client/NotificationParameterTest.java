@@ -17,7 +17,7 @@ public class NotificationParameterTest {
         String name = "bool value";
         NotificationParameter value = NotificationParameter.createParameter(new NotificationParamTestName(name), exp);
         Assert.assertEquals(exp, value.getBoolValue());
-        Assert.assertEquals("" + exp, value.toString());
+        Assert.assertEquals(name + ":" + exp, value.toString());
         Assert.assertEquals(name, value.getName());
 
         // Make sure the others fail
@@ -46,10 +46,10 @@ public class NotificationParameterTest {
     @Test
     public void testGetDouble() {
         double exp = rand.nextDouble();
-        NotificationParameter value = NotificationParameter.createParameter(new NotificationParamTestName("double value"),
-                exp);
+        String name = "double value";
+        NotificationParameter value = NotificationParameter.createParameter(new NotificationParamTestName(name), exp);
         Assert.assertEquals(exp, value.getDoubleValue(), 0.0001);
-        Assert.assertEquals("" + exp, value.toString());
+        Assert.assertEquals(name + ":" + exp, value.toString());
 
         // Make sure the others fail
         try {
@@ -77,9 +77,10 @@ public class NotificationParameterTest {
     @Test
     public void testGetInt() {
         int exp = rand.nextInt();
-        NotificationParameter value = NotificationParameter.createParameter(new NotificationParamTestName("int value"), exp);
+        String name = "int value";
+        NotificationParameter value = NotificationParameter.createParameter(new NotificationParamTestName(name), exp);
         Assert.assertEquals(exp, value.getIntValue());
-        Assert.assertEquals("" + exp, value.toString());
+        Assert.assertEquals(name + ":" + exp, value.toString());
 
         // Make sure the others fail
         try {
@@ -107,10 +108,10 @@ public class NotificationParameterTest {
     @Test
     public void testGetLong() {
         long exp = rand.nextLong();
-        NotificationParameter value = NotificationParameter
-                .createParameter(new NotificationParamTestName("long value"), exp);
+        String name = "long value";
+        NotificationParameter value = NotificationParameter.createParameter(new NotificationParamTestName(name), exp);
         Assert.assertEquals(exp, value.getLongValue());
-        Assert.assertEquals("" + exp, value.toString());
+        Assert.assertEquals(name + ":" + exp, value.toString());
 
         // Make sure the others fail
         try {
@@ -138,10 +139,10 @@ public class NotificationParameterTest {
     @Test
     public void testGetString() {
         String exp = rand.nextDouble() + " " + rand.nextInt();
-        NotificationParameter value = NotificationParameter.createParameter(new NotificationParamTestName("string value"),
-                exp);
+        String name = "string value";
+        NotificationParameter value = NotificationParameter.createParameter(new NotificationParamTestName(name), exp);
         Assert.assertEquals(exp, value.getStringValue());
-        Assert.assertEquals("" + exp, value.toString());
+        Assert.assertEquals(name + ":" + exp, value.toString());
 
         // Make sure the others fail
         try {
