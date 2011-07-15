@@ -34,9 +34,9 @@ public class MessageNotification implements Serializable {
     public enum MessageUpdatedParam implements NotificationParameterName {
         NEW_PARENT_PROTOCAL_SPECIFIC_ID_STRING("newParentProtocalId"), //
         NEW_PARENT_LINK_ID_STRING("newParentLinkId"), //
-        PERSONAL_NAME_STRING("newFromPersonalName"), //
-        CONTACT_URI_STRING("newContactURI"), //
-        IS_ME_BOOLEAN("newIsMeFlag"), //
+        FROM_PERSONAL_NAME_STRING("newFromPersonalName"), //
+        FROM_CONTACT_URI_STRING("newContactURI"), //
+        FROM_IS_ME_BOOLEAN("newIsMeFlag"), //
         PROTOCAL_SPECIFIC_ID("newProtocolSpecificId"), //
         NEW_SEEN_VALUE_BOOLEAN("newSeenValueBoolean");
 
