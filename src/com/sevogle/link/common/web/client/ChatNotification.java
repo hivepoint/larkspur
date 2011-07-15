@@ -4,6 +4,8 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.sevogle.link.common.web.client.NotificationParameter.NotificationParameterName;
+
 public class ChatNotification implements Serializable {
     private static final long serialVersionUID = 2622775668112024634L;
 
@@ -11,9 +13,19 @@ public class ChatNotification implements Serializable {
         MOVE_CHAT_TO_FEED;
     }
 
-    public static final class ChatMovedToFeedParams {
-        public static final String OLD_FEED_ID = "oldFeedId";
-        public static final String NEW_FEED_ID = "newFeedId";
+    public enum ChatMovedToFeedParams implements NotificationParameterName {
+        OLD_FEED_ID("oldFeedId"), NEW_FEED_ID("newFeedId");
+
+        private String paramName;
+
+        private ChatMovedToFeedParams(String paramName) {
+            this.paramName = paramName;
+        }
+
+        @Override
+        public String getParamName() {
+            return paramName;
+        }
     }
 
     private ChatNotificationType type;
@@ -47,10 +59,10 @@ public class ChatNotification implements Serializable {
         return parameters;
     }
 
-    public List<NotificationParameter> getParameters(String name) {
+    public List<NotificationParameter> getParameters(NotificationParameterName name) {
         List<NotificationParameter> result = new ArrayList<NotificationParameter>();
         for (NotificationParameter p : parameters) {
-            if (p.getName().equals(name)) {
+            if (p.getName().equals(name.getParamName())) {
                 result.add(p);
             }
         }
