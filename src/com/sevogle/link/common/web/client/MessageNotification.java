@@ -1,7 +1,9 @@
 package com.sevogle.link.common.web.client;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 import com.sevogle.link.common.web.client.NotificationParameter.NotificationParameterName;
 import com.sevogle.link.common.web.client.NotificationParameter.UnknownParamNameException;
@@ -135,6 +137,25 @@ public class MessageNotification implements Serializable {
 
     public NotificationParameter[] getParameters() {
         return parameters;
+    }
+
+    public List<NotificationParameter> getParametersByName(String name) {
+        ArrayList<NotificationParameter> list = new ArrayList<NotificationParameter>();
+        for (NotificationParameter p : parameters) {
+            if (p.getName().equals(name)) {
+                list.add(p);
+            }
+        }
+        return list;
+    }
+
+    public boolean hasParameterByName(String name) {
+        for (NotificationParameter p : parameters) {
+            if (p.getName().equals(name)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     @Override
