@@ -12,13 +12,7 @@ public class MessageNotification implements Serializable {
     private static final long serialVersionUID = -768530870508302229L;
 
     public enum MessageNotificationType {
-        PROCESSING_COMPLETE, READY_FOR_PROCESSING, MESSAGE_UPDATED, //
-        @Deprecated
-        SEEN_UPDATED, //
-        @Deprecated
-        PARENT_ID_UPDATED, //
-        @Deprecated
-        FROM_UPDATED, DELIVERY_PROBLEMS;
+        PROCESSING_COMPLETE, READY_FOR_PROCESSING, MESSAGE_UPDATED, DELIVERY_PROBLEMS;
     }
 
     public enum DeliveryProblemParams implements NotificationParameterName {
@@ -65,54 +59,6 @@ public class MessageNotification implements Serializable {
             }
             throw new UnknownParamNameException(paramName);
         }
-    }
-
-    @Deprecated
-    public enum ParentIdUpdatedParams implements NotificationParameterName {
-        NEW_PARENT_PROTOCAL_SPECIFIC_ID_STRING("newParentProtocalId"), NEW_PARENT_LINK_ID_STRING("newParentLinkId");
-
-        String paramName;
-
-        private ParentIdUpdatedParams(String paramName) {
-            this.paramName = paramName;
-        }
-
-        @Override
-        public String getParamName() {
-            return paramName;
-        }
-    }
-
-    @Deprecated
-    public enum SeenUpdatedParams implements NotificationParameterName {
-        NEW_SEEN_VALUE_BOOLEAN("newSeenValueBoolean");
-        String paramName;
-
-        private SeenUpdatedParams(String paramName) {
-            this.paramName = paramName;
-        }
-
-        @Override
-        public String getParamName() {
-            return paramName;
-        }
-    }
-
-    @Deprecated
-    public enum FromAddressUpdatedParams implements NotificationParameterName {
-        PERSONAL_NAME_STRING("newFromPersonalName"), CONTACT_URI_STRING("newContactURI"), IS_ME_BOOLEAN("newIsMeFlag"), PROTOCAL_SPECIFIC_ID(
-                "newProtocolSpecificId");
-
-        String paramName;
-
-        private FromAddressUpdatedParams(String paramName) {
-            this.paramName = paramName;
-        }
-
-        @Override
-        public String getParamName() {
-            return paramName;
-        };
     }
 
     private MessageNotificationType type;
