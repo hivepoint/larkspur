@@ -22,7 +22,6 @@ public class MessageDB implements Serializable {
     private String subjectNormalized;
     private String subjectRaw;
     private RelatedMessageDescriptor parent;
-    private RelatedMessageDescriptor inReplyTo;
     public static final String PARENT = "parent.messageId";
     public static final String PARENT_PROTOCOL_SPECIFIC = "parent.protocolSpecificId";
     private AddressDescriptor from;
@@ -207,21 +206,13 @@ public class MessageDB implements Serializable {
         this.seen = seen;
     }
 
-    public RelatedMessageDescriptor getInReplyTo() {
-        return inReplyTo;
-    }
-
-    public void setInReplyTo(RelatedMessageDescriptor inReplyTo) {
-        this.inReplyTo = inReplyTo;
-    }
-
     @Override
     public String toString() {
         return "MessageDB [_id=" + _id + ", state=" + state + ", channelId=" + channelId + ", userId=" + userId
                 + ", protocolSpecificId=" + protocolSpecificId + ", messageSource=" + messageSource + ", sent=" + sent
                 + ", received=" + received + ", subjectNormalized=" + subjectNormalized + ", subjectRaw=" + subjectRaw
-                + ", parent=" + parent + ", inReplyTo=" + inReplyTo + ", from=" + from + ", replyTo=" + replyTo + ", to="
-                + to + ", cc=" + cc + ", bcc=" + bcc + ", preamble=" + preamble + ", seen=" + seen + "]";
+                + ", parent=" + parent + ", from=" + from + ", replyTo=" + replyTo + ", to=" + to + ", cc=" + cc + ", bcc="
+                + bcc + ", preamble=" + preamble + ", seen=" + seen + "]";
     }
 
     @Override
@@ -235,7 +226,6 @@ public class MessageDB implements Serializable {
         result = prime * result + ((contentObjects == null) ? 0 : contentObjects.hashCode());
         result = prime * result + ((from == null) ? 0 : from.hashCode());
         result = prime * result + ((headers == null) ? 0 : headers.hashCode());
-        result = prime * result + ((inReplyTo == null) ? 0 : inReplyTo.hashCode());
         result = prime * result + ((messageSource == null) ? 0 : messageSource.hashCode());
         result = prime * result + ((normalizedMessage == null) ? 0 : normalizedMessage.hashCode());
         result = prime * result + ((parent == null) ? 0 : parent.hashCode());
@@ -312,13 +302,6 @@ public class MessageDB implements Serializable {
                 return false;
             }
         } else if (!headers.equals(other.headers)) {
-            return false;
-        }
-        if (inReplyTo == null) {
-            if (other.inReplyTo != null) {
-                return false;
-            }
-        } else if (!inReplyTo.equals(other.inReplyTo)) {
             return false;
         }
         if (messageSource != other.messageSource) {
