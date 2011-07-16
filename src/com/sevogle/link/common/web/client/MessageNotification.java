@@ -16,7 +16,6 @@ public class MessageNotification implements Serializable {
     }
 
     public enum DeliveryProblemParams implements NotificationParameterName {
-
         DELIVERY_PROBLEM_MESSAGE("msgDeliveryProblem");
 
         String paramName;
@@ -61,6 +60,21 @@ public class MessageNotification implements Serializable {
         }
     }
 
+    public enum ReadyForProcessingParams implements NotificationParameterName {
+        SUGGESTED_FEED_ID("suggestedFeedId");
+
+        String paramName;
+
+        private ReadyForProcessingParams(String paramName) {
+            this.paramName = paramName;
+        }
+
+        @Override
+        public String getParamName() {
+            return paramName;
+        }
+    }
+
     private MessageNotificationType type;
     private NotificationParameter[] parameters = new NotificationParameter[0];
 
@@ -85,10 +99,10 @@ public class MessageNotification implements Serializable {
         return parameters;
     }
 
-    public List<NotificationParameter> getParametersByName(String name) {
+    public List<NotificationParameter> getParametersByName(NotificationParameterName paramterName) {
         ArrayList<NotificationParameter> list = new ArrayList<NotificationParameter>();
         for (NotificationParameter p : parameters) {
-            if (p.getName().equals(name)) {
+            if (p.getName().equals(paramterName.getParamName())) {
                 list.add(p);
             }
         }
