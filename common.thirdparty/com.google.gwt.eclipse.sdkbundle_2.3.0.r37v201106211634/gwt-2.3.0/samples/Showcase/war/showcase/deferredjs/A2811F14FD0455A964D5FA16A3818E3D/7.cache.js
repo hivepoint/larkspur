@@ -1,0 +1,14 @@
+function P4(){}
+function K4(){}
+function Ajb(){}
+function Ejb(){}
+function Fjb(b){this.b=b}
+function Bjb(b,c){this.b=b;this.c=c}
+function Jjb(b){f8(b.c,vjb(b.b))}
+function My(b,c){var d;d=dz((az(),c));return Ny(b,d,c,false)}
+function O4(){var b;while(L4){b=L4;L4=L4.c;!L4&&(M4=null);Jjb(b.b)}}
+function pjb(b,c,d){return edc(edc(edc(edc(edc(edc(edc(new gdc,Jtc),b),Ktc),c),Ltc),d),Voc).b.b}
+function R4(){N4=new P4;ci((ai(),_h),7);!!$stats&&$stats(Ji(Itc,Bnc,-1,-1));N4.nd();!!$stats&&$stats(Ji(Itc,Dsc,-1,-1))}
+function wjb(b){var c,d,e;c=Kcc($j(b.b.N,Vsc));d=Kcc($j(b.c.N,Vsc));e=Kcc($j(b.d.N,Vsc));rQb(b.g.b,edc(edc(edc(edc(edc(edc(edc(new gdc,Jtc),c),Ktc),d),Ltc),e),Voc).b.b,false);rQb(b.e.b,pjb(My(b.f,c),r7(d),My(b.f,e)),true)}
+function vjb(b){var c,d,e,f,g,i,j,k,n,o,p,q,r,s,t,u,v,w,x,y,z,A,B;e=new RSb;c=zz(e.k,94);e.p[hrc]=5;i=(k=yH.d,Icc(k,k.lastIndexOf(Zoc)+1));f=new uMb(i);$d(f,new Bjb(b,i),(eo(),eo(),co));g=new mUb;g.f[hrc]=3;jUb(g,new fQb(Mtc));n=kUb(g);g.c.appendChild(n);fe(f);i4b(g.k,f);n.appendChild(f.N);he(f,g);KSb(e,0,0,g);(c.b.Ye(0,0),c.b.j.rows[0].cells[0])[Ntc]=2;j=edc(edc(edc(edc(edc(edc(edc(new gdc,Jtc),Otc),Ktc),Ptc),Ltc),Qtc),Voc).b.b;e.Ye(1,0);o=(p=e.k.b.j.rows[1].cells[0],ESb(e,p,false),p);o.innerHTML=Rtc;e.Ye(1,1);q=(r=e.k.b.j.rows[1].cells[1],ESb(e,r,j==null),r);j!=null&&(q.innerHTML=j||xnc,undefined);b.b=new oXb;eXb(b.b,(tv(),'\u05EA\u05D5\u05DE\u05E8 \u05D2\u05E8\u05D9\u05DF'));e.Ye(2,0);s=(t=e.k.b.j.rows[2].cells[0],ESb(e,t,false),t);s.innerHTML=Stc;KSb(e,2,1,b.b);b.c=new oXb;eXb(b.c,'16');e.Ye(3,0);u=(v=e.k.b.j.rows[3].cells[0],ESb(e,v,false),v);u.innerHTML=Ttc;KSb(e,3,1,b.c);b.d=new oXb;eXb(b.d,'\u05DB\u05DE\u05D4 \u05D7\u05D5\u05DC \u05D9\u05E9 \u05D1\u05D7\u05D5\u05E3?');e.Ye(4,0);w=(x=e.k.b.j.rows[4].cells[0],ESb(e,x,false),x);w.innerHTML=Utc;KSb(e,4,1,b.d);b.g=new dQb;e.Ye(5,0);y=(z=e.k.b.j.rows[5].cells[0],ESb(e,z,false),z);y.innerHTML='<b>Message formatted without BidiFormatter:<\/b>';KSb(e,5,1,b.g);aTb(c,5,0,(eUb(),dUb));b.e=new dQb;e.Ye(6,0);A=(B=e.k.b.j.rows[6].cells[0],ESb(e,B,false),B);A.innerHTML='<b>Message formatted with BidiFormatter:<\/b>';KSb(e,6,1,b.e);aTb(c,6,0,dUb);d=new Fjb(b);$d(b.b,d,(Zo(),Zo(),Yo));$d(b.c,d,Yo);$d(b.d,d,Yo);wjb(b);return e}
+var Ltc=" posts) added a comment on '",Jtc='User ',Itc='runCallbacks7';_=P4.prototype=K4.prototype=new Z;_.gC=function Q4(){return aF};_.nd=function U4(){O4()};_.cM={};_=Bjb.prototype=Ajb.prototype=new Z;_.gC=function Cjb(){return BH};_.jc=function Djb(b){F7(this.b,this.c+Vtc)};_.cM={25:1,139:1};_.b=null;_.c=null;_=Fjb.prototype=Ejb.prototype=new Z;_.gC=function Gjb(){return CH};_.lc=function Hjb(b){wjb(this.b)};_.cM={30:1,139:1};_.b=null;var aF=sbc(esc,'AsyncLoader7'),yH=ubc(ksc,'BlogMessages'),BH=sbc(ksc,'CwBidiFormatting$1'),CH=sbc(ksc,'CwBidiFormatting$2');qnc(R4)();

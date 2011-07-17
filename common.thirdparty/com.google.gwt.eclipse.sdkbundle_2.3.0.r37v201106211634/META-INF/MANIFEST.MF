@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Created-By: 1.6.0_25-b06 (Sun Microsystems Inc.)
+Require-Bundle: org.eclipse.core.runtime,com.google.gwt.eclipse.core;v
+ isibility:=reexport
+Bundle-Vendor: Google, Inc.
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: gwt-sdk-plugin.jar
+Bundle-Version: 2.3.0.r37v201106211634
+Bundle-Name: Google Web Toolkit SDK
+Bundle-Activator: com.google.gwt.eclipse.sdkbundle.Activator
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.google.gwt.eclipse.sdkbundle
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+

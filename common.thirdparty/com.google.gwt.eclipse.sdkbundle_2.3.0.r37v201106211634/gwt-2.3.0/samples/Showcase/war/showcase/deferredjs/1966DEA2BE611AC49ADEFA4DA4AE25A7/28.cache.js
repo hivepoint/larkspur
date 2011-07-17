@@ -1,0 +1,21 @@
+function ZZ(){}
+function UZ(){}
+function vSb(){}
+function QSb(){}
+function PSb(){}
+function SSb(){}
+function WSb(){}
+function VSb(){}
+function JSb(b){if(b==zSb){return true}Sv();return b==CSb}
+function KSb(b){if(b==ySb){return true}Sv();return b==xSb}
+function TSb(b){this.c=(AUb(),vUb).b;this.e=(JUb(),IUb).b;this.b=b}
+function LSb(){DSb();ENb.call(this);this.c=(AUb(),vUb);this.d=(JUb(),IUb);this.f[fsc]=0;this.f[gsc]=0}
+function HSb(b,c){var d;d=Yz(b.L,118);d.c=c.b;!!d.d&&(d.d[dsc]=c.b,undefined)}
+function ISb(b,c){var d;d=Yz(b.L,118);d.e=c.b;!!d.d&&(d.d.style[esc]=c.b,undefined)}
+function DSb(){DSb=Unc;wSb=new QSb;zSb=new QSb;ySb=new QSb;xSb=new QSb;ASb=new QSb;BSb=new QSb;CSb=new QSb}
+function _Z(){XZ=new ZZ;ci((ai(),_h),28);!!$stats&&$stats(Ji(cyc,woc,-1,-1));XZ.rd();!!$stats&&$stats(Ji(cyc,Btc,-1,-1))}
+function ESb(b,c,d){var e;if(d==wSb){if(c==b.b){return}else if(b.b){throw new Ecc('Only one CENTER widget may be added')}}fe(c);N4b(b.k,c);d==wSb&&(b.b=c);e=new TSb(d);c.L=e;HSb(c,b.c);ISb(c,b.d);GSb(b);he(c,b)}
+function FSb(b,c){var d,e,f,g,i,j,k,n;f4b(b.N,soc,c);j=new alc;k=new Y4b(b.k);while(k.b<k.c.d-1){d=X4b(k);i=Yz(d.L,118).b;f=Yz(j.Wc(i),10);e=!f?1:f.b;g=i==ASb?'north'+e:i==BSb?'south'+e:i==CSb?'west'+e:i==xSb?'east'+e:i==zSb?'linestart'+e:i==ySb?'lineend'+e:Orc;f4b((n=d.N.parentNode,(!n||n.nodeType!=1)&&(n=null),n),c,g);j.Yc(i,$cc(e+1))}}
+function GSb(b){var c,d,e,f,g,i,j,k,n,o,p,q,r,s,t,u;c=b.e;while(LLb(c)>0){c.removeChild(KLb(c,0))}r=1;f=1;for(j=new Y4b(b.k);j.b<j.c.d-1;){e=X4b(j);g=Yz(e.L,118).b;g==ASb||g==BSb?++r:(g==xSb||g==CSb||g==zSb||g==ySb)&&++f}s=Pz(sS,{17:1},79,r,0);for(i=0;i<r;++i){s[i]=new WSb;s[i].c=$doc.createElement(bsc);c.appendChild(s[i].c)}n=0;o=f-1;p=0;t=r-1;d=null;for(j=new Y4b(b.k);j.b<j.c.d-1;){e=X4b(j);k=Yz(e.L,118);u=$doc.createElement(csc);k.d=u;k.d[dsc]=k.c;k.d.style[esc]=k.e;k.d[Lpc]=soc;k.d[Mpc]=soc;if(k.b==ASb){OLb(s[p].c,u,s[p].b);u.appendChild(e.N);u[Luc]=o-n+1;++p}else if(k.b==BSb){OLb(s[t].c,u,s[t].b);u.appendChild(e.N);u[Luc]=o-n+1;--t}else if(k.b==wSb){d=u}else if(JSb(k.b)){q=s[p];OLb(q.c,u,q.b++);u.appendChild(e.N);u[dyc]=t-p+1;++n}else if(KSb(k.b)){q=s[p];OLb(q.c,u,q.b);u.appendChild(e.N);u[dyc]=t-p+1;--o}}if(b.b){q=s[p];OLb(q.c,d,q.b);d.appendChild(b.b.N)}}
+function YZ(){var b,c,d,e;while(VZ){b=VZ;VZ=VZ.c;!VZ&&(WZ=null);K8(b.b.b,(d=new LSb,d.N[noc]='cw-DockPanel',d.f[fsc]=4,d.c=(AUb(),uUb),ESb(d,new OQb('This is the first north component'),(DSb(),ASb)),ESb(d,new OQb('This is the first south component'),BSb),ESb(d,new OQb('This is the east component'),xSb),ESb(d,new OQb('This is the west component'),CSb),ESb(d,new OQb('This is the second north component'),ASb),ESb(d,new OQb('This is the second south component'),BSb),c=new OQb("This is a <code>ScrollPanel<\/code> contained at the center of a <code>DockPanel<\/code>.  By putting some fairly large contents in the middle and setting its size explicitly, it becomes a scrollable area within the page, but without requiring the use of an IFRAME.<br><br>Here's quite a bit more meaningless text that will serve primarily to make this thing scroll off the bottom of its visible area.  Otherwise, you might have to make it really, really small in order to see the nifty scroll bars!"),e=new g_b(c),e.N.style[Lpc]=Gwc,e.N.style[Mpc]='100px',ESb(d,e,wSb),FSb(d,'cwDockPanel'),d))}}
+var cyc='runCallbacks28';_=ZZ.prototype=UZ.prototype=new Z;_.gC=function $Z(){return oE};_.rd=function c$(){YZ()};_.cM={};_=LSb.prototype=vSb.prototype=new BNb;_.gC=function MSb(){return jN};_.ub=function NSb(b){FSb(this,b)};_.Kb=function OSb(b){var c;c=xMb(this,b);if(c){b==this.b&&(this.b=null);GSb(this)}return c};_.cM={13:1,14:1,15:1,16:1,81:1,83:1,130:1};_.b=null;var wSb,xSb,ySb,zSb,ASb,BSb,CSb;_=QSb.prototype=PSb.prototype=new Z;_.gC=function RSb(){return gN};_.cM={};_=TSb.prototype=SSb.prototype=new Z;_.gC=function USb(){return hN};_.cM={118:1};_.b=null;_.d=null;_=WSb.prototype=VSb.prototype=new Z;_.gC=function XSb(){return iN};_.cM={79:1};_.b=0;_.c=null;var oE=ncc(ctc,'AsyncLoader28'),jN=ncc(Nsc,'DockPanel'),iN=ncc(Nsc,'DockPanel$TmpRow'),sS=mcc(vtc,'DockPanel$TmpRow;',iN),gN=ncc(Nsc,'DockPanel$DockLayoutConstant'),hN=ncc(Nsc,'DockPanel$LayoutData');loc(_Z)();

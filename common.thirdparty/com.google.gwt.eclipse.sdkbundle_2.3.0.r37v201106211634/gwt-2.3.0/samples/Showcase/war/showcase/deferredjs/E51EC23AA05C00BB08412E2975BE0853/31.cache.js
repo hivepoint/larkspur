@@ -1,0 +1,6 @@
+function Mcb(){}
+function Hcb(){}
+function Lcb(){var b;while(Icb){b=Icb;Icb=Icb.b;!Icb&&(Jcb=null);Lmb(b.a.a,eGb())}}
+function Ocb(){Kcb=new Mcb;ci((ai(),_h),31);!!$stats&&$stats(Ji(Tid,qEc,-1,-1));Kcb.Hd();!!$stats&&$stats(Ji(Tid,F1c,-1,-1))}
+function eGb(){var b,c,d,e,f;f=new ffc(5);Kjc(f.M,lEc,Uid);f.M.style[yIc]=Fbd;f.M.style[zIc]=vcd;f.M.style[jLc]=Vid;afc(f,new b4b(Wid),(H5b(),E5b),50);afc(f,new b4b(Xid),F5b,50);afc(f,new b4b(Yid),B5b,100);afc(f,new b4b(Zid),G5b,100);afc(f,new b4b($id),E5b,50);afc(f,new b4b(_id),F5b,50);d=ajd;for(e=0;e<3;++e){d+=LEc+d}b=new b4b(d);c=new Hec(b);afc(f,c,A5b,0);return f}
+var Vid='3px solid #e7e7e7',bjd='AsyncLoader31',ajd='This is some text to show how the contents on either side of the splitter flow.',Yid='This is the east component.',Wid='This is the first north component.',Xid='This is the first south component.',$id='This is the second north component.',_id='This is the second south component.',Zid='This is the west component.',Uid='cwSplitLayoutPanel',Tid='runCallbacks31';_=Mcb.prototype=Hcb.prototype=new Z;_.gC=function Ncb(){return PR};_.Hd=function Rcb(){Lcb()};_.cM={};var PR=Vrc(GVc,bjd);VDc(Ocb)();

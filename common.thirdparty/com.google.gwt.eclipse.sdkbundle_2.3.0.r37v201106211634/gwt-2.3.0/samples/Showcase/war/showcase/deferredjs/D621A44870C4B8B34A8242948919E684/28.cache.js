@@ -1,0 +1,21 @@
+function l1(){}
+function g1(){}
+function KVb(){}
+function dWb(){}
+function cWb(){}
+function fWb(){}
+function jWb(){}
+function iWb(){}
+function YVb(b){if(b==OVb){return true}sw();return b==RVb}
+function ZVb(b){if(b==NVb){return true}sw();return b==MVb}
+function gWb(b){this.c=(NXb(),IXb).b;this.e=(WXb(),VXb).b;this.b=b}
+function $Vb(){SVb();TQb.call(this);this.c=(NXb(),IXb);this.d=(WXb(),VXb);this.f[vvc]=0;this.f[wvc]=0}
+function WVb(b,c){var d;d=ZC(b.L,119);d.c=c.b;!!d.d&&(d.d[tvc]=c.b,undefined)}
+function XVb(b,c){var d;d=ZC(b.L,119);d.e=c.b;!!d.d&&(d.d.style[uvc]=c.b,undefined)}
+function SVb(){SVb=erc;LVb=new dWb;OVb=new dWb;NVb=new dWb;MVb=new dWb;PVb=new dWb;QVb=new dWb;RVb=new dWb}
+function n1(){j1=new l1;di((bi(),ai),28);!!$stats&&$stats(Ki(vBc,Irc,-1,-1));j1.Dd();!!$stats&&$stats(Ki(vBc,Qwc,-1,-1))}
+function TVb(b,c,d){var e;if(d==LVb){if(c==b.b){return}else if(b.b){throw new Qfc('Only one CENTER widget may be added')}}fe(c);b8b(b.k,c);d==LVb&&(b.b=c);e=new gWb(d);c.L=e;WVb(c,b.c);XVb(c,b.d);VVb(b);he(c,b)}
+function UVb(b,c){var d,e,f,g,i,j,k,n;v7b(b.N,Erc,c);j=new moc;k=new m8b(b.k);while(k.b<k.c.d-1){d=l8b(k);i=ZC(d.L,119).b;f=ZC(j._c(i),10);e=!f?1:f.b;g=i==PVb?'north'+e:i==QVb?'south'+e:i==RVb?'west'+e:i==MVb?'east'+e:i==OVb?'linestart'+e:i==NVb?'lineend'+e:avc;v7b((n=d.N.parentNode,(!n||n.nodeType!=1)&&(n=null),n),c,g);j.bd(i,kgc(e+1))}}
+function VVb(b){var c,d,e,f,g,i,j,k,n,o,p,q,r,s,t,u;c=b.e;while(ZOb(c)>0){c.removeChild(YOb(c,0))}r=1;f=1;for(j=new m8b(b.k);j.b<j.c.d-1;){e=l8b(j);g=ZC(e.L,119).b;g==PVb||g==QVb?++r:(g==MVb||g==RVb||g==OVb||g==NVb)&&++f}s=QC(GV,{17:1},67,r,0);for(i=0;i<r;++i){s[i]=new jWb;s[i].c=$doc.createElement(rvc);c.appendChild(s[i].c)}n=0;o=f-1;p=0;t=r-1;d=null;for(j=new m8b(b.k);j.b<j.c.d-1;){e=l8b(j);k=ZC(e.L,119);u=$doc.createElement(svc);k.d=u;k.d[tvc]=k.c;k.d.style[uvc]=k.e;k.d[Usc]=Erc;k.d[Vsc]=Erc;if(k.b==PVb){aPb(s[p].c,u,s[p].b);u.appendChild(e.N);u[Wxc]=o-n+1;++p}else if(k.b==QVb){aPb(s[t].c,u,s[t].b);u.appendChild(e.N);u[Wxc]=o-n+1;--t}else if(k.b==LVb){d=u}else if(YVb(k.b)){q=s[p];aPb(q.c,u,q.b++);u.appendChild(e.N);u[wBc]=t-p+1;++n}else if(ZVb(k.b)){q=s[p];aPb(q.c,u,q.b);u.appendChild(e.N);u[wBc]=t-p+1;--o}}if(b.b){q=s[p];aPb(q.c,d,q.b);d.appendChild(b.b.N)}}
+function k1(){var b,c,d,e;while(h1){b=h1;h1=h1.c;!h1&&(i1=null);Ybb(b.b.b,(d=new $Vb,d.N[zrc]='cw-DockPanel',d.f[vvc]=4,d.c=(NXb(),HXb),TVb(d,new bUb(pBc),(SVb(),PVb)),TVb(d,new bUb(qBc),QVb),TVb(d,new bUb(rBc),MVb),TVb(d,new bUb(sBc),RVb),TVb(d,new bUb(tBc),PVb),TVb(d,new bUb(uBc),QVb),c=new bUb("Voici un <code>panneau de d\xE9filement<\/code> situ\xE9 au centre d'un <code>panneau d'ancrage<\/code>. Si des contenus relativement volumineux sont ins\xE9r\xE9s au milieu de ce panneau \xE0 d\xE9filement et si sa taille est d\xE9finie, il prend la forme d'une zone dot\xE9e d'une fonction de d\xE9filement \xE0 l'int\xE9rieur de la page, sans l'utilisation d'un IFRAME.<br><br>Voici un texte encore plus obscur qui va surtout servir \xE0 faire d\xE9filer cet \xE9l\xE9ment jusqu'en bas de sa zone visible. Sinon, il vous faudra r\xE9duire ce panneau \xE0 une taille minuscule pour pouvoir afficher ces formidables barres de d\xE9filement!"),e=new t2b(c),e.N.style[Usc]=Tzc,e.N.style[Vsc]='100px',TVb(d,e,LVb),UVb(d,'cwDockPanel'),d))}}
+var vBc='runCallbacks28';_=l1.prototype=g1.prototype=new Z;_.gC=function m1(){return EH};_.Dd=function q1(){k1()};_.cM={};_=$Vb.prototype=KVb.prototype=new QQb;_.gC=function _Vb(){return yQ};_.ub=function aWb(b){UVb(this,b)};_.Kb=function bWb(b){var c;c=OPb(this,b);if(c){b==this.b&&(this.b=null);VVb(this)}return c};_.cM={13:1,14:1,15:1,16:1,69:1,71:1,131:1};_.b=null;var LVb,MVb,NVb,OVb,PVb,QVb,RVb;_=dWb.prototype=cWb.prototype=new Z;_.gC=function eWb(){return vQ};_.cM={};_=gWb.prototype=fWb.prototype=new Z;_.gC=function hWb(){return wQ};_.cM={119:1};_.b=null;_.d=null;_=jWb.prototype=iWb.prototype=new Z;_.gC=function kWb(){return xQ};_.cM={67:1};_.b=0;_.c=null;var EH=zfc(rwc,'AsyncLoader28'),yQ=zfc(awc,'DockPanel'),xQ=zfc(awc,'DockPanel$TmpRow'),GV=yfc(Kwc,'DockPanel$TmpRow;',xQ),vQ=zfc(awc,'DockPanel$DockLayoutConstant'),wQ=zfc(awc,'DockPanel$LayoutData');xrc(n1)();
