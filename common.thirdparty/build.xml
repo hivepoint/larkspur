@@ -9,6 +9,10 @@
 	<property name="debuglevel" value="source,lines,vars" />
 	<property name="target" value="1.6" />
 	<property name="source" value="1.6" />
+	<property name="out" value="out" />
+	<tstamp>
+		<format property="buildtime" pattern="yyyyMMdd_HHmmss" />
+	</tstamp>
 	<path id="common.thirdparty.classpath">
 		<pathelement location="bin" />
 		<pathelement location="axiom-api-1.2.2.jar" />
