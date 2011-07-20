@@ -1,0 +1,21 @@
+function O2(){}
+function J2(){}
+function CXb(){}
+function XXb(){}
+function WXb(){}
+function ZXb(){}
+function bYb(){}
+function aYb(){}
+function QXb(b){if(b==GXb){return true}Iw();return b==JXb}
+function RXb(b){if(b==FXb){return true}Iw();return b==EXb}
+function $Xb(b){this.b=(FZb(),AZb).a;this.d=(OZb(),NZb).a;this.a=b}
+function SXb(){KXb();LSb.call(this);this.b=(FZb(),AZb);this.c=(OZb(),NZb);this.e[hxc]=0;this.e[ixc]=0}
+function OXb(b,c){var d;d=wE(b.K,119);d.b=c.a;!!d.c&&(d.c[fxc]=c.a,undefined)}
+function PXb(b,c){var d;d=wE(b.K,119);d.d=c.a;!!d.c&&(d.c.style[gxc]=c.a,undefined)}
+function KXb(){KXb=Osc;DXb=new XXb;GXb=new XXb;FXb=new XXb;EXb=new XXb;HXb=new XXb;IXb=new XXb;JXb=new XXb}
+function Q2(){M2=new O2;ci((ai(),_h),28);!!$stats&&$stats(Ji(bDc,rtc,-1,-1));M2.Pd();!!$stats&&$stats(Ji(bDc,Dyc,-1,-1))}
+function LXb(b,c,d){var e;if(d==DXb){if(c==b.a){return}else if(b.a){throw new xhc('Only one CENTER widget may be added')}}fe(c);Q9b(b.j,c);d==DXb&&(b.a=c);e=new $Xb(d);c.K=e;OXb(c,b.b);PXb(c,b.c);NXb(b);he(c,b)}
+function MXb(b,c){var d,e,f,g,i,j,k,n;i9b(b.M,ntc,c);j=new Wpc;k=new _9b(b.j);while(k.a<k.b.c-1){d=$9b(k);i=wE(d.K,119).a;f=wE(j.ed(i),10);e=!f?1:f.a;g=i==HXb?'north'+e:i==IXb?'south'+e:i==JXb?'west'+e:i==EXb?'east'+e:i==GXb?'linestart'+e:i==FXb?'lineend'+e:Qwc;i9b((n=d.M.parentNode,(!n||n.nodeType!=1)&&(n=null),n),c,g);j.gd(i,Thc(e+1))}}
+function NXb(b){var c,d,e,f,g,i,j,k,n,o,p,q,r,s,t,u;c=b.d;while(c.children.length>0){c.removeChild(c.children[0])}r=1;f=1;for(j=new _9b(b.j);j.a<j.b.c-1;){e=$9b(j);g=wE(e.K,119).a;g==HXb||g==IXb?++r:(g==EXb||g==JXb||g==GXb||g==FXb)&&++f}s=nE(hX,{17:1},67,r,0);for(i=0;i<r;++i){s[i]=new bYb;s[i].b=jk($doc,dxc);c.appendChild(s[i].b)}n=0;o=f-1;p=0;t=r-1;d=null;for(j=new _9b(b.j);j.a<j.b.c-1;){e=$9b(j);k=wE(e.K,119);u=jk($doc,exc);k.c=u;k.c[fxc]=k.b;k.c.style[gxc]=k.d;k.c[Buc]=ntc;k.c[Cuc]=ntc;if(k.a==HXb){TQb(s[p].b,u,s[p].a);u.appendChild(e.M);u[Jzc]=o-n+1;++p}else if(k.a==IXb){TQb(s[t].b,u,s[t].a);u.appendChild(e.M);u[Jzc]=o-n+1;--t}else if(k.a==DXb){d=u}else if(QXb(k.a)){q=s[p];TQb(q.b,u,q.a++);u.appendChild(e.M);u[cDc]=t-p+1;++n}else if(RXb(k.a)){q=s[p];TQb(q.b,u,q.a);u.appendChild(e.M);u[cDc]=t-p+1;--o}}if(b.a){q=s[p];TQb(q.b,d,q.a);d.appendChild(b.a.M)}}
+function N2(){var b,c,d,e;while(K2){b=K2;K2=K2.b;!K2&&(L2=null);Edb(b.a.a,(d=new SXb,d.M[htc]='cw-DockPanel',d.e[hxc]=4,d.b=(FZb(),zZb),LXb(d,new VVb(XCc),(KXb(),HXb)),LXb(d,new VVb(YCc),IXb),LXb(d,new VVb(ZCc),EXb),LXb(d,new VVb($Cc),JXb),LXb(d,new VVb(_Cc),HXb),LXb(d,new VVb(aDc),IXb),c=new VVb('\u8FD9\u4E2A\u793A\u4F8B\u4E2D\u5728<code>DockPanel<\/code> \u7684\u4E2D\u95F4\u4F4D\u7F6E\u6709\u4E00\u4E2A<code>ScrollPanel<\/code>\u3002\u5982\u679C\u5728\u4E2D\u95F4\u653E\u5165\u5F88\u591A\u5185\u5BB9\uFF0C\u5B83\u5C31\u4F1A\u53D8\u6210\u9875\u9762\u5185\u7684\u53EF\u6EDA\u52A8\u533A\u57DF\uFF0C\u65E0\u9700\u4F7F\u7528IFRAME\u3002<br><br>\u6B64\u5904\u4F7F\u7528\u4E86\u76F8\u5F53\u591A\u65E0\u610F\u4E49\u7684\u6587\u5B57\uFF0C\u4E3B\u8981\u662F\u4E3A\u4E86\u53EF\u4EE5\u6EDA\u52A8\u81F3\u53EF\u89C6\u533A\u57DF\u7684\u5E95\u90E8\u3002\u5426\u5219\uFF0C\u60A8\u6050\u6015\u4E0D\u5F97\u4E0D\u628A\u5B83\u7F29\u5230\u5F88\u5C0F\u624D\u80FD\u770B\u5230\u90A3\u5C0F\u5DE7\u7684\u6EDA\u52A8\u6761\u3002'),e=new h4b(c),e.M.style[Buc]=BBc,e.M.style[Cuc]='100px',LXb(d,e,DXb),MXb(d,'cwDockPanel'),d))}}
+var bDc='runCallbacks28';_=O2.prototype=J2.prototype=new Z;_.gC=function P2(){return eJ};_.Pd=function T2(){N2()};_.cM={};_=SXb.prototype=CXb.prototype=new ISb;_.gC=function TXb(){return bS};_.tb=function UXb(b){MXb(this,b)};_.Jb=function VXb(b){var c;c=GRb(this,b);if(c){b==this.a&&(this.a=null);NXb(this)}return c};_.cM={13:1,14:1,15:1,16:1,69:1,71:1,131:1};_.a=null;var DXb,EXb,FXb,GXb,HXb,IXb,JXb;_=XXb.prototype=WXb.prototype=new Z;_.gC=function YXb(){return $R};_.cM={};_=$Xb.prototype=ZXb.prototype=new Z;_.gC=function _Xb(){return _R};_.cM={119:1};_.a=null;_.c=null;_=bYb.prototype=aYb.prototype=new Z;_.gC=function cYb(){return aS};_.cM={67:1};_.a=0;_.b=null;var eJ=ghc(eyc,'AsyncLoader28'),bS=ghc(Pxc,'DockPanel'),aS=ghc(Pxc,'DockPanel$TmpRow'),hX=fhc(xyc,'DockPanel$TmpRow;',aS),$R=ghc(Pxc,'DockPanel$DockLayoutConstant'),_R=ghc(Pxc,'DockPanel$LayoutData');ftc(Q2)();

@@ -1,0 +1,24 @@
+function l3(){}
+function g3(){}
+function owb(){}
+function m4b(){}
+function twb(b){Rhb(b.b,kwb(b.a))}
+function l3b(b,c){return s3b(b,c,b.a.b)}
+function pwb(b){this.c=b;this.b=kjb(this.c.a)}
+function h4b(b,c){j4b.call(this,b,false);this.b=c}
+function i4b(b,c){j4b.call(this,b,false);f4b(this,c)}
+function g4b(b){j4b.call(this,'GWT',true);f4b(this,b)}
+function k3(){var b;while(h3){b=h3;h3=h3.b;!h3&&(i3=null);twb(b.a)}}
+function H3b(){this.a=new Grc;this.f=new Grc;q3b(this,false,bWb((c4b(),b4b)))}
+function s3b(b,c,d){if(d<0||d>b.a.b){throw new Klc}b.o&&(c.M[ODc]=2,undefined);k3b(b,d,c.M);xrc(b.a,d,c);return c}
+function f4b(b,c){b.d=c;!!b.c&&G3b(b.c,b);if(c){c.M.tabIndex=-1;b.M.setAttribute(dFc,Wzc)}else{b.M.setAttribute(dFc,sBc)}}
+function n3(){j3=new l3;ci((ai(),_h),17);!!$stats&&$stats(Ji(VEc,wxc,-1,-1));j3.Dd();!!$stats&&$stats(Ji(VEc,ICc,-1,-1))}
+function n4b(){var b;this.M=$doc.createElement(lBc);this.M[nxc]='gwt-MenuItemSeparator';b=$doc.createElement(qxc);this.M.appendChild(b);b[nxc]='menuSeparatorInner'}
+function gjb(b){var c,d;c=jI(b.a.$c(XEc),49);if(c==null){d=bI(D_,{17:1,49:1},1,['\u062C\u062F\u064A\u062F','\u0641\u062A\u062D',YEc,'\u0645\u0624\u062E\u0631\u0627','\u062E\u0631\u0648\u062C']);b.a.ad(XEc,d);return d}else{return c}}
+function jjb(b){var c,d;c=jI(b.a.$c(_Ec),49);if(c==null){d=bI(D_,{17:1,49:1},1,['\u0627\u0644\u0645\u062D\u062A\u0648\u064A\u0627\u062A','\u0643\u0639\u0643\u0647 \u0627\u0644\u062D\u0638','\u0639\u0646 gwt']);b.a.ad(_Ec,d);return d}else{return c}}
+function fjb(b){var c,d;c=jI(b.a.$c(WEc),49);if(c==null){d=bI(D_,{17:1,49:1},1,['\u062A\u0631\u0627\u062C\u0639','\u0627\u0639\u0627\u062F\u0629','\u0642\u0637\u0639','\u0646\u0633\u062E\u0629','\u0648\u0623\u0644\u0635\u0642']);b.a.ad(WEc,d);return d}else{return c}}
+function ijb(b){var c,d;c=jI(b.a.$c($Ec),49);if(c==null){d=bI(D_,{17:1,49:1},1,['\u062A\u0646\u0632\u064A\u0644','\u0627\u0645\u062B\u0644\u0629','\u0634\u0641\u0631\u0629 \u0627\u0644\u0645\u0635\u062F\u0631\u0629','\u0648\u062A gwt','\u0627\u0644\u0628\u0631\u0646\u0627\u0645\u062C']);b.a.ad($Ec,d);return d}else{return c}}
+function hjb(b){var c,d;c=jI(b.a.$c(ZEc),49);if(c==null){d=bI(D_,{17:1,49:1},1,['\u0635\u064A\u062F \u0627\u0644\u0633\u0645\u0643 \u0641\u064A \u0627\u0644\u0635\u062D\u0631\u0627\u0621.txt','\u0643\u064A\u0641\u064A\u0629 \u062A\u062F\u0631\u064A\u0628 \u0627\u0644\u0628\u0628\u063A\u0627\u0648\u0627\u062A \u0627\u0644\u0628\u0631\u064A\u0629','\u062F\u0644\u064A\u0644 \u0627\u0644\u0628\u0644\u0647\u0627\u0621 \u0644\u0644\u0645\u0632\u0627\u0631\u0639']);b.a.ad(ZEc,d);return d}else{return c}}
+function kjb(b){var c,d;c=jI(b.a.$c(aFc),49);if(c==null){d=bI(D_,{17:1,49:1},1,['\u0634\u0643\u0631\u0627 \u0644\u0627\u062E\u062A\u064A\u0627\u0631\u0643 \u0639\u0646\u0635\u0631 \u0645\u0646 \u0627\u0644\u0642\u0627\u0626\u0645\u0629. \u0627\u062E\u062A\u064A\u0627\u0631 \u062C\u064A\u062F \u0641\u0639\u0644\u0627. \u0627\u0644\u0627 \u064A\u0648\u062C\u062F \u0634\u064A\u0621 \u0627\u0641\u0636\u0644 \u062A\u0642\u0648\u0645 \u0628\u0647 \u0628\u062F\u0644\u0627 \u0645\u0646 \u0627\u062E\u062A\u064A\u0627\u0631\u0643 \u0639\u0646\u0635\u0631\u0627 \u0645\u0646 \u0627\u0644\u0642\u0627\u0626\u0645\u0629\u061F']);b.a.ad(aFc,d);return d}else{return c}}
+function kwb(b){var c,d,e,f,g,i,j,k,n,o,p,q,r;p=new pwb(b);o=new H3b;o.b=true;o.M.style[Eyc]=bFc;o.e=true;r=new I3b(true);q=hjb(b.a);for(n=0;n<q.length;++n){j3b(r,new h4b(q[n],p))}e=new I3b(true);e.e=true;j3b(o,new i4b('\u0627\u0644\u0645\u0644\u0641',e));f=gjb(b.a);for(n=0;n<f.length;++n){if(n==3){l3b(e,new n4b);j3b(e,new i4b(f[3],r));l3b(e,new n4b)}else{j3b(e,new h4b(f[n],p))}}c=new I3b(true);j3b(o,new i4b('\u062A\u062D\u0631\u064A\u0631',c));d=fjb(b.a);for(n=0;n<d.length;++n){j3b(c,new h4b(d[n],p))}g=new I3b(true);j3b(o,new g4b(g));i=ijb(b.a);for(n=0;n<i.length;++n){j3b(g,new h4b(i[n],p))}j=new I3b(true);l3b(o,new n4b);j3b(o,new i4b('\u0645\u0633\u0627\u0639\u062F\u0629',j));k=jjb(b.a);for(n=0;n<k.length;++n){j3b(j,new h4b(k[n],p))}qdc(o.M,sxc,cFc);F3b(o,cFc);return o}
+var dFc='aria-haspopup',cFc='cwMenuBar',WEc='cwMenuBarEditOptions',XEc='cwMenuBarFileOptions',ZEc='cwMenuBarFileRecents',$Ec='cwMenuBarGWTOptions',_Ec='cwMenuBarHelpOptions',aFc='cwMenuBarPrompts',VEc='runCallbacks17';_=l3.prototype=g3.prototype=new Z;_.gC=function m3(){return KM};_.Dd=function q3(){k3()};_.cM={};_=pwb.prototype=owb.prototype=new Z;_.$b=function qwb(){$wnd.alert(this.b[this.a]);this.a=(this.a+1)%this.b.length};_.gC=function rwb(){return SR};_.cM={113:1};_.a=0;_.c=null;_=H3b.prototype=i3b.prototype;_=i4b.prototype=h4b.prototype=g4b.prototype=d4b.prototype;_=n4b.prototype=m4b.prototype=new Ed;_.gC=function o4b(){return YW};_.cM={69:1,121:1};var KM=mlc(jCc,'AsyncLoader17'),SR=mlc(qCc,'CwMenuBar$1'),YW=mlc(UBc,'MenuItemSeparator');lxc(n3)();

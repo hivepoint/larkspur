@@ -1,0 +1,6 @@
+function o_(){}
+function j_(){}
+function n_(){var b;while(k_){b=k_;k_=k_.b;!k_&&(l_=null);n9(b.a.a,Isb())}}
+function q_(){m_=new o_;ci((ai(),_h),31);!!$stats&&$stats(Ji(t5c,Uqc,-1,-1));m_.pd();!!$stats&&$stats(Ji(t5c,gQc,-1,-1))}
+function Isb(){var b,c,d,e,f;f=new J1b(5);m6b(f.M,Pqc,u5c);f.M.style[$uc]=f$c;f.M.style[_uc]=X$c;f.M.style[Mxc]=v5c;E1b(f,new FSb(w5c),(jUb(),gUb),50);E1b(f,new FSb(x5c),hUb,50);E1b(f,new FSb(y5c),dUb,100);E1b(f,new FSb(z5c),iUb,100);E1b(f,new FSb(A5c),gUb,50);E1b(f,new FSb(B5c),hUb,50);d=C5c;for(e=0;e<3;++e){d+=nrc+d}b=new FSb(d);c=new j1b(b);E1b(f,c,cUb,0);return f}
+var v5c='3px solid #e7e7e7',D5c='AsyncLoader31',C5c='This is some text to show how the contents on either side of the splitter flow.',y5c='This is the east component.',w5c='This is the first north component.',x5c='This is the first south component.',A5c='This is the second north component.',B5c='This is the second south component.',z5c='This is the west component.',u5c='cwSplitLayoutPanel',t5c='runCallbacks31';_=o_.prototype=j_.prototype=new Z;_.gC=function p_(){return rE};_.pd=function t_(){n_()};_.cM={};var rE=xec(hIc,D5c);xqc(q_)();
