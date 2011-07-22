@@ -82,7 +82,8 @@
 			<classpath refid="common.thirdparty.classpath" />
 		</javac>
 	</target>
+	<property name="build.number" value="personal" description="Defaults to personal if not set by build" />
 	<target name="jar" description="create package file" depends="build-project">
-		<jar destfile="${out}/${ant.project.name}.jar" basedir="bin" includes="**/*.class" />
+		<jar destfile="${out}/${ant.project.name}_${build.number}.jar" basedir="bin" includes="**/*.class" />
 	</target>
 </project>
