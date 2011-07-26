@@ -71,6 +71,7 @@
 	</target>
 	<target name="clean">
 		<delete dir="bin" />
+        <delete dir="${out}" />
 	</target>
 	<target depends="clean" name="cleanall" />
 	<target depends="build-subprojects,build-project" name="build" />
