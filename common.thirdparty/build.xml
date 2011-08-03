@@ -85,6 +85,7 @@
 	</target>
 	<property name="build.number" value="personal" description="Defaults to personal if not set by build" />
 	<target name="jar" description="create package file" depends="build-project">
+		<mkdir dir="${out}" />
 		<jar destfile="${out}/${ant.project.name}_${build.number}.jar" basedir="bin" includes="**/*.class" />
 	</target>
 </project>
