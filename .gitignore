@@ -3,3 +3,5 @@ common.java/out/
 common.thirdparty/out/
 git-daemon-export-ok
 com.sevogle.common.web/out/
+
+/.DS_Store
