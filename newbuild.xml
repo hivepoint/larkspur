@@ -47,7 +47,7 @@
 
 	<target name="publish" description="public artifacts" depends="jar,war">
         <mkdir dir="${artifact.publish.location}" />
-        <copy todir="${artifact.publish.location}">
+        <copy todir="${artifact.publish.location}" flatten="true" verbose="true">
            <fileset dir=".">
             <include name="**/out/*.war" />
             <include name="**/out/*.jar" />
