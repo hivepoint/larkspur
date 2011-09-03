@@ -52,6 +52,9 @@
             <include name="**/out/*.war" />
             <include name="**/out/*.jar" />
           </fileset>
+           <fileset dir="common.thirdparty">
+            <include name="**/*.jar" />
+          </fileset>
         </copy>
 	</target>
 </project>
