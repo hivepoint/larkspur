@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="hedgehog">
+	<property environment="env" />
+	<property name="debuglevel" value="source,lines,vars" />
+	<property name="target" value="1.6" />
+	<property name="source" value="1.6" />
+	<property name="out" value="out" />
+
+	<target name="init" />
+
+    <path id="build-subdirs">
+    <filelist dir=".">
+      <file name="common.thirdparty" />
+      <file name="common.java" />
+      <file name="com.sevogle.common.web" />
+      <file name="com.sevogle.common.email" />
+    </filelist>
+    </path>
+
+    <path id="build-wars">
+    <filelist dir=".">
+      <file name="com.sevogle.common.web" />
+    </filelist>
+    </path>
+
+	<target name="clean">
+        <subant target="clean" antfile="newbuild.xml" verbose="true" >
+            <path refid="build-subdirs"/>
+        </subant>
+	</target>
+
+	<target depends="clean" name="cleanall" />
+
+	<target name="build-project" />
+
+	<target depends="build-subprojects,build-project" name="build" />
+
+	<target name="build-subprojects" >
+        <subant target="build" antfile="newbuild.xml" verbose="true" >
+            <path refid="build-subdirs"/>
+        </subant>
+    </target>
+
+	<target name="jar" description="create package file" depends="build-project">
+        <subant target="jar" antfile="newbuild.xml" verbose="true" >
+            <path refid="build-subdirs"/>
+        </subant>
+	</target>
+
+	<target name="war" description="create package file" depends="build-project,jar">
+        <subant target="war" antfile="newbuild.xml" verbose="true" >
+            <path refid="build-wars"/>
+        </subant>
+	</target>
+</project>
