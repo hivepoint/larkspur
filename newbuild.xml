@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- WARNING: Eclipse auto-generated file.
-              Any modifications will be overwritten.
-              To include a user specific buildfile here, simply create one in the same
-              directory with the processing instruction <?eclipse.ant.import?>
-              as the first entry and export the buildfile again. -->
 <project basedir="." default="build" name="hedgehog">
 	<property environment="env" />
 	<property name="debuglevel" value="source,lines,vars" />
-	<property name="target" value="1.6" />
-	<property name="source" value="1.6" />
-	<property name="out" value="out" />
+	<property name="artifact.publish.location" value="../artifacts/hedgehog" />
 
-	<target name="init" />
-
-    <path id="build-subdirs">
+    <path id="subdirs-jar">
     <filelist dir=".">
       <file name="common.thirdparty" />
       <file name="common.java" />
@@ -22,7 +13,7 @@
     </filelist>
     </path>
 
-    <path id="build-wars">
+    <path id="subdirs-war">
     <filelist dir=".">
       <file name="com.sevogle.common.web" />
     </filelist>
@@ -30,31 +21,37 @@
 
 	<target name="clean">
         <subant target="clean" antfile="newbuild.xml" verbose="true" >
-            <path refid="build-subdirs"/>
+            <path refid="subdirs-jar"/>
         </subant>
 	</target>
 
 	<target depends="clean" name="cleanall" />
 
-	<target name="build-project" />
+    <!-- Contortions here cause the build target for web depends on the jar target for thirdparty, and web jar target doesn't automatically do the build target -->
+	<target name="build" description="" >
+        <ant dir="common.thirdparty" target="jar" antfile="newbuild.xml" />
+        <ant dir="com.sevogle.common.web" target="build" antfile="newbuild.xml" />
+	</target>
 
-	<target depends="build-subprojects,build-project" name="build" />
-
-	<target name="build-subprojects" >
-        <subant target="build" antfile="newbuild.xml" verbose="true" >
-            <path refid="build-subdirs"/>
-        </subant>
-    </target>
-
-	<target name="jar" description="create package file" depends="build-project">
+	<target name="jar" description="create package file" depends="build" >
         <subant target="jar" antfile="newbuild.xml" verbose="true" >
-            <path refid="build-subdirs"/>
+            <path refid="subdirs-jar"/>
         </subant>
 	</target>
 
-	<target name="war" description="create package file" depends="build-project,jar">
+	<target name="war" description="create package file" depends="jar">
         <subant target="war" antfile="newbuild.xml" verbose="true" >
-            <path refid="build-wars"/>
+            <path refid="subdirs-war"/>
         </subant>
+	</target>
+
+	<target name="publish" description="public artifacts" depends="jar,war">
+        <mkdir dir="${artifact.publish.location}" />
+        <copy todir="${artifact.publish.location}">
+           <fileset dir=".">
+            <include name="**/out/*.war" />
+            <include name="**/out/*.jar" />
+          </fileset>
+        </copy>
 	</target>
 </project>
