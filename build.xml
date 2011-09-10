@@ -22,6 +22,8 @@
     </path>
 -->
 	<target name="clean">
+		<delete dir="${artifact.publish.location}" failonerror="false" />
+		<delete dir="${artifact.thirdparty.publish.location}" failonerror="false" />
 		<subant target="clean"  verbose="true">
 			<path refid="subdirs-jar" />
 		</subant>
