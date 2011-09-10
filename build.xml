@@ -37,7 +37,7 @@
 	</target>
 
     <target name="test" description="create package file" depends="build">
-        <subant target="test" antfile="newbuild.xml" verbose="true">
+        <subant target="test" verbose="true">
             <path refid="subdirs-jar" />
         </subant>
     </target>
