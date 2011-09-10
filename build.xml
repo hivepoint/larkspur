@@ -22,7 +22,7 @@
     </path>
 -->
 	<target name="clean">
-		<subant target="clean" antfile="newbuild.xml" verbose="true">
+		<subant target="clean"  verbose="true">
 			<path refid="subdirs-jar" />
 		</subant>
 	</target>
@@ -31,15 +31,10 @@
 
 	<!-- Contortions here cause the build target for web depends on the jar target for thirdparty, and web jar target doesn't automatically do the build target -->
 	<target name="build" description="">
-		<ant dir="common.thirdparty" target="jar" antfile="newbuild.xml" />
-		<ant dir="com.sevogle.common.web" target="build" antfile="newbuild.xml" />
-	</target>
-
-    <target name="jar" description="create package file" depends="build">
-        <subant target="jar" antfile="newbuild.xml" verbose="true">
+        <subant target="build" verbose="true">
             <path refid="subdirs-jar" />
         </subant>
-    </target>
+	</target>
 
     <target name="test" description="create package file" depends="build">
         <subant target="test" antfile="newbuild.xml" verbose="true">
@@ -53,7 +48,7 @@
         </subant>
 	</target>
 -->
-	<target name="publish" description="public artifacts" depends="jar">
+	<target name="publish" description="public artifacts" depends="build">
 		<mkdir dir="${artifact.publish.location}" />
 		<copy todir="${artifact.publish.location}" flatten="true" verbose="true">
 			<fileset dir=".">
