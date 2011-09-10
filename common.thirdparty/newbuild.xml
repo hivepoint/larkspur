@@ -60,6 +60,10 @@
 		<pathelement location="gson-1.7.1.jar" />
 		<pathelement location="scribe-1.2.1.jar" />
 	</path>
+    <target name="test" depends="" description="test project">
+        
+    </target>
+
 	<target name="init">
 		<mkdir dir="bin" />
 		<copy includeemptydirs="false" todir="bin">
