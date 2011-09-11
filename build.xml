@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project basedir="." default="build" name="hedgehog">
+	<property environment="env" />
+	<property name="debuglevel" value="source,lines,vars" />
+	<property name="artifact.publish.location" value="../artifacts/hedgehog" />
+	<property name="artifact.thirdparty.publish.location" value="../artifacts/thirdparty" />
+
+	<path id="subdirs-jar">
+		<filelist dir=".">
+			<file name="common.thirdparty" />
+			<file name="common.java" />
+			<file name="com.sevogle.common.web" />
+			<file name="common.link" />
+			<file name="com.sevogle.common.email" />
+		</filelist>
+	</path>
+
+	<!--    <path id="subdirs-war">
+    <filelist dir=".">
+      <file name="com.sevogle.common.web" />
+    </filelist>
+    </path>
+-->
+	<target name="clean">
+		<delete dir="${artifact.publish.location}" failonerror="false" />
+		<delete dir="${artifact.thirdparty.publish.location}" failonerror="false" />
+		<subant target="clean"  verbose="true">
+			<path refid="subdirs-jar" />
+		</subant>
+	</target>
+
+	<target depends="clean" name="cleanall" />
+
+	<!-- Contortions here cause the build target for web depends on the jar target for thirdparty, and web jar target doesn't automatically do the build target -->
+	<target name="build" description="">
+        <subant target="build" verbose="true">
+            <path refid="subdirs-jar" />
+        </subant>
+	</target>
+
+    <target name="test" description="create package file" depends="build">
+        <subant target="test" verbose="true">
+            <path refid="subdirs-jar" />
+        </subant>
+    </target>
+
+	<!--	<target name="war" description="create package file" depends="jar">
+        <subant target="war" antfile="newbuild.xml" verbose="true" >
+            <path refid="subdirs-war"/>
+        </subant>
+	</target>
+-->
+	<target name="publish" description="public artifacts" depends="build">
+		<mkdir dir="${artifact.publish.location}" />
+		<copy todir="${artifact.publish.location}" flatten="true" verbose="true">
+			<fileset dir=".">
+				<!--         <include name="**/out/*.war" /> -->
+				<include name="**/out/*.jar" />
+			</fileset>
+		</copy>
+		<copy todir="${artifact.thirdparty.publish.location}" flatten="true" verbose="true">
+			<fileset dir="common.thirdparty">
+				<include name="**/*.jar" />
+			</fileset>
+		</copy>
+	</target>
+</project>
