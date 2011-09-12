@@ -60,7 +60,8 @@
 		</copy>
 		<copy todir="${artifact.thirdparty.publish.location}" flatten="true" verbose="true">
 			<fileset dir="common.thirdparty">
-				<include name="**/*.jar" />
+				<include name="*.jar" />
+				<include name="out/*.jar" />
 			</fileset>
 		</copy>
 	</target>
