@@ -60,7 +60,7 @@
 		<pathelement location="gson-1.7.1.jar" />
 		<pathelement location="scribe-1.2.1.jar" />
 	</path>
-    <target name="test" depends="" description="test project" />
+	<target name="test" depends="" description="test project" />
 
 	<target name="init">
 		<mkdir dir="bin" />
@@ -71,12 +71,31 @@
 			</fileset>
 		</copy>
 	</target>
+	<property name="gwt.sdk.version" value="gwt-2.4.0" />
+	<property name="gwt.sdk" value="gwt-sdk" />
+	<!-- - - - - - - - - - - - - - - - - - 
+	              target: unzip                      
+	             - - - - - - - - - - - - - - - - - -->
+	<target name="unzip">
+		<unzip src="${gwt.sdk.version}.zip" dest=".">
+		</unzip>
+		<move todir="${gwt.sdk}" includeEmptyDirs="yes" verbose="true">
+			<fileset dir="${gwt.sdk.version}">
+				<include name="**/*" />
+			</fileset>
+		</move>
+		<delete dir="${gwt.sdk.version}" />
+	</target>
+
+
 	<target name="clean">
 		<delete dir="bin" />
-        <delete dir="${out}" />
+		<delete dir="${out}" />
+		<delete dir="${gwt.sdk.version}" />
+		<delete dir="${gwt.sdk}" />
 	</target>
 	<target depends="clean" name="cleanall" />
-	<target depends="build-subprojects,build-project,jar" name="build" />
+	<target depends="build-subprojects,build-project,jar,unzip" name="build" />
 	<target name="build-subprojects" />
 	<target depends="init" name="build-project">
 		<echo message="${ant.project.name}: ${ant.file}" />

@@ -7,7 +7,6 @@
 
 	<path id="subdirs-jar">
 		<filelist dir=".">
-			<file name="common.thirdparty" />
 			<file name="common.java" />
 			<file name="com.sevogle.common.web" />
 			<file name="common.link" />
@@ -15,6 +14,13 @@
 			<file name="com.sevogle.common.email" />
 		</filelist>
 	</path>
+
+	<path id="subdirs-thirdparty">
+		<filelist dir=".">
+			<file name="common.thirdparty" />
+		</filelist>
+	</path>
+
 
 	<!--    <path id="subdirs-war">
     <filelist dir=".">
@@ -24,26 +30,37 @@
 -->
 	<target name="clean">
 		<delete dir="${artifact.publish.location}" failonerror="false" />
-		<delete dir="${artifact.thirdparty.publish.location}" failonerror="false" />
-		<subant target="clean"  verbose="true">
+		<subant target="clean" verbose="true">
+			<path refid="subdirs-jar" />
+		</subant>
+	</target>
+	<target name="clean-thirdparty">
+		<delete dir="${artifact.publish.location}" failonerror="false" />
+		<subant target="clean" verbose="true">
+			<path refid="subdirs-thirdparty" />
+		</subant>
+	</target>
+
+	<target depends="clean,clean-thirdparty" name="cleanall" />
+
+	<target name="build-thirdparty">
+		<subant target="build" verbose="true">
+			<path refid="subdirs-thirdparty" />
+		</subant>
+	</target>
+
+	<!-- Contortions here cause the build target for web depends on the jar target for thirdparty, and web jar target doesn't automatically do the build target -->
+	<target name="build" description="">
+		<subant target="build" verbose="true">
 			<path refid="subdirs-jar" />
 		</subant>
 	</target>
 
-	<target depends="clean" name="cleanall" />
-
-	<!-- Contortions here cause the build target for web depends on the jar target for thirdparty, and web jar target doesn't automatically do the build target -->
-	<target name="build" description="">
-        <subant target="build" verbose="true">
-            <path refid="subdirs-jar" />
-        </subant>
+	<target name="test" description="create package file">
+		<subant target="test" verbose="true">
+			<path refid="subdirs-jar" />
+		</subant>
 	</target>
-
-    <target name="test" description="create package file" >
-        <subant target="test" verbose="true">
-            <path refid="subdirs-jar" />
-        </subant>
-    </target>
 
 	<!--	<target name="war" description="create package file" depends="jar">
         <subant target="war" antfile="newbuild.xml" verbose="true" >
@@ -59,6 +76,8 @@
 				<include name="**/out/*.jar" />
 			</fileset>
 		</copy>
+	</target>
+	<target name="publish-thirdparty" description="public artifacts" depends="build-thirdparty">
 		<copy todir="${artifact.thirdparty.publish.location}" verbose="true">
 			<fileset dir="common.thirdparty">
 				<include name="*.jar" />
