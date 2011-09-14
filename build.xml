@@ -11,6 +11,7 @@
 			<file name="common.java" />
 			<file name="com.sevogle.common.web" />
 			<file name="common.link" />
+			<file name="common.extension" />
 			<file name="com.sevogle.common.email" />
 		</filelist>
 	</path>
