@@ -1,6 +1,0 @@
-function U$(){}
-function P$(){}
-function T$(){var b;while(Q$){b=Q$;Q$=Q$.b;!Q$&&(R$=null);s8(b.a.a,srb())}}
-function W$(){S$=new U$;ci((ai(),_h),31);!!$stats&&$stats(Ji(Exc,Znc,-1,-1));S$.nd();!!$stats&&$stats(Ji(Exc,Ysc,-1,-1))}
-function srb(){var b,c,d,e,f;f=new q_b(5);T3b(f.M,Vnc,'cwSplitLayoutPanel');f.M.style[epc]=uvc;f.M.style[fpc]=bwc;f.M.style[Ppc]='3px solid #e7e7e7';l_b(f,new vQb('This is the first north component.'),(YRb(),VRb),50);l_b(f,new vQb('This is the first south component.'),WRb,50);l_b(f,new vQb('This is the east component.'),SRb,100);l_b(f,new vQb('This is the west component.'),XRb,100);l_b(f,new vQb('This is the second north component.'),VRb,50);l_b(f,new vQb('This is the second south component.'),WRb,50);d='This is some text to show how the contents on either side of the splitter flow.';for(e=0;e<3;++e){d+=foc+d}b=new vQb(d);c=new S$b(b);l_b(f,c,RRb,0);return f}
-var Exc='runCallbacks31';_=U$.prototype=P$.prototype=new Z;_.gC=function V$(){return dE};_.nd=function Z$(){T$()};_.cM={};var dE=Pbc(zsc,'AsyncLoader31');Onc(W$)();

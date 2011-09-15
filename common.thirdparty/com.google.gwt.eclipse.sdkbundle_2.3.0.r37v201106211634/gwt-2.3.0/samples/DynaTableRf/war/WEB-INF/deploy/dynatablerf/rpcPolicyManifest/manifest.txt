@@ -1,3 +1,0 @@
-# Module dynatablerf
-# RPC service class, partial path of RPC policy file
-com.google.gwt.logging.shared.RemoteLoggingService, 5894745FB9F8B9B14859C35BE7962C8B.gwt.rpc
