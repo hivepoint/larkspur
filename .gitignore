@@ -12,3 +12,5 @@ com.sevogle.common.web/out/
 /common.extension/blackbox.log
 /common.extension/out/
 /com.sevogle.common.web/gwt-2.4.0/
+/com.sevogle.common.web/gwt-unitCache/
+/common.thirdparty/gwt-sdk/
