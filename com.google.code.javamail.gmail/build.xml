@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="com.java.gmail.imap">
+	<property environment="env" />
+	<property name="debuglevel" value="source,lines,vars" />
+	<property name="target" value="1.6" />
+	<property name="source" value="1.6" />
+	<property name="out" value="out" />
+	<property name="artifact.dir" value="../../artifacts" />
+	<property name="artifacts.thirdparty.location" value="${artifact.dir}/thirdparty" />
+	<path id="common.java.classpath">
+		<pathelement location="bin" />
+	</path>
+	<target depends="build-subprojects" name="init-eclipse-build" description="Target to be called to set variables based on the build taking place inside of the eclipse dev environment">
+		<path id="artifact.classpath">
+			<fileset dir="${artifact.dir}">
+				<include name="*.jar" />
+			</fileset>
+		</path>
+	</target>
+	<target name="init">
+		<mkdir dir="bin" />
+		<mkdir dir="${out}" />
+		<copy includeemptydirs="false" todir="bin">
+			<fileset dir="src">
+				<exclude name="**/*.launch" />
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+	</target>
+	<target name="clean">
+		<delete dir="bin" />
+		<delete dir="${out}" />
+	</target>
+	<target depends="clean" name="cleanall">
+		<ant antfile="build.xml" dir="${common.thirdparty.location}" inheritAll="false" target="clean" />
+	</target>
+	<target depends="build-project,jar" name="build" />
+	<target name="build-subprojects">
+		<ant antfile="build.xml" dir="${common.thirdparty.location}" inheritAll="false" target="build-project" />
+	</target>
+	<target depends="init" name="build-project">
+		<echo message="${ant.project.name}: ${ant.file}" />
+		<javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}" includeantruntime="false">
+			<src path="src" />
+			<classpath refid="common.java.classpath" />
+		</javac>
+	</target>
+	<target name="test" description="Placeholder" depends="build-project">
+	</target>
+	<property name="build.number" value="personal" description="Defaults to personal if not set by build" />
+	<target name="jar" description="create package file" depends="build-project">
+		<jar destfile="${out}/${ant.project.name}_${build.number}.jar" basedir="bin" includes="**/*.class">
+			<fileset dir="resources" />
+		</jar>
+		<checksum>
+			<fileset dir="${out}" includes="*.jar" />
+		</checksum>
+	</target>
+</project>

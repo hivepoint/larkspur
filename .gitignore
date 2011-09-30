@@ -17,3 +17,4 @@ com.sevogle.common.web/out/
 /com.sevogle.extension.loopback/bin/
 /com.sevogle.extension.loopback/blackbox.log
 com.google.code.javamail.gmail/bin/
+com.google.code.javamail.gmail/out/
