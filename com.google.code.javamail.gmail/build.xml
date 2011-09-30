@@ -56,6 +56,7 @@
 	<target name="jar" description="create package file" depends="build-project">
 		<jar destfile="${out}/${ant.project.name}_${build.number}.jar" basedir="bin" includes="**/*.class">
 			<fileset dir="resources" />
+			<fileset dir="src" />
 		</jar>
 		<checksum>
 			<fileset dir="${out}" includes="*.jar" />
