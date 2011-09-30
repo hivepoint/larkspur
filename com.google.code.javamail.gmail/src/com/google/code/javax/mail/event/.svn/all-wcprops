@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/javax/mail/event
+END
+MessageCountEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/javax/mail/event/MessageCountEvent.java
+END
+ConnectionAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/javax/mail/event/ConnectionAdapter.java
+END
+MessageChangedEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/javax/mail/event/MessageChangedEvent.java
+END
+ConnectionEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/javax/mail/event/ConnectionEvent.java
+END
+StoreListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/javax/mail/event/StoreListener.java
+END
+TransportListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/javax/mail/event/TransportListener.java
+END
+MessageCountListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/javax/mail/event/MessageCountListener.java
+END
+MessageChangedListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/javax/mail/event/MessageChangedListener.java
+END
+ConnectionListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/javax/mail/event/ConnectionListener.java
+END
+FolderAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/javax/mail/event/FolderAdapter.java
+END
+FolderEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/javax/mail/event/FolderEvent.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/javax/mail/event/package.html
+END
+FolderListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/javax/mail/event/FolderListener.java
+END
+MailEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/javax/mail/event/MailEvent.java
+END
+TransportAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/javax/mail/event/TransportAdapter.java
+END
+StoreEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/javax/mail/event/StoreEvent.java
+END
+TransportEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/javax/mail/event/TransportEvent.java
+END
+MessageCountAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/javax/mail/event/MessageCountAdapter.java
+END

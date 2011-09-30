@@ -16,3 +16,4 @@ com.sevogle.common.web/out/
 /common.thirdparty/gwt-sdk/
 /com.sevogle.extension.loopback/bin/
 /com.sevogle.extension.loopback/blackbox.log
+com.google.code.javamail.gmail/bin/

@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/com/sun/mail/imap/protocol
+END
+RFC822DATA.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/com/sun/mail/imap/protocol/RFC822DATA.java
+END
+MessageSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/com/sun/mail/imap/protocol/MessageSet.java
+END
+BASE64MailboxEncoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/com/sun/mail/imap/protocol/BASE64MailboxEncoder.java
+END
+RFC822SIZE.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/com/sun/mail/imap/protocol/RFC822SIZE.java
+END
+IMAPSaslAuthenticator.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/com/sun/mail/imap/protocol/IMAPSaslAuthenticator.java
+END
+IMAPResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/com/sun/mail/imap/protocol/IMAPResponse.java
+END
+MailboxInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/com/sun/mail/imap/protocol/MailboxInfo.java
+END
+FetchResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/com/sun/mail/imap/protocol/FetchResponse.java
+END
+IMAPProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/com/sun/mail/imap/protocol/IMAPProtocol.java
+END
+INTERNALDATE.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/com/sun/mail/imap/protocol/INTERNALDATE.java
+END
+X_GM_LABELS.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/com/sun/mail/imap/protocol/X_GM_LABELS.java
+END
+X_GM_MSGID.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/com/sun/mail/imap/protocol/X_GM_MSGID.java
+END
+ENVELOPE.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/com/sun/mail/imap/protocol/ENVELOPE.java
+END
+BODYSTRUCTURE.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/com/sun/mail/imap/protocol/BODYSTRUCTURE.java
+END
+Namespaces.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/com/sun/mail/imap/protocol/Namespaces.java
+END
+UID.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/com/sun/mail/imap/protocol/UID.java
+END
+Status.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/com/sun/mail/imap/protocol/Status.java
+END
+X_GM_THRID.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/com/sun/mail/imap/protocol/X_GM_THRID.java
+END
+BASE64MailboxDecoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/com/sun/mail/imap/protocol/BASE64MailboxDecoder.java
+END
+ListInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/com/sun/mail/imap/protocol/ListInfo.java
+END
+FLAGS.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/com/sun/mail/imap/protocol/FLAGS.java
+END
+SaslAuthenticator.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/com/sun/mail/imap/protocol/SaslAuthenticator.java
+END
+UIDSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/com/sun/mail/imap/protocol/UIDSet.java
+END
+BODY.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/com/sun/mail/imap/protocol/BODY.java
+END
+Item.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/com/sun/mail/imap/protocol/Item.java
+END
+SearchSequence.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/9/trunk/src/main/java/com/google/code/com/sun/mail/imap/protocol/SearchSequence.java
+END
