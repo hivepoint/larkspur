@@ -910,7 +910,8 @@ public final class Session {
 	loadAllResources("META-INF/javamail.providers", cl, loader);
 
 	// load default META-INF/javamail.default.providers from mail.jar file
-	loadResource("/META-INF/javamail.default.providers", cl, loader);
+	loadResource("/javamail.gmail.imap.providers", cl, loader);
+	loadResource("/META-INF/javamail.gmail.imap.providers", cl, loader);
 
 	if (providers.size() == 0) {
 	    if (debug)
