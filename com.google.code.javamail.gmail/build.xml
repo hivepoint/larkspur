@@ -54,7 +54,18 @@
 	</target>
 	<property name="build.number" value="personal" description="Defaults to personal if not set by build" />
 	<target name="jar" description="create package file" depends="build-project">
+		<tstamp>
+			<format property="timestamp" pattern="yyyyMMdd_HHmmss" />
+			<format property="current.time" pattern="MM/dd/yyyy hh:mm:ss" />
+		</tstamp>
 		<jar destfile="${out}/${ant.project.name}_${build.number}.jar" basedir="bin" includes="**/*.class">
+			<manifest>
+				<section name="Copyright">
+					<attribute name="Copy" value="(C) Sevogle 2011" />
+				</section>
+				<attribute name="Build-Date" value="${current.time}" />
+				<attribute name="Build-Number" value="${build.number}" />
+			</manifest>
 			<fileset dir="resources" />
 			<fileset dir="src" />
 		</jar>
