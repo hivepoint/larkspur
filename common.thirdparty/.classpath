@@ -55,7 +55,6 @@
 			<attribute name="javadoc_location" value="file:/C:/Users/kduffie/Downloads/jtidy-r938/javadoc/"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry exported="true" kind="lib" path="commons-lang-2.6.jar"/>
 	<classpathentry exported="true" kind="lib" path="httpclient-4.1.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="httpcore-4.1.jar">
 		<attributes>
@@ -80,5 +79,6 @@
 	<classpathentry exported="true" kind="lib" path="scribe-1.2.1.jar" sourcepath="scribe-1.2.1-src.zip"/>
 	<classpathentry exported="true" kind="lib" path="hamcrest-all-1.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="commons-io-2.0.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="commons-lang3-3.0.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
