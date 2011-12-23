@@ -80,5 +80,10 @@
 	<classpathentry exported="true" kind="lib" path="hamcrest-all-1.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="commons-io-2.0.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="commons-lang3-3.0.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="jsoup-1.6.1.jar" sourcepath="jsoup-1.6.1-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/common.thirdparty/gson-1.7.1-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
