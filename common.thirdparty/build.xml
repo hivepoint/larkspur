@@ -32,7 +32,7 @@
 		<pathelement location="jug-1.1.2.jar" />
 		<pathelement location="log4j-1.2.16.jar" />
 		<pathelement location="maven-ant-tasks-2.0.7.jar" />
-		<pathelement location="mongo-2.5.2.jar" />
+		<pathelement location="mongo-2.7.2.jar" />
 		<pathelement location="nekohtml-1.9.7.jar" />
 		<pathelement location="openid4java-full-0.9.5.jar" />
 		<pathelement location="openxri-client-1.2.0.jar" />
@@ -55,7 +55,6 @@
 		<pathelement location="commons-lang-2.6.jar" />
 		<pathelement location="httpclient-4.1.1.jar" />
 		<pathelement location="httpcore-4.1.jar" />
-		<pathelement location="mongo-2.6.2.jar" />
 		<pathelement location="mail-1.4.4.jar" />
 		<pathelement location="gson-1.7.1.jar" />
 		<pathelement location="scribe-1.2.1.jar" />
