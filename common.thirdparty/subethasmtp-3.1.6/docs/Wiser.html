@@ -1,0 +1,57 @@
+
+ 
+
+
+
+ 
+
+
+
+<html>
+ <head>
+ <title>Wiser</title>
+ </head>
+ <body>
+ 
+
+
+
+
+<div>
+<table>
+ <tr>
+ 
+ 
+ <td style="vertical-align:top; padding-left:5px">
+ 
+ <div id="wikicontent">
+ <div class="vt" id="wikimaincol">
+ <p>Wiser is a simple SMTP server that you can use for unit testing applications that send mail.  It accepts all messages and stores them in an internal ArrayList.  Your unit test code can then examine the messages (or lack thereof) and verify their validity. </p><p>WISER IS NOT A MAIL SERVER.  If you want to receive email and then &quot;do something&quot; with the mail, simply implement the MessageHandler or MessageListener interfaces.  Look at the (very short) Wiser code as an example. </p><h2><a name="How_To_Use_It"></a>How To Use It<a href="#How_To_Use_It" class="section_anchor"></a></h2><p>Include the following jars on your classpath: <ul><li>subethasmtp.jar </li><li>slf4j-api-X.X.X.jar </li><li>One of the slf4j connectors such as slf4j-simple-X.X.X.jar </li><li>JavaMail (mail.jar and activation.jar) </li></ul></p><p>Using Wiser is trivial: </p><pre class="prettyprint">Wiser wiser = new Wiser();
+wiser.setPort(2500); // Default is 25
+wiser.start();</pre><p>  Now, use a mail client to send email to your Wiser server. To get your JavaMail messages out of the Wiser server, just use this code: </p><pre class="prettyprint">for (WiserMessage message : wiser.getMessages())
+{
+	String envelopeSender = message.getEnvelopeSender();
+	String envelopeReceiver = message.getEnvelopeReceiver();
+
+	MimeMessage mess = message.getMimeMessage();
+
+	// now do something fun!
+}</pre><p>Note that Wiser is not thread-safe; start it, process your unit tests, then check for delivered messages. </p>
+ </div>
+ </div>
+ </td><tr>
+</table>
+ </div>
+
+
+
+
+<script type="text/javascript" src="http://www.gstatic.com/codesite/ph/7955777679655757817/js/dit_scripts.js"></script>
+
+
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+</script>
+
+ </body>
+</html>
+
