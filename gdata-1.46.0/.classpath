@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="java/src"/>
+	<classpathentry kind="lib" path="java/deps/google-collect-1.0-rc1.jar"/>
+	<classpathentry kind="lib" path="java/deps/jsr305.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-analytics-2.1.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-analytics-meta-2.1.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-appsforyourdomain-1.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-appsforyourdomain-meta-1.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-base-1.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-blogger-2.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-blogger-meta-2.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-books-1.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-books-meta-1.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-calendar-2.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-calendar-meta-2.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-client-1.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-client-meta-1.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-codesearch-2.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-codesearch-meta-2.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-contacts-3.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-contacts-meta-3.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-core-1.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-docs-3.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-docs-meta-3.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-finance-2.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-finance-meta-2.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-gtt-2.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-gtt-meta-2.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-health-2.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-health-meta-2.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-maps-2.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-maps-meta-2.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-media-1.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-photos-2.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-photos-meta-2.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-projecthosting-2.1.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-projecthosting-meta-2.1.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-sidewiki-2.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-sidewiki-meta-2.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-sites-2.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-sites-meta-2.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-spreadsheet-3.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-spreadsheet-meta-3.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-webmastertools-2.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-webmastertools-meta-2.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-youtube-2.0.jar"/>
+	<classpathentry kind="lib" path="java/lib/gdata-youtube-meta-2.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/common.thirdparty/mail-1.4.4.jar" sourcepath="/common.thirdparty/javamail-1.4.4-src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/common.thirdparty/javamail-1.4.4-javadocs.zip!/javadocs"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/common.thirdparty/activation-1.1.jar"/>
+	<classpathentry kind="lib" path="/common.thirdparty/servlet-api-2.5.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="http://61.154.14.234:89/tomcat-docs/servletapi"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="java/classes/${template.service.name}"/>
+</classpath>
