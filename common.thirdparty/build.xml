@@ -78,7 +78,7 @@
 	<target name="unzip">
 		<unzip src="${gwt.sdk.version}.zip" dest=".">
 		</unzip>
-		<move todir="${gwt.sdk}" includeEmptyDirs="yes" verbose="true">
+		<move todir="${gwt.sdk}" includeEmptyDirs="yes" verbose="false">
 			<fileset dir="${gwt.sdk.version}">
 				<include name="**/*" />
 			</fileset>
