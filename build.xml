@@ -15,6 +15,7 @@
 		<subant target="clean" verbose="true">
 			<path refid="subdirs" />
 		</subant>
+		<delete dir="${artifact.thirdparty.publish.location}" failonerror="false" />
 	</target>
 
 	<target depends="clean" name="cleanall" />
