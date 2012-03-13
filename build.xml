@@ -30,6 +30,9 @@
 				<include name="*.jar" />
 				<include name="**/*.jar" />
 			</fileset>
+			<fileset dir="common.thirdparty/out">
+				<include name="*.jar" />
+			</fileset>
 		</copy>
 	</target>
 
