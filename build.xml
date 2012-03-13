@@ -26,9 +26,6 @@
 		</subant>
         <mkdir dir="${artifact.thirdparty.publish.location}" />
 		<copy todir="${artifact.thirdparty.publish.location}" verbose="true">
-			<fileset dir="common.thirdparty/out">
-				<include name="*.jar" />
-			</fileset>
 			<fileset dir="common.thirdparty">
 				<include name="*.jar" />
 				<include name="**/*.jar" />
