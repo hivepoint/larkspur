@@ -30,6 +30,8 @@
 				<include name="*.jar" />
 				<include name="**/*.jar" />
 			</fileset>
+        </copy>
+		<copy todir="${artifact.thirdparty.publish.location}" verbose="true">
 			<fileset dir="common.thirdparty/out">
 				<include name="*.jar" />
 			</fileset>
