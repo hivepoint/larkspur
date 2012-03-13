@@ -24,15 +24,7 @@
 		<subant target="build" verbose="true">
 			<path refid="subdirs" />
 		</subant>
-	</target>
-
-	<target name="test" description="create package file">
-		<subant target="test" verbose="true">
-			<path refid="subdirs-jar" />
-		</subant>
-	</target>
-
-	<target name="publish" description="public artifacts" depends="build">
+        <mkdir dir="${artifact.thirdparty.publish.location}" />
 		<copy todir="${artifact.thirdparty.publish.location}" verbose="true">
 			<fileset dir="common.thirdparty/out">
 				<include name="*.jar" />
@@ -42,5 +34,11 @@
 				<include name="**/*.jar" />
 			</fileset>
 		</copy>
+	</target>
+
+	<target name="test" description="create package file">
+		<subant target="test" verbose="true">
+			<path refid="subdirs-jar" />
+		</subant>
 	</target>
 </project>
