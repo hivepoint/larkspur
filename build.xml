@@ -2,7 +2,7 @@
 <project basedir="." default="build" name="hedgehog">
   <property environment="env"/>
   <property name="debuglevel" value="source,lines,vars"/>
-  <property name="artifact.thirdparty.publish.location" value="../../artifacts/thirdparty"/>
+  <property name="artifact.thirdparty.publish.location" value="../artifacts/thirdparty"/>
   <path id="subdirs">
     <filelist dir=".">
       <file name="common.thirdparty"/>
