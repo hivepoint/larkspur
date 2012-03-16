@@ -1,42 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project basedir="." default="build" name="hedgehog">
-	<property environment="env" />
-	<property name="debuglevel" value="source,lines,vars" />
-	<property name="artifact.thirdparty.publish.location" value="../artifacts/thirdparty" />
+  <property environment="env"/>
+  <property name="debuglevel" value="source,lines,vars"/>
+  <property name="artifact.thirdparty.publish.location" value="../../artifacts/thirdparty"/>
+  <path id="subdirs">
+    <filelist dir=".">
+      <file name="common.thirdparty"/>
+    </filelist>
 
-	<path id="subdirs">
-		<filelist dir=".">
-			<file name="common.thirdparty" />
-		</filelist>
-	</path>
+  </path>
+
+  <target name="clean">
+    <subant target="clean" verbose="true">
+      <path refid="subdirs"/>
+    </subant>
+
+    <delete dir="${artifact.thirdparty.publish.location}" failonerror="false"/>
+  </target>
 
 
-	<target name="clean">
-		<subant target="clean" verbose="true">
-			<path refid="subdirs" />
-		</subant>
-	</target>
+  <target depends="clean" name="cleanall"/>
 
-	<target depends="clean" name="cleanall" />
+  <target name="build">
+    <subant target="build" verbose="true">
+      <path refid="subdirs"/>
+    </subant>
 
-	<target name="build">
-		<subant target="build" verbose="true">
-			<path refid="subdirs" />
-		</subant>
-	</target>
+    <mkdir dir="${artifact.thirdparty.publish.location}"/>
+    <copy todir="${artifact.thirdparty.publish.location}" verbose="true">
+      <fileset dir="common.thirdparty">
+        <include name="*.jar"/>
+        <include name="**/*.jar"/>
+      </fileset>
+    </copy>
+    <copy todir="${artifact.thirdparty.publish.location}" verbose="true">
+      <fileset dir="common.thirdparty/out">
+        <include name="*.jar"/>
+      </fileset>
+    </copy>
+  </target>
 
-	<target name="test" description="create package file">
-		<subant target="test" verbose="true">
-			<path refid="subdirs-jar" />
-		</subant>
-	</target>
 
-	<target name="publish" description="public artifacts" depends="build">
-		<copy todir="${artifact.thirdparty.publish.location}" verbose="true">
-			<fileset dir="common.thirdparty">
-				<include name="*.jar" />
-				<include name="**/*.jar" />
-			</fileset>
-		</copy>
-	</target>
+  <target name="test" description="create package file">
+    <subant target="test" verbose="true">
+      <path refid="subdirs-jar"/>
+    </subant>
+
+  </target>
+
 </project>
