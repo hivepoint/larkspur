@@ -88,5 +88,6 @@
 	<classpathentry exported="true" kind="lib" path="gdata-client-meta-1.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="gdata-client-1.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="jgravatar.2012.03.20-10.43.jar"/>
+	<classpathentry exported="true" kind="lib" path="restfb-1.6.9.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
