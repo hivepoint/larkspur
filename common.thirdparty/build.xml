@@ -65,6 +65,10 @@
 
   <target name="test" depends="" description="test project"/>
 
+  <target name="testlist" description="">
+    <echo>TEST-PARALLEL: ${basedir}</echo>
+  </target>
+
   <target name="init">
     <mkdir dir="bin"/>
     <copy includeemptydirs="false" todir="bin">
