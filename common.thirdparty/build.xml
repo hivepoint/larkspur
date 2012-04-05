@@ -71,7 +71,7 @@
 
   <target name="init">
     <mkdir dir="bin"/>
-    <copy includeemptydirs="false" todir="bin">
+    <copy includeemptydirs="false" todir="bin" preservelastmodified="true">
       <fileset dir="src">
         <exclude name="**/*.launch"/>
         <exclude name="**/*.java"/>

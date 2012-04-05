@@ -27,13 +27,13 @@
     </subant>
 
     <mkdir dir="${artifact.thirdparty.publish.location}"/>
-    <copy todir="${artifact.thirdparty.publish.location}" verbose="true">
+    <copy todir="${artifact.thirdparty.publish.location}" verbose="true" preservelastmodified="true">
       <fileset dir="common.thirdparty">
         <include name="*.jar"/>
         <include name="**/*.jar"/>
       </fileset>
     </copy>
-    <copy todir="${artifact.thirdparty.publish.location}" verbose="true">
+    <copy todir="${artifact.thirdparty.publish.location}" verbose="true" preservelastmodified="true">
       <fileset dir="common.thirdparty/out">
         <include name="*.jar"/>
       </fileset>
