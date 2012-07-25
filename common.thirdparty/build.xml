@@ -61,6 +61,7 @@
     <pathelement location="mail-1.4.4.jar"/>
     <pathelement location="gson-1.7.1.jar"/>
     <pathelement location="scribe-1.2.1.jar"/>
+    <pathelement location="gwt-visualization.jar"/>
   </path>
 
   <target name="test" depends="" description="test project"/>
