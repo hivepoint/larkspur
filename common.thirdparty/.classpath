@@ -93,9 +93,6 @@
 	<classpathentry exported="true" kind="lib" path="gdata-client-1.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="jgravatar.2012.03.20-10.43.jar"/>
 	<classpathentry exported="true" kind="lib" path="restfb-1.6.9.jar"/>
-	<classpathentry exported="true" kind="lib" path="jackson-core-2.0.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="jackson-annotations-2.0.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="jackson-databind-2.0.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="lucene-core-3.5.0.jar" sourcepath="lucene-3.5.0.zip">
 		<attributes>
 			<attribute name="javadoc_location" value="jar:platform:/resource/common.thirdparty/lucene-core-3.5.0-javadoc.jar!/"/>
@@ -108,5 +105,20 @@
 	</classpathentry>
 	<classpathentry exported="true" kind="lib" path="gwt-visualization.jar"/>
 	<classpathentry exported="true" kind="lib" path="commons-collections-3.2.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="jackson-core-2.1.2.jar" sourcepath="jackson-core-2.1.2-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/common.thirdparty/jackson-core-2.1.2-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="jackson-annotations-2.1.2.jar" sourcepath="jackson-annotations-2.1.2-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/common.thirdparty/jackson-annotations-2.1.2-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="jackson-databind-2.1.2.jar" sourcepath="jackson-databind-2.1.2-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/common.thirdparty/jackson-databind-2.1.2-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
