@@ -63,6 +63,7 @@
     <pathelement location="gson-1.7.1.jar"/>
     <pathelement location="scribe-1.2.1.jar"/>
     <pathelement location="gwt-visualization.jar"/>
+    <pathelement location="rome-1.0.jar"/>
   </path>
 
   <target name="test" depends="" description="test project"/>

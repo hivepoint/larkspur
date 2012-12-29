@@ -108,5 +108,6 @@
 	</classpathentry>
 	<classpathentry exported="true" kind="lib" path="gwt-visualization.jar"/>
 	<classpathentry exported="true" kind="lib" path="commons-collections-3.2.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="rome-1.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
