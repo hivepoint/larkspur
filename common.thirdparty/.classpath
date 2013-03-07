@@ -121,5 +121,6 @@
 			<attribute name="javadoc_location" value="jar:platform:/resource/common.thirdparty/jackson-databind-2.1.2-javadoc.jar!/"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="javaxt-core.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
