@@ -64,6 +64,9 @@
     <pathelement location="scribe-1.2.1.jar"/>
     <pathelement location="gwt-visualization.jar"/>
     <pathelement location="rome-1.0.jar"/>
+    <pathelement location="natty-0.7.jar"/>
+    <pathelement location="antlr-3.2.jar"/>
+    <pathelement location="ical4j-1.0.2.jar"/>
   </path>
 
   <target name="test" depends="" description="test project"/>

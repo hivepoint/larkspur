@@ -122,5 +122,8 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry exported="true" kind="lib" path="javaxt-core.jar"/>
+	<classpathentry exported="true" kind="lib" path="natty-0.7.jar" sourcepath="natty-master.zip"/>
+	<classpathentry exported="true" kind="lib" path="antlr-3.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="ical4j-1.0.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
