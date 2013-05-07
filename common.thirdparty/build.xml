@@ -85,7 +85,7 @@
     </copy>
   </target>
 
-  <property name="gwt.sdk.version" value="gwt-2.5.0"/>
+  <property name="gwt.sdk.version" value="gwt-2.5.1"/>
   <property name="gwt.sdk" value="gwt-sdk"/>
   <!-- - - - - - - - - - - - - - - - - - 
 	              target: unzip                      
