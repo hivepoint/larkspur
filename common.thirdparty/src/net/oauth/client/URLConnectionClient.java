@@ -107,6 +107,7 @@ public class URLConnectionClient implements HttpClient {
                         output.write(b, 0, n);
                     }
                     excerpt = ex.getExcerpt();
+                    ex.close();
                 } finally {
                     output.close();
                 }
