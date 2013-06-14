@@ -11,7 +11,6 @@
 	<classpathentry exported="true" kind="lib" path="commons-codec-1.3.jar"/>
 	<classpathentry exported="true" kind="lib" path="commons-httpclient-3.0.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="commons-httpclient-3.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="/Users/kiwi/ws/git/larkspur/common.thirdparty/commons-logging-1.1.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="higgins-configuration-api.jar"/>
 	<classpathentry exported="true" kind="lib" path="higgins-sts-api.jar"/>
 	<classpathentry exported="true" kind="lib" path="higgins-sts-common.jar"/>
@@ -106,21 +105,6 @@
 	<classpathentry exported="true" kind="lib" path="gwt-visualization.jar"/>
 	<classpathentry exported="true" kind="lib" path="commons-collections-3.2.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="rome-1.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="/Users/kiwi/ws/git/larkspur/common.thirdparty/jackson-core-2.2.0.jar" sourcepath="jackson-core-2.2.0-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/common.thirdparty/jackson-core-2.2.0-javadoc.jar!/"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry exported="true" kind="lib" path="/Users/kiwi/ws/git/larkspur/common.thirdparty/jackson-annotations-2.2.0.jar" sourcepath="jackson-annotations-2.2.0-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/common.thirdparty/jackson-annotations-2.2.0-javadoc.jar!/"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry exported="true" kind="lib" path="/Users/kiwi/ws/git/larkspur/common.thirdparty/jackson-databind-2.2.0.jar" sourcepath="jackson-databind-2.2.0-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/common.thirdparty/jackson-databind-2.2.0-javadoc.jar!/"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry exported="true" kind="lib" path="javaxt-core.jar"/>
 	<classpathentry exported="true" kind="lib" path="natty-0.7.jar" sourcepath="natty-master.zip"/>
 	<classpathentry exported="true" kind="lib" path="antlr-3.2.jar"/>
@@ -144,5 +128,9 @@
 			<attribute name="javadoc_location" value="jar:platform:/resource/common.thirdparty/oauth/google/plus/google-api-services-plus-v1-rev75-1.15.0-rc-javadoc.jar!/"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="commons-logging-1.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="jackson-annotations-2.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="jackson-core-2.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="jackson-databind-2.2.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
