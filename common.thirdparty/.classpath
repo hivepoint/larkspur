@@ -65,11 +65,6 @@
 	<classpathentry exported="true" kind="lib" path="commons-io-2.0.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="commons-lang3-3.0.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="jsoup-1.6.1.jar" sourcepath="jsoup-1.6.1-sources.jar"/>
-	<classpathentry exported="true" kind="lib" path="mongo-2.7.2.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="http://api.mongodb.org/java/current/"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry exported="true" kind="lib" path="gson-2.1.jar" sourcepath="gson-2.1-sources.jar">
 		<attributes>
 			<attribute name="javadoc_location" value="jar:platform:/resource/common.thirdparty/gson-2.1-javadoc.jar!/"/>
@@ -135,5 +130,10 @@
 	<classpathentry exported="true" kind="lib" path="commons-lang-2.6.jar"/>
 	<classpathentry exported="true" kind="lib" path="groovy-all-1.8.6.jar"/>
 	<classpathentry exported="true" kind="lib" path="backport-util-concurrent-3.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="mongo-java-driver-2.9.3.jar" sourcepath="mongo-java-driver-2.9.3-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/common.thirdparty/mongo-java-driver-2.9.3-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
