@@ -83,6 +83,8 @@
     <pathelement location="jdo2-api-2.3-eb.jar"/>
     <pathelement location="transaction-api-1.1.jar"/>
     <pathelement location="xpp3-1.1.4c.jar"/>
+    <pathelement location="twitter4j-core-3.0.3.jar"/>
+    <pathelement location="twitter4j-async-3.0.3.jar"/>
   	<!-- Added for ical4j -->
     <pathelement location="ical4j-1.0.4.jar"/>
     <pathelement location="backport-util-concurrent-3.1.jar"/>
