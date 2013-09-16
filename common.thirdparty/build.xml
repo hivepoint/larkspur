@@ -91,6 +91,7 @@
     <pathelement location="groovy-all-1.8.6.jar"/>
   	
     <pathelement location="org.xbill.dns_2.1.5.jar"/>
+    <pathelement location="tagsoup-1.2.1.jar"/>
   	
   </path>
 
