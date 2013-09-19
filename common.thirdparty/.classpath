@@ -101,7 +101,7 @@
 	<classpathentry exported="true" kind="lib" path="rome-1.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="javaxt-core.jar"/>
 	<classpathentry exported="true" kind="lib" path="natty-0.7.jar" sourcepath="natty-master.zip"/>
-	<classpathentry exported="true" kind="lib" path="antlr-3.2.jar"/>
+	<classpathentry kind="lib" path="antlr-3.2.jar"/>
 	<classpathentry exported="true" kind="lib" path="ical4j-1.0.2.jar"/>
 	<classpathentry exported="true" kind="lib" path="google-http-client-1.15.0-rc.jar" sourcepath="oauth/google/oauth2/libs-sources/google-http-client-1.15.0-rc-sources.jar"/>
 	<classpathentry exported="true" kind="lib" path="google-http-client-gson-1.15.0-rc.jar"/>
@@ -141,6 +141,8 @@
 	</classpathentry>
 	<classpathentry exported="true" kind="lib" path="org.xbill.dns_2.1.5.jar"/>
 	<classpathentry exported="true" kind="lib" path="tagsoup-1.2.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="antlr-4.1-complete.jar"/>
+	<classpathentry exported="true" kind="lib" path="tika-app-1.4.jar"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry exported="true" kind="lib" path="twitter4j-3.0.3/lib/twitter4j-async-3.0.3.jar" sourcepath="twitter4j-3.0.3/twitter4j-async"/>
 	<classpathentry exported="true" kind="lib" path="twitter4j-3.0.3/lib/twitter4j-core-3.0.3.jar" sourcepath="twitter4j-3.0.3/twitter4j-core"/>
