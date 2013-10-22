@@ -101,7 +101,6 @@
 	<classpathentry exported="true" kind="lib" path="rome-1.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="javaxt-core.jar"/>
 	<classpathentry exported="true" kind="lib" path="natty-0.7.jar" sourcepath="natty-master.zip"/>
-	<classpathentry kind="lib" path="antlr-3.2.jar"/>
 	<classpathentry exported="true" kind="lib" path="ical4j-1.0.2.jar"/>
 	<classpathentry exported="true" kind="lib" path="google-http-client-1.15.0-rc.jar" sourcepath="oauth/google/oauth2/libs-sources/google-http-client-1.15.0-rc-sources.jar"/>
 	<classpathentry exported="true" kind="lib" path="google-http-client-gson-1.15.0-rc.jar"/>
@@ -146,5 +145,12 @@
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry exported="true" kind="lib" path="twitter4j-3.0.3/lib/twitter4j-async-3.0.3.jar" sourcepath="twitter4j-3.0.3/twitter4j-async"/>
 	<classpathentry exported="true" kind="lib" path="twitter4j-3.0.3/lib/twitter4j-core-3.0.3.jar" sourcepath="twitter4j-3.0.3/twitter4j-core"/>
+	<classpathentry exported="true" kind="lib" path="guava-15.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="guava-gwt-15.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="commons-exec-1.1.jar" sourcepath="commons-exec-1.1-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/common.thirdparty/commons-exec-1.1-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

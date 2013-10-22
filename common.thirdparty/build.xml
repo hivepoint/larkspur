@@ -19,6 +19,7 @@
     <pathelement location="commons-cli-1.2.jar"/>
     <pathelement location="commons-codec-1.8.jar"/>
     <pathelement location="commons-collections-3.2.1.jar"/>
+    <pathelement location="commons-exec-1.1.jar"/>
     <pathelement location="commons-httpclient-3.0.1.jar"/>
     <pathelement location="commons-httpclient-3.1.jar"/>
     <pathelement location="commons-lang-2.6.jar"/>
