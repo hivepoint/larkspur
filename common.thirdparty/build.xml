@@ -96,6 +96,69 @@
     <pathelement location="antlr-4.1-complete.jar"/>
     <pathelement location="tika-app-1.4.jar"/>
   	
+  	<!-- Added for user agent parser -->
+    <pathelement location="ient-1.15.0-rc.jar"/>
+    	<pathelement location="google-api-client-java6-1.15.0-rc.jar"/>
+    	<pathelement location="google-api-client-servlet-1.15.0-rc.jar"/>
+    	<pathelement location="google-api-services-oauth2-v2-rev38-1.15.0-rc.jar" />
+    	<pathelement location="google-api-services-plus-v1-rev75-1.15.0-rc.jar"/>
+        <pathelement location="google-http-client-1.15.0-rc.jar"/>
+        <pathelement location="google-http-client-gson-1.15.0-rc.jar"/>
+        <pathelement location="google-http-client-jackson2-1.15.0-rc.jar"/>
+        <pathelement location="google-oauth-client-1.15.0-rc.jar"/>
+    	<pathelement location="google-oauth-client-java6-1.15.0-rc.jar"/>
+        <pathelement location="google-oauth-client-java7-1.15.0-rc.jar"/>
+        <pathelement location="google-oauth-client-servlet-1.15.0-rc.jar"/>
+        <pathelement location="jsr305-1.3.9.jar"/>
+        <pathelement location="jdo2-api-2.3-eb.jar"/>
+        <pathelement location="transaction-api-1.1.jar"/>
+        <pathelement location="xpp3-1.1.4c.jar"/>
+        <pathelement location="twitter4j-core-3.0.3.jar"/>
+        <pathelement location="twitter4j-async-3.0.3.jar"/>
+      	<!-- Added for ical4j -->
+        <pathelement location="ical4j-1.0.4.jar"/>
+        <pathelement location="backport-util-concurrent-3.1.jar"/>
+        <pathelement location="groovy-all-1.8.6.jar"/>
+      	
+        <pathelement location="org.xbill.dns_2.1.5.jar"/>
+        <pathelement location="tagsoup-1.2.1.jar"/>
+        <pathelement location="antlr-4.1-complete.jar"/>
+        <pathelement location="tika-app-1.4.jar"/>
+      	
+      	<!-- Added for user agent parser -->
+        <pathelement location="ient-1.15.0-rc.jar"/>
+    	<pathelement location="google-api-client-java6-1.15.0-rc.jar"/>
+    	<pathelement location="google-api-client-servlet-1.15.0-rc.jar"/>
+    	<pathelement location="google-api-services-oauth2-v2-rev38-1.15.0-rc.jar" />
+    	<pathelement location="google-api-services-plus-v1-rev75-1.15.0-rc.jar"/>
+        <pathelement location="google-http-client-1.15.0-rc.jar"/>
+        <pathelement location="google-http-client-gson-1.15.0-rc.jar"/>
+        <pathelement location="google-http-client-jackson2-1.15.0-rc.jar"/>
+        <pathelement location="google-oauth-client-1.15.0-rc.jar"/>
+    	<pathelement location="google-oauth-client-java6-1.15.0-rc.jar"/>
+        <pathelement location="google-oauth-client-java7-1.15.0-rc.jar"/>
+        <pathelement location="google-oauth-client-servlet-1.15.0-rc.jar"/>
+        <pathelement location="jsr305-1.3.9.jar"/>
+        <pathelement location="jdo2-api-2.3-eb.jar"/>
+        <pathelement location="transaction-api-1.1.jar"/>
+        <pathelement location="xpp3-1.1.4c.jar"/>
+        <pathelement location="twitter4j-core-3.0.3.jar"/>
+        <pathelement location="twitter4j-async-3.0.3.jar"/>
+      	<!-- Added for ical4j -->
+        <pathelement location="ical4j-1.0.4.jar"/>
+        <pathelement location="backport-util-concurrent-3.1.jar"/>
+        <pathelement location="groovy-all-1.8.6.jar"/>
+      	
+        <pathelement location="org.xbill.dns_2.1.5.jar"/>
+        <pathelement location="tagsoup-1.2.1.jar"/>
+        <pathelement location="antlr-4.1-complete.jar"/>
+        <pathelement location="tika-app-1.4.jar"/>
+      	
+      	<!-- Added for user agent parser -->
+        <pathelement location="quality-check-1.3.jar"/>
+        <pathelement location="uadetector-core-0.9.12.jar"/>
+        <pathelement location="uadetector-json-0.1.12.jar"/>
+        <pathelement location="uadetector-resources-2013.12.jar"/>
   </path>
 
   <target name="test" depends="" description="test project"/>
