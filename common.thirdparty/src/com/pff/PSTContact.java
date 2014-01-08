@@ -355,7 +355,7 @@ public class PSTContact extends PSTMessage {
     }
 
     /**
-     * Assistant�s Name
+     * Assistant's Name
      */
     public String getAssistant() {
         return this.getStringItem(0x3a30);
@@ -397,7 +397,7 @@ public class PSTContact extends PSTMessage {
     }
 
     /**
-     * Spouse�s Name
+     * Spouse's Name
      */
     public String getSpouseName() {
         return this.getStringItem(0x3a48);
@@ -432,7 +432,7 @@ public class PSTContact extends PSTMessage {
     }
 
     /**
-     * Manager�s Name
+     * Manager's Name
      */
     public String getManagerName() {
         return this.getStringItem(0x3a4e);
