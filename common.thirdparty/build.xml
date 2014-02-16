@@ -58,8 +58,10 @@
     <pathelement location="slf4j-api-1.3.1.jar"/>
     <pathelement location="slf4j-simple-1.3.1.jar"/>
     <pathelement location="jtidy-r938.jar"/>
-    <pathelement location="httpclient-4.1.1.jar"/>
-    <pathelement location="httpcore-4.1.jar"/>
+    <pathelement location="httpclient-4.3.2.jar"/>
+    <pathelement location="httpclient-cache-4.3.2.jar"/>
+    <pathelement location="httpcore-4.3.1.jar"/>
+    <pathelement location="httpmime-4.3.2.jar"/>
     <pathelement location="mail-1.4.4.jar"/>
     <pathelement location="gson-1.7.1.jar"/>
     <pathelement location="scribe-1.3.0.jar"/>
