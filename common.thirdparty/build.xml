@@ -97,6 +97,7 @@
     <pathelement location="tagsoup-1.2.1.jar"/>
     <pathelement location="antlr-4.1-complete.jar"/>
     <pathelement location="tika-app-1.4.jar"/>
+    <pathelement location="tnef.jar"/>
   	
   	<!-- Added for user agent parser -->
     <pathelement location="ient-1.15.0-rc.jar"/>
