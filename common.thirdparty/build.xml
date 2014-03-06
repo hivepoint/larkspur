@@ -36,7 +36,7 @@
     <pathelement location="jdom-1.0.jar"/>
     <pathelement location="jetty-all-server-7.2.0.v20101020.jar"/>
     <pathelement location="jug-1.1.2.jar"/>
-    <pathelement location="log4j-1.2.16.jar"/>
+    <pathelement location="log4j-1.2.17.jar"/>
     <pathelement location="maven-ant-tasks-2.0.7.jar"/>
     <pathelement location="mongo-java-driver-2.9.3.jar"/>
     <pathelement location="nekohtml-1.9.7.jar"/>
@@ -180,20 +180,24 @@
     </copy>
   </target>
 
-  <property name="gwt.sdk.version" value="gwt-2.5.1"/>
   <property name="gwt.sdk" value="gwt-sdk"/>
   <!-- - - - - - - - - - - - - - - - - - 
 	              target: unzip                      
 	             - - - - - - - - - - - - - - - - - -->
-
   <target name="unzip">
-    <unzip src="${gwt.sdk.version}.zip" dest=".">
-		</unzip>
-    <move todir="${gwt.sdk}" includeEmptyDirs="yes" verbose="false">
+  	<property name="gwt.sdk.version" value="gwt-2.6.0"/>
+	<get src="https://google-web-toolkit.googlecode.com/files/${gwt.sdk.version}.zip" 
+	    dest="${gwt.sdk}.zip" 
+	    verbose="true"
+	    usetimestamp="true"/>
+  	<unzip src="${gwt.sdk}.zip" dest=".">
+  		<globmapper from="${gwt.sdk.version}*" to="${gwt.sdk}*" />
+  	</unzip>
+    <!--<move todir="${gwt.sdk}" includeEmptyDirs="yes" verbose="false">
       <fileset dir="${gwt.sdk.version}">
         <include name="**/*"/>
       </fileset>
-    </move>
+    </move>-->
     <delete dir="${gwt.sdk.version}"/>
   </target>
 
@@ -203,6 +207,7 @@
     <delete dir="${out}"/>
     <delete dir="${gwt.sdk.version}"/>
     <delete dir="${gwt.sdk}"/>
+  	<delete file="${gwt.sdk}.zip" />
   </target>
 
 
