@@ -199,6 +199,7 @@
       </fileset>
     </move>-->
     <delete dir="${gwt.sdk.version}"/>
+  	<echo file="${gwt.sdk}/version.txt">${gwt.sdk.version}</echo>
   </target>
 
 
