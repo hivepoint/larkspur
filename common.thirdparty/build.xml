@@ -63,12 +63,13 @@
     <pathelement location="httpcore-4.3.1.jar"/>
     <pathelement location="httpmime-4.3.2.jar"/>
     <pathelement location="mail-1.4.4.jar"/>
-    <pathelement location="gson-1.7.1.jar"/>
+    <pathelement location="gson-2.2.2.jar"/>
     <pathelement location="scribe-1.3.0.jar"/>
     <pathelement location="gwt-visualization.jar"/>
     <pathelement location="rome-1.0.jar"/>
     <pathelement location="natty-0.7.jar"/>
     <pathelement location="antlr-3.2.jar"/>
+    <pathelement location="stripe-java-1.7.1.jar"/>
   	<!-- Added for google oauth -->
     <pathelement location="google-api-client-1.15.0-rc.jar"/>
 	<pathelement location="google-api-client-java6-1.15.0-rc.jar"/>
