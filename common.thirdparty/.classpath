@@ -54,11 +54,6 @@
 			<attribute name="javadoc_location" value="file:/C:/Users/kduffie/Downloads/jtidy-r938/javadoc/"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry exported="true" kind="lib" path="mail-1.4.4.jar" sourcepath="javamail-1.4.4-src.zip">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/common.thirdparty/javamail-1.4.4-javadocs.zip!/javadocs"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry exported="true" kind="lib" path="hamcrest-all-1.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="commons-io-2.0.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="commons-lang3-3.0.1.jar"/>
@@ -139,8 +134,8 @@
 	<classpathentry exported="true" kind="lib" path="httpcore-4.3.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="httpmime-4.3.2.jar"/>
 	<classpathentry exported="true" kind="lib" path="tnef.jar" sourcepath="jtnef-1_8_0.zip"/>
-	<classpathentry exported="true" kind="lib" path="stripe-java-1.7.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="gson-2.2.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="gimap-1.5.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="javax.mail-1.5.1.jar"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry exported="true" kind="lib" path="twitter4j-3.0.3/lib/twitter4j-async-3.0.3.jar" sourcepath="twitter4j-3.0.3/twitter4j-async"/>
 	<classpathentry exported="true" kind="lib" path="twitter4j-3.0.3/lib/twitter4j-core-3.0.3.jar" sourcepath="twitter4j-3.0.3/twitter4j-core"/>
