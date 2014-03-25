@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- WARNING: Eclipse auto-generated file.
-              Any modifications will be overwritten.
-              To include a user specific buildfile here, simply create one in the same
-              directory with the processing instruction <?eclipse.ant.import?>
-              as the first entry and export the buildfile again. -->
 <project basedir="." default="build" name="common.thirdparty">
   <property environment="env"/>
   <property name="debuglevel" value="source,lines,vars"/>
@@ -69,8 +64,7 @@
     <pathelement location="natty-0.7.jar"/>
     <pathelement location="antlr-3.2.jar"/>
     <pathelement location="stripe-java-1.7.1.jar"/>
-    <pathelement location="javax.mail-1.5.1.jar"/>
-    <pathelement location="gimap-1.5.1.jar"/>
+  	<pathelement location="mail-1.4.4.jar"/>
   	<!-- Added for google oauth -->
     <pathelement location="google-api-client-1.15.0-rc.jar"/>
 	<pathelement location="google-api-client-java6-1.15.0-rc.jar"/>
