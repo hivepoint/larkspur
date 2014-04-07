@@ -45,9 +45,9 @@
     <pathelement location="svnjavahl-1.0.0.jar"/>
     <pathelement location="xalan-2.7.1.jar"/>
     <pathelement location="xercesImpl-2.9.0.jar"/>
-    <pathelement location="xml-apis.jar"/>
+    <pathelement location="xml-apis-2.0.2.jar"/>
     <pathelement location="xmlsec-1.3.0.jar"/>
-    <pathelement location="serializer.jar"/>
+    <pathelement location="serializer-2.7.1.jar"/>
     <pathelement location="oauth-20090825.jar"/>
     <pathelement location="activation-1.1.jar"/>
     <pathelement location="greenmail-1.3.1b.jar"/>

@@ -137,10 +137,10 @@
 	<classpathentry exported="true" kind="lib" path="httpmime-4.3.2.jar"/>
 	<classpathentry exported="true" kind="lib" path="tnef.jar" sourcepath="jtnef-1_8_0.zip"/>
 	<classpathentry exported="true" kind="lib" path="mail-1.4.4.jar"/>
-	<classpathentry exported="true" kind="lib" path="serializer.jar"/>
 	<classpathentry exported="true" kind="lib" path="xalan-2.7.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="xercesImpl-2.9.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="xml-apis.jar"/>
+	<classpathentry exported="true" kind="lib" path="xml-apis-2.0.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="serializer-2.7.1.jar"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry exported="true" kind="lib" path="twitter4j-3.0.3/lib/twitter4j-async-3.0.3.jar" sourcepath="twitter4j-3.0.3/twitter4j-async"/>
 	<classpathentry exported="true" kind="lib" path="twitter4j-3.0.3/lib/twitter4j-core-3.0.3.jar" sourcepath="twitter4j-3.0.3/twitter4j-core"/>
