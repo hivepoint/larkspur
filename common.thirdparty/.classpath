@@ -137,7 +137,6 @@
 	<classpathentry exported="true" kind="lib" path="httpmime-4.3.2.jar"/>
 	<classpathentry exported="true" kind="lib" path="tnef.jar" sourcepath="jtnef-1_8_0.zip"/>
 	<classpathentry exported="true" kind="lib" path="mail-1.4.4.jar" sourcepath="javamail-1.4.4-src.zip"/>
-	<classpathentry exported="true" kind="lib" path="mail-1.4.4.jar"/>
 	<classpathentry exported="true" kind="lib" path="xalan-2.7.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="xercesImpl-2.9.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="xml-apis-2.0.2.jar"/>
