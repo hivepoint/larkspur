@@ -64,8 +64,9 @@
     <pathelement location="rome-1.0.jar"/>
     <pathelement location="natty-0.7.jar"/>
     <pathelement location="antlr-3.2.jar"/>
-    <pathelement location="stripe-java-1.7.1.jar"/>
+    <pathelement location="stripe-java-1.10.0.jar"/>
   	<pathelement location="mail-1.4.4.jar"/>
+    <pathelement location="Junit-Params-1.0.2.jar"/>
   	<!-- Added for google oauth -->
     <pathelement location="google-api-client-1.15.0-rc.jar"/>
 	<pathelement location="google-api-client-java6-1.15.0-rc.jar"/>

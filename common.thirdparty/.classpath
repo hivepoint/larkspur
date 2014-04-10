@@ -141,6 +141,8 @@
 	<classpathentry exported="true" kind="lib" path="xercesImpl-2.9.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="xml-apis-2.0.2.jar"/>
 	<classpathentry exported="true" kind="lib" path="serializer-2.7.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="stripe-java-1.10.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="JUnitParams-1.0.2.jar"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry exported="true" kind="lib" path="twitter4j-3.0.3/lib/twitter4j-async-3.0.3.jar" sourcepath="twitter4j-3.0.3/twitter4j-async"/>
 	<classpathentry exported="true" kind="lib" path="twitter4j-3.0.3/lib/twitter4j-core-3.0.3.jar" sourcepath="twitter4j-3.0.3/twitter4j-core"/>
