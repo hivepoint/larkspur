@@ -1,235 +1,171 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project basedir="." default="build" name="common.thirdparty">
-  <property environment="env"/>
-  <property name="debuglevel" value="source,lines,vars"/>
-  <property name="target" value="1.6"/>
-  <property name="source" value="1.6"/>
-  <property name="out" value="out"/>
-  <tstamp>
-    <format property="buildtime" pattern="yyyyMMdd_HHmmss"/>
-  </tstamp>
-  <path id="common.thirdparty.classpath">
-    <pathelement location="bin"/>
-    <pathelement location="axiom-api-1.2.2.jar"/>
-    <pathelement location="commons-cli-1.2.jar"/>
-    <pathelement location="commons-codec-1.8.jar"/>
-    <pathelement location="commons-collections-3.2.1.jar"/>
-    <pathelement location="commons-exec-1.1.jar"/>
-    <pathelement location="commons-httpclient-3.0.1.jar"/>
-    <pathelement location="commons-httpclient-3.1.jar"/>
-    <pathelement location="commons-lang-2.6.jar"/>
-    <pathelement location="commons-logging-1.1.1.jar"/>
-    <pathelement location="higgins-configuration-api.jar"/>
-    <pathelement location="higgins-sts-api.jar"/>
-    <pathelement location="higgins-sts-common.jar"/>
-    <pathelement location="higgins-sts-server-token-handler.jar"/>
-    <pathelement location="higgins-sts-spi.jar"/>
-    <pathelement location="icu4j-3.4.4.jar"/>
-    <pathelement location="jackson-core-2.1.2.jar"/>
-    <pathelement location="jackson-databind-2.1.2.jar"/>
-    <pathelement location="jackson-annotations-2.1.2.jar"/>
-    <pathelement location="jdom-1.0.jar"/>
-    <pathelement location="jetty-all-server-7.2.0.v20101020.jar"/>
-    <pathelement location="jug-1.1.2.jar"/>
-    <pathelement location="log4j-1.2.17.jar"/>
-    <pathelement location="maven-ant-tasks-2.0.7.jar"/>
-    <pathelement location="mongo-java-driver-2.9.3.jar"/>
-    <pathelement location="nekohtml-1.9.7.jar"/>
-    <pathelement location="openid4java-full-0.9.5.jar"/>
-    <pathelement location="openxri-client-1.2.0.jar"/>
-    <pathelement location="openxri-syntax-1.2.0.jar"/>
-    <pathelement location="servlet-api-2.5.jar"/>
-    <pathelement location="stax-api-1.0.1.jar"/>
-    <pathelement location="svnant-1.0.0.jar"/>
-    <pathelement location="svnClientAdapter-1.0.0.jar"/>
-    <pathelement location="svnjavahl-1.0.0.jar"/>
-    <pathelement location="xalan-2.7.1.jar"/>
-    <pathelement location="xercesImpl-2.9.0.jar"/>
-    <pathelement location="xml-apis-2.0.2.jar"/>
-    <pathelement location="xmlsec-1.3.0.jar"/>
-    <pathelement location="serializer-2.7.1.jar"/>
-    <pathelement location="oauth-20090825.jar"/>
-    <pathelement location="activation-1.1.jar"/>
-    <pathelement location="greenmail-1.3.1b.jar"/>
-    <pathelement location="slf4j-api-1.3.1.jar"/>
-    <pathelement location="slf4j-simple-1.3.1.jar"/>
-    <pathelement location="jtidy-r938.jar"/>
-    <pathelement location="httpclient-4.3.2.jar"/>
-    <pathelement location="httpclient-cache-4.3.2.jar"/>
-    <pathelement location="httpcore-4.3.1.jar"/>
-    <pathelement location="httpmime-4.3.2.jar"/>
-    <pathelement location="gson-2.2.2.jar"/>
-    <pathelement location="scribe-1.3.0.jar"/>
-    <pathelement location="gwt-visualization.jar"/>
-    <pathelement location="rome-1.0.jar"/>
-    <pathelement location="natty-0.7.jar"/>
-    <pathelement location="antlr-3.2.jar"/>
-    <pathelement location="stripe-java-1.10.0.jar"/>
-  	<pathelement location="mail-1.4.4.jar"/>
-    <pathelement location="Junit-Params-1.0.2.jar"/>
-  	<!-- Added for google oauth -->
-    <pathelement location="google-api-client-1.15.0-rc.jar"/>
-	<pathelement location="google-api-client-java6-1.15.0-rc.jar"/>
-	<pathelement location="google-api-client-servlet-1.15.0-rc.jar"/>
-	<pathelement location="google-api-services-oauth2-v2-rev38-1.15.0-rc.jar" />
-	<pathelement location="google-api-services-plus-v1-rev75-1.15.0-rc.jar"/>
-    <pathelement location="google-http-client-1.15.0-rc.jar"/>
-    <pathelement location="google-http-client-gson-1.15.0-rc.jar"/>
-    <pathelement location="google-http-client-jackson2-1.15.0-rc.jar"/>
-    <pathelement location="google-oauth-client-1.15.0-rc.jar"/>
-	<pathelement location="google-oauth-client-java6-1.15.0-rc.jar"/>
-    <pathelement location="google-oauth-client-java7-1.15.0-rc.jar"/>
-    <pathelement location="google-oauth-client-servlet-1.15.0-rc.jar"/>
-    <pathelement location="jsr305-1.3.9.jar"/>
-    <pathelement location="jdo2-api-2.3-eb.jar"/>
-    <pathelement location="transaction-api-1.1.jar"/>
-    <pathelement location="xpp3-1.1.4c.jar"/>
-    <pathelement location="twitter4j-core-3.0.3.jar"/>
-    <pathelement location="twitter4j-async-3.0.3.jar"/>
-  	<!-- Added for ical4j -->
-    <pathelement location="ical4j-1.0.4.jar"/>
-    <pathelement location="backport-util-concurrent-3.1.jar"/>
-    <pathelement location="groovy-all-1.8.6.jar"/>
-  	
-    <pathelement location="org.xbill.dns_2.1.5.jar"/>
-    <pathelement location="tagsoup-1.2.1.jar"/>
-    <pathelement location="antlr-4.1-complete.jar"/>
-    <pathelement location="tika-app-1.4.jar"/>
-    <pathelement location="tnef.jar"/>
-  	
-  	<!-- Added for user agent parser -->
-    <pathelement location="ient-1.15.0-rc.jar"/>
-    	<pathelement location="google-api-client-java6-1.15.0-rc.jar"/>
-    	<pathelement location="google-api-client-servlet-1.15.0-rc.jar"/>
-    	<pathelement location="google-api-services-oauth2-v2-rev38-1.15.0-rc.jar" />
-    	<pathelement location="google-api-services-plus-v1-rev75-1.15.0-rc.jar"/>
-        <pathelement location="google-http-client-1.15.0-rc.jar"/>
-        <pathelement location="google-http-client-gson-1.15.0-rc.jar"/>
-        <pathelement location="google-http-client-jackson2-1.15.0-rc.jar"/>
-        <pathelement location="google-oauth-client-1.15.0-rc.jar"/>
-    	<pathelement location="google-oauth-client-java6-1.15.0-rc.jar"/>
-        <pathelement location="google-oauth-client-java7-1.15.0-rc.jar"/>
-        <pathelement location="google-oauth-client-servlet-1.15.0-rc.jar"/>
-        <pathelement location="jsr305-1.3.9.jar"/>
-        <pathelement location="jdo2-api-2.3-eb.jar"/>
-        <pathelement location="transaction-api-1.1.jar"/>
-        <pathelement location="xpp3-1.1.4c.jar"/>
-        <pathelement location="twitter4j-core-3.0.3.jar"/>
-        <pathelement location="twitter4j-async-3.0.3.jar"/>
-      	<!-- Added for ical4j -->
-        <pathelement location="ical4j-1.0.4.jar"/>
-        <pathelement location="backport-util-concurrent-3.1.jar"/>
-        <pathelement location="groovy-all-1.8.6.jar"/>
-      	
-        <pathelement location="org.xbill.dns_2.1.5.jar"/>
-        <pathelement location="tagsoup-1.2.1.jar"/>
-        <pathelement location="antlr-4.1-complete.jar"/>
-        <pathelement location="tika-app-1.4.jar"/>
-      	
-      	<!-- Added for user agent parser -->
-        <pathelement location="ient-1.15.0-rc.jar"/>
-    	<pathelement location="google-api-client-java6-1.15.0-rc.jar"/>
-    	<pathelement location="google-api-client-servlet-1.15.0-rc.jar"/>
-    	<pathelement location="google-api-services-oauth2-v2-rev38-1.15.0-rc.jar" />
-    	<pathelement location="google-api-services-plus-v1-rev75-1.15.0-rc.jar"/>
-        <pathelement location="google-http-client-1.15.0-rc.jar"/>
-        <pathelement location="google-http-client-gson-1.15.0-rc.jar"/>
-        <pathelement location="google-http-client-jackson2-1.15.0-rc.jar"/>
-        <pathelement location="google-oauth-client-1.15.0-rc.jar"/>
-    	<pathelement location="google-oauth-client-java6-1.15.0-rc.jar"/>
-        <pathelement location="google-oauth-client-java7-1.15.0-rc.jar"/>
-        <pathelement location="google-oauth-client-servlet-1.15.0-rc.jar"/>
-        <pathelement location="jsr305-1.3.9.jar"/>
-        <pathelement location="jdo2-api-2.3-eb.jar"/>
-        <pathelement location="transaction-api-1.1.jar"/>
-        <pathelement location="xpp3-1.1.4c.jar"/>
-        <pathelement location="twitter4j-core-3.0.3.jar"/>
-        <pathelement location="twitter4j-async-3.0.3.jar"/>
-      	<!-- Added for ical4j -->
-        <pathelement location="ical4j-1.0.4.jar"/>
-        <pathelement location="backport-util-concurrent-3.1.jar"/>
-        <pathelement location="groovy-all-1.8.6.jar"/>
-      	
-        <pathelement location="org.xbill.dns_2.1.5.jar"/>
-        <pathelement location="tagsoup-1.2.1.jar"/>
-        <pathelement location="antlr-4.1-complete.jar"/>
-        <pathelement location="tika-app-1.4.jar"/>
-      	
-      	<!-- Added for user agent parser -->
-        <pathelement location="quality-check-1.3.jar"/>
-        <pathelement location="uadetector-core-0.9.12.jar"/>
-        <pathelement location="uadetector-json-0.1.12.jar"/>
-        <pathelement location="uadetector-resources-2013.12.jar"/>
-  </path>
+	<property environment="env" />
+	<property name="debuglevel" value="source,lines,vars" />
+	<property name="target" value="1.6" />
+	<property name="source" value="1.6" />
+	<property name="out" value="out" />
+	<tstamp>
+		<format property="buildtime" pattern="yyyyMMdd_HHmmss" />
+	</tstamp>
+	<path id="common.thirdparty.classpath">
+		<pathelement location="bin" />
+		<pathelement location="activation-1.1.jar" />
+		<pathelement location="antlr-3.2.jar" />
+		<pathelement location="antlr-4.1-complete.jar" />
+		<pathelement location="axiom-api-1.2.2.jar" />
+		<pathelement location="backport-util-concurrent-3.1.jar" />
+		<pathelement location="commons-cli-1.2.jar" />
+		<pathelement location="commons-codec-1.8.jar" />
+		<pathelement location="commons-collections-3.2.1.jar" />
+		<pathelement location="commons-exec-1.1.jar" />
+		<pathelement location="commons-httpclient-3.0.1.jar" />
+		<pathelement location="commons-httpclient-3.1.jar" />
+		<pathelement location="commons-lang-2.6.jar" />
+		<pathelement location="commons-logging-1.1.1.jar" />
+		<pathelement location="google-api-client-1.17.0-rc.jar" />
+		<pathelement location="google-api-client-java6-1.17.0-rc.jar" />
+		<pathelement location="google-api-client-servlet-1.18.0-rc.jar" />
+		<pathelement location="google-api-services-oauth2-v2-rev38-1.15.0-rc.jar" />
+		<pathelement location="google-api-services-plus-v1-rev75-1.15.0-rc.jar" />
+		<pathelement location="google-http-client-1.18.0-rc.jar" />
+		<pathelement location="google-http-client-gson-1.18.0-rc.jar" />
+		<pathelement location="google-http-client-jackson2-1.18.0-rc.jar" />
+		<pathelement location="google-oauth-client-1.18.0-rc.jar" />
+		<pathelement location="google-oauth-client-java6-1.15.0-rc.jar" />
+		<pathelement location="google-oauth-client-java7-1.15.0-rc.jar" />
+		<pathelement location="google-oauth-client-servlet-1.18.0-rc.jar" />
+		<pathelement location="greenmail-1.3.1b.jar" />
+		<pathelement location="groovy-all-1.8.6.jar" />
+		<pathelement location="gson-2.2.2.jar" />
+		<pathelement location="gwt-visualization.jar" />
+		<pathelement location="higgins-configuration-api.jar" />
+		<pathelement location="higgins-sts-api.jar" />
+		<pathelement location="higgins-sts-common.jar" />
+		<pathelement location="higgins-sts-server-token-handler.jar" />
+		<pathelement location="higgins-sts-spi.jar" />
+		<pathelement location="httpclient-4.3.2.jar" />
+		<pathelement location="httpclient-cache-4.3.2.jar" />
+		<pathelement location="httpcore-4.3.1.jar" />
+		<pathelement location="httpmime-4.3.2.jar" />
+		<pathelement location="ical4j-1.0.4.jar" />
+		<pathelement location="icu4j-3.4.4.jar" />
+		<pathelement location="ient-1.15.0-rc.jar" />
+		<pathelement location="jackson-annotations-2.1.2.jar" />
+		<pathelement location="jackson-core-2.2.0.jar" />
+		<pathelement location="jackson-core-asl-1.9.11.jar" />
+		<pathelement location="jackson-databind-2.1.2.jar" />
+		<pathelement location="jdo2-api-2.3-eb.jar" />
+		<pathelement location="jdom-1.0.jar" />
+		<pathelement location="jetty-all-server-7.2.0.v20101020.jar" />
+		<pathelement location="jsr305-1.3.9.jar" />
+		<pathelement location="jtidy-r938.jar" />
+		<pathelement location="Junit-Params-1.0.2.jar" />
+		<pathelement location="jug-1.1.2.jar" />
+		<pathelement location="log4j-1.2.17.jar" />
+		<pathelement location="mail-1.4.4.jar" />
+		<pathelement location="maven-ant-tasks-2.0.7.jar" />
+		<pathelement location="mongo-java-driver-2.9.3.jar" />
+		<pathelement location="natty-0.7.jar" />
+		<pathelement location="nekohtml-1.9.7.jar" />
+		<pathelement location="oauth-20090825.jar" />
+		<pathelement location="openid4java-full-0.9.5.jar" />
+		<pathelement location="openxri-client-1.2.0.jar" />
+		<pathelement location="openxri-syntax-1.2.0.jar" />
+		<pathelement location="org.xbill.dns_2.1.5.jar" />
+		<pathelement location="quality-check-1.3.jar" />
+		<pathelement location="rome-1.0.jar" />
+		<pathelement location="scribe-1.3.0.jar" />
+		<pathelement location="serializer-2.7.1.jar" />
+		<pathelement location="servlet-api-2.5.jar" />
+		<pathelement location="slf4j-api-1.3.1.jar" />
+		<pathelement location="slf4j-simple-1.3.1.jar" />
+		<pathelement location="stax-api-1.0.1.jar" />
+		<pathelement location="stripe-java-1.10.0.jar" />
+		<pathelement location="svnant-1.0.0.jar" />
+		<pathelement location="svnClientAdapter-1.0.0.jar" />
+		<pathelement location="svnjavahl-1.0.0.jar" />
+		<pathelement location="tagsoup-1.2.1.jar" />
+		<pathelement location="tika-app-1.4.jar" />
+		<pathelement location="tnef.jar" />
+		<pathelement location="transaction-api-1.1.jar" />
+		<pathelement location="twitter4j-core-3.0.3.jar" />
+		<pathelement location="twitter4j-async-3.0.3.jar" />
+		<pathelement location="xalan-2.7.1.jar" />
+		<pathelement location="xercesImpl-2.9.0.jar" />
+		<pathelement location="xml-apis-2.0.2.jar" />
+		<pathelement location="xmlsec-1.3.0.jar" />
+		<pathelement location="xpp3-1.1.4c.jar" />
+		<pathelement location="uadetector-core-0.9.12.jar" />
+		<pathelement location="uadetector-json-0.1.12.jar" />
+		<pathelement location="uadetector-resources-2013.12.jar" />
+	</path>
 
-  <target name="test" depends="" description="test project"/>
+	<target name="test" depends="" description="test project" />
 
-  <target name="testlist" description="">
-    <echo>TEST-PARALLEL: ${basedir}</echo>
-  </target>
+	<target name="testlist" description="">
+		<echo>TEST-PARALLEL: ${basedir}</echo>
+	</target>
 
-  <target name="init">
-    <mkdir dir="bin"/>
-    <copy includeemptydirs="false" todir="bin" preservelastmodified="true">
-      <fileset dir="src">
-        <exclude name="**/*.launch"/>
-        <exclude name="**/*.java"/>
-      </fileset>
-    </copy>
-  </target>
+	<target name="init">
+		<mkdir dir="bin" />
+		<copy includeemptydirs="false" todir="bin" preservelastmodified="true">
+			<fileset dir="src">
+				<exclude name="**/*.launch" />
+				<exclude name="**/*.java" />
+			</fileset>
+		</copy>
+	</target>
 
-  <property name="gwt.sdk" value="gwt-sdk"/>
-  <!-- - - - - - - - - - - - - - - - - - 
+	<property name="gwt.sdk" value="gwt-sdk" />
+	<!-- - - - - - - - - - - - - - - - - - 
 	              target: unzip                      
 	             - - - - - - - - - - - - - - - - - -->
-  <target name="unzip">
-  	<property name="gwt.sdk.version" value="gwt-2.6.0"/>
-	<get src="https://google-web-toolkit.googlecode.com/files/${gwt.sdk.version}.zip" 
-	    dest="${gwt.sdk}.zip" 
-	    verbose="true"
-	    usetimestamp="true"/>
-  	<unzip src="${gwt.sdk}.zip" dest=".">
-  		<globmapper from="${gwt.sdk.version}*" to="${gwt.sdk}*" />
-  	</unzip>
-    <!--<move todir="${gwt.sdk}" includeEmptyDirs="yes" verbose="false">
+	<target name="unzip">
+		<property name="gwt.sdk.version" value="gwt-2.6.0" />
+		<get src="https://google-web-toolkit.googlecode.com/files/${gwt.sdk.version}.zip" dest="${gwt.sdk}.zip" verbose="true" usetimestamp="true" />
+		<unzip src="${gwt.sdk}.zip" dest=".">
+			<globmapper from="${gwt.sdk.version}*" to="${gwt.sdk}*" />
+		</unzip>
+		<!--<move todir="${gwt.sdk}" includeEmptyDirs="yes" verbose="false">
       <fileset dir="${gwt.sdk.version}">
         <include name="**/*"/>
       </fileset>
     </move>-->
-    <delete dir="${gwt.sdk.version}"/>
-  	<echo file="${gwt.sdk}/version.txt">${gwt.sdk.version}</echo>
-  </target>
+		<delete dir="${gwt.sdk.version}" />
+		<echo file="${gwt.sdk}/version.txt">${gwt.sdk.version}</echo>
+	</target>
 
 
-  <target name="clean">
-    <delete dir="bin"/>
-    <delete dir="${out}"/>
-    <delete dir="${gwt.sdk.version}"/>
-    <delete dir="${gwt.sdk}"/>
-  	<delete file="${gwt.sdk}.zip" />
-  </target>
+	<target name="clean">
+		<delete dir="bin" />
+		<delete dir="${out}" />
+		<delete dir="${gwt.sdk.version}" />
+		<delete dir="${gwt.sdk}" />
+		<delete file="${gwt.sdk}.zip" />
+	</target>
 
 
-  <target depends="clean" name="cleanall"/>
+	<target depends="clean" name="cleanall" />
 
-  <target depends="build-subprojects,build-project,jar,unzip" name="build"/>
+	<target depends="build-subprojects,build-project,jar,unzip" name="build" />
 
-  <target name="build-subprojects"/>
+	<target name="build-subprojects" />
 
-  <target depends="init" name="build-project">
-    <echo message="${ant.project.name}: ${ant.file}"/>
-    <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}" includeantruntime="false">
-      <src path="src"/>
-      <classpath refid="common.thirdparty.classpath"/>
-    </javac>
-  </target>
+	<target depends="init" name="build-project">
+		<echo message="${ant.project.name}: ${ant.file}" />
+		<javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}" includeantruntime="false">
+			<src path="src" />
+			<classpath refid="common.thirdparty.classpath" />
+		</javac>
+	</target>
 
-  <property name="build.number" value="personal" description="Defaults to personal if not set by build"/>
+	<property name="build.number" value="personal" description="Defaults to personal if not set by build" />
 
-  <target name="jar" description="create package file" depends="build-project">
-    <mkdir dir="${out}"/>
-    <!-- <jar destfile="${out}/${ant.project.name}_${build.number}.jar" basedir="bin" includes="**/*.class"/> -->
-    <jar destfile="${out}/${ant.project.name}.jar" basedir="bin" includes="**/*.class"/>
-  </target>
+	<target name="jar" description="create package file" depends="build-project">
+		<mkdir dir="${out}" />
+		<!-- <jar destfile="${out}/${ant.project.name}_${build.number}.jar" basedir="bin" includes="**/*.class"/> -->
+		<jar destfile="${out}/${ant.project.name}.jar" basedir="bin" includes="**/*.class" />
+	</target>
 
 </project>
