@@ -115,5 +115,7 @@
 	</classpathentry>
 	<classpathentry exported="true" kind="lib" path="uadetector-json-0.1.12.jar"/>
 	<classpathentry exported="true" kind="lib" path="uadetector-resources-2013.12.jar"/>
+	<classpathentry exported="true" kind="lib" path="opencsv-2.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="testng-6.8.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
