@@ -27,7 +27,7 @@
 		<pathelement location="google-http-client-jackson2-1.18.0-rc.jar" />
 		<pathelement location="google-oauth-client-1.18.0-rc.jar" />
 		<pathelement location="google-oauth-client-servlet-1.18.0-rc.jar" />
-		<pathelement location="gson-2.2.2.jar" />
+		<pathelement location="gson-2.2.1.jar" />
 		<pathelement location="gwt-visualization.jar" />
 		<pathelement location="httpclient-4.3.2.jar" />
 		<pathelement location="httpclient-cache-4.3.2.jar" />
