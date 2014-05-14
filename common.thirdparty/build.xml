@@ -27,7 +27,8 @@
 		<pathelement location="google-http-client-jackson2-1.18.0-rc.jar" />
 		<pathelement location="google-oauth-client-1.18.0-rc.jar" />
 		<pathelement location="google-oauth-client-servlet-1.18.0-rc.jar" />
-		<pathelement location="gson-2.2.1.jar" />
+		<pathelement location="greenmail-1.3.1b.jar" />		
+		<pathelement location="gson-2.2.4.jar" />
 		<pathelement location="gwt-visualization.jar" />
 		<pathelement location="httpclient-4.3.2.jar" />
 		<pathelement location="httpclient-cache-4.3.2.jar" />
@@ -38,6 +39,7 @@
 		<pathelement location="jackson-core-2.2.0.jar" />
 		<pathelement location="jackson-core-asl-1.9.11.jar" />
 		<pathelement location="jackson-databind-2.1.2.jar" />
+		<pathelement location="javax.mail-1.5.2.1.jar" />
 		<pathelement location="jdo2-api-2.3-eb.jar" />
 		<pathelement location="jdom-1.0.jar" />
 		<pathelement location="jetty-all-server-7.2.0.v20101020.jar" />
@@ -45,7 +47,6 @@
 		<pathelement location="jtidy-r938.jar" />
 		<pathelement location="Junit-Params-1.0.2.jar" />
 		<pathelement location="log4j-1.2.17.jar" />
-		<pathelement location="mail-1.4.4.jar" />
 		<pathelement location="maven-ant-tasks-2.0.7.jar" />
 		<pathelement location="mongo-java-driver-2.9.3.jar" />
 		<pathelement location="natty-0.7.jar" />
