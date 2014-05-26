@@ -72,9 +72,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry exported="true" kind="lib" path="tika-app-1.4.jar"/>
-	<classpathentry exported="true" kind="lib" path="httpclient-4.3.2.jar"/>
-	<classpathentry exported="true" kind="lib" path="httpclient-cache-4.3.2.jar"/>
-	<classpathentry exported="true" kind="lib" path="httpcore-4.3.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="httpmime-4.3.2.jar"/>
 	<classpathentry exported="true" kind="lib" path="tnef.jar" sourcepath="jtnef-1_8_0.zip"/>
 	<classpathentry exported="true" kind="lib" path="xalan-2.7.1.jar"/>
@@ -102,6 +99,9 @@
 			<attribute name="javadoc_location" value="jar:platform:/resource/common.thirdparty/gson-2.2.4-javadoc.jar!/"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="httpclient-4.3.3.jar" sourcepath="httpcomponents-client-4.3.3-src.zip"/>
+	<classpathentry exported="true" kind="lib" path="httpclient-cache-4.3.3.jar" sourcepath="httpcomponents-client-4.3.3-src.zip"/>
+	<classpathentry exported="true" kind="lib" path="httpcore-4.3.2.jar" sourcepath="httpcomponents-core-4.3.2-src.zip"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry exported="true" kind="lib" path="guava-15.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="guava-gwt-15.0.jar"/>
