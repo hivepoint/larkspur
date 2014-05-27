@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry excluding=".DS_Store" kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry exported="true" kind="lib" path="log4j-1.2.17.jar" sourcepath="log4j-1.2.17-sources.jar">
 		<attributes>
@@ -12,8 +11,6 @@
 			<attribute name="javadoc_location" value="http://commons.apache.org/cli/api-release/"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry exported="true" kind="lib" path="commons-httpclient-3.0.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="commons-httpclient-3.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="jdom-1.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="jetty-all-server-7.2.0.v20101020.jar" sourcepath="jetty-distribution-7.2.0.v20101020-src.zip">
 		<attributes>
@@ -119,5 +116,6 @@
 	<classpathentry exported="true" kind="lib" path="uadetector-resources-2013.12.jar"/>
 	<classpathentry exported="true" kind="lib" path="opencsv-2.2.jar"/>
 	<classpathentry exported="true" kind="lib" path="testng-6.8.6.jar"/>
+	<classpathentry excluding=".DS_Store" kind="src" path="src"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

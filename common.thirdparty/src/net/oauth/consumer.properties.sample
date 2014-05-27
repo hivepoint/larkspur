@@ -1,6 +1,0 @@
-# NamedConsumerPool can gets consumer configuration parameters from a file like this.
-
-google.consumerKey: dev.sevogle.com
-google.consumerSecret: egp4e96MazAZNgxECubfrKHE
-google.consumer.oauth_signature_method: HMAC_SHA1
-google.serviceProvider.accessTokenURL: https://www.google.com/accounts/OAuthGetAccessToken
