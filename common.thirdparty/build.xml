@@ -45,6 +45,7 @@
 		<pathelement location="jdo2-api-2.3-eb.jar" />
 		<pathelement location="jdom-1.0.jar" />
 		<pathelement location="jetty-all-server-7.2.0.v20101020.jar" />
+		<pathelement location="joda-time-2.3.jar" />
 		<pathelement location="jsr305-1.3.9.jar" />
 		<pathelement location="jtidy-r938.jar" />
 		<pathelement location="Junit-Params-1.0.2.jar" />
