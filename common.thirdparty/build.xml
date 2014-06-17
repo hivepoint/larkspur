@@ -16,8 +16,6 @@
 		<pathelement location="commons-codec-1.8.jar" />
 		<pathelement location="commons-collections-3.2.1.jar" />
 		<pathelement location="commons-exec-1.1.jar" />
-		<pathelement location="commons-httpclient-3.0.1.jar" />
-		<pathelement location="commons-httpclient-3.1.jar" />
 		<pathelement location="commons-lang-2.6.jar" />
 		<pathelement location="commons-logging-1.1.1.jar" />
 		<pathelement location="gimap-1.5.2.jar" />
@@ -77,7 +75,7 @@
 		<pathelement location="uadetector-core-0.9.12.jar" />
 		<pathelement location="uadetector-json-0.1.12.jar" />
 		<pathelement location="uadetector-resources-2013.12.jar" />
-	</path>
+</path>
 
 	<target name="test" depends="" description="test project" />
 
