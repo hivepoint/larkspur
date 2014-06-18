@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="lib" path="javax-mail-1.5.2.3.jar" sourcepath="javamail-1.5.2-src.zip"/>
 	<classpathentry exported="true" kind="lib" path="log4j-1.2.17.jar" sourcepath="log4j-1.2.17-sources.jar">
 		<attributes>
 			<attribute name="javadoc_location" value="http://logging.apache.org/log4j/1.2/apidocs/"/>
@@ -100,7 +101,6 @@
 	<classpathentry exported="true" kind="lib" path="httpcore-4.3.2.jar" sourcepath="httpcomponents-core-4.3.2-src.zip"/>
 	<classpathentry exported="true" kind="lib" path="aws-java-sdk-1.7.12.jar" sourcepath="aws-java-sdk-1.7.12-sources.jar"/>
 	<classpathentry exported="true" kind="lib" path="joda-time-2.3.jar" sourcepath="joda-time-2.3-sources.jar"/>
-	<classpathentry exported="true" kind="lib" path="javax.mail-1.5.2.2.jar" sourcepath="javamail-1.5.2-src.zip"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry exported="true" kind="lib" path="guava-15.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="guava-gwt-15.0.jar"/>
