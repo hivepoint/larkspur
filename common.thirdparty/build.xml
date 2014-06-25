@@ -39,7 +39,7 @@
 		<pathelement location="jackson-core-2.2.0.jar" />
 		<pathelement location="jackson-core-asl-1.9.11.jar" />
 		<pathelement location="jackson-databind-2.1.2.jar" />
-		<pathelement location="javax.mail-1.5.2.5.jar" />
+		<pathelement location="javax.mail-1.5.2.6.jar" />
 		<pathelement location="jdo2-api-2.3-eb.jar" />
 		<pathelement location="jdom-1.0.jar" />
 		<pathelement location="jetty-all-server-7.2.0.v20101020.jar" />
