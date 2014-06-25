@@ -11,7 +11,7 @@
 	<path id="common.thirdparty.classpath">
 		<pathelement location="bin" />
 		<pathelement location="activation-1.1.jar" />
-		<pathelement location="aws-java-sdk-1.7.12.jar" />
+		<pathelement location="aws-java-sdk-1.8.1.jar" />
 		<pathelement location="commons-cli-1.2.jar" />
 		<pathelement location="commons-codec-1.8.jar" />
 		<pathelement location="commons-collections-3.2.1.jar" />
