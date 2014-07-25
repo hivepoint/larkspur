@@ -49,7 +49,7 @@
 		<pathelement location="Junit-Params-1.0.2.jar" />
 		<pathelement location="log4j-1.2.17.jar" />
 		<pathelement location="maven-ant-tasks-2.0.7.jar" />
-		<pathelement location="mongo-java-driver-2.9.3.jar" />
+		<pathelement location="mongo-java-driver-2.12.3.jar" />
 		<pathelement location="natty-0.7.jar" />
 		<pathelement location="opencsv-2.2.jar" />
 		<pathelement location="quality-check-1.3.jar" />
