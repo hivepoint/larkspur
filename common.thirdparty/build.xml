@@ -64,7 +64,7 @@
 		<pathelement location="svnClientAdapter-1.0.0.jar" />
 		<pathelement location="svnjavahl-1.0.0.jar" />
 		<pathelement location="testng-6.8.6.jar" />
-		<pathelement location="tika-app-1.4.jar" />
+		<pathelement location="tika-app-1.6.jar" />
 		<pathelement location="tnef.jar" />
 		<pathelement location="transaction-api-1.1.jar" />
 		<pathelement location="xalan-2.7.1.jar" />
