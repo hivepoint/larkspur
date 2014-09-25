@@ -40,6 +40,7 @@
 		<pathelement location="jackson-core-asl-1.9.11.jar" />
 		<pathelement location="jackson-databind-2.1.2.jar" />
 		<pathelement location="javax.mail-1.5.2.6.jar" />
+		<pathelement location="jcharset-1.5.jar" />
 		<pathelement location="jdo2-api-2.3-eb.jar" />
 		<pathelement location="jdom-1.0.jar" />
 		<pathelement location="jetty-all-server-7.2.0.v20101020.jar" />
@@ -64,7 +65,7 @@
 		<pathelement location="svnClientAdapter-1.0.0.jar" />
 		<pathelement location="svnjavahl-1.0.0.jar" />
 		<pathelement location="testng-6.8.6.jar" />
-		<pathelement location="tika-app-1.4.jar" />
+		<pathelement location="tika-app-1.6.jar" />
 		<pathelement location="tnef.jar" />
 		<pathelement location="transaction-api-1.1.jar" />
 		<pathelement location="xalan-2.7.1.jar" />
