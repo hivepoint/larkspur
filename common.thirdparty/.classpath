@@ -96,6 +96,7 @@
 	<classpathentry exported="true" kind="lib" path="joda-time-2.3.jar" sourcepath="joda-time-2.3-sources.jar"/>
 	<classpathentry exported="true" kind="lib" path="aws-java-sdk-1.8.1.jar" sourcepath="aws-java-sdk-1.8.1-sources.jar"/>
 	<classpathentry exported="true" kind="lib" path="tika-app-1.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="jcharset-1.5.jar"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry exported="true" kind="lib" path="guava-15.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="guava-gwt-15.0.jar"/>
