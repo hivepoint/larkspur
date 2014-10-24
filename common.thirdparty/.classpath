@@ -72,15 +72,8 @@
 	<classpathentry exported="true" kind="lib" path="serializer-2.7.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="stripe-java-1.10.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="JUnitParams-1.0.2.jar"/>
-	<classpathentry exported="true" kind="lib" path="google-http-client-1.18.0-rc.jar"/>
-	<classpathentry exported="true" kind="lib" path="google-oauth-client-1.18.0-rc.jar"/>
 	<classpathentry exported="true" kind="lib" path="jackson-core-asl-1.9.11.jar"/>
 	<classpathentry exported="true" kind="lib" path="protobuf-java-2.4.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="google-api-client-1.17.0-rc.jar"/>
-	<classpathentry exported="true" kind="lib" path="google-http-client-gson-1.18.0-rc.jar"/>
-	<classpathentry exported="true" kind="lib" path="google-http-client-jackson-1.18.0-rc.jar"/>
-	<classpathentry exported="true" kind="lib" path="google-http-client-jackson2-1.18.0-rc.jar"/>
-	<classpathentry exported="true" kind="lib" path="google-oauth-client-servlet-1.18.0-rc.jar"/>
 	<classpathentry exported="true" kind="lib" path="xmlsec-1.5.6.jar"/>
 	<classpathentry exported="true" kind="lib" path="quality-check-1.3.jar"/>
 	<classpathentry exported="true" kind="lib" path="greenmail-1.3.1b.jar" sourcepath="greenmail-1.3.1b-src.zip"/>
@@ -95,6 +88,19 @@
 	<classpathentry exported="true" kind="lib" path="httpcore-4.3.2.jar" sourcepath="httpcomponents-core-4.3.2-src.zip"/>
 	<classpathentry exported="true" kind="lib" path="joda-time-2.3.jar" sourcepath="joda-time-2.3-sources.jar"/>
 	<classpathentry exported="true" kind="lib" path="aws-java-sdk-1.8.1.jar" sourcepath="aws-java-sdk-1.8.1-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="google-api-services-gmail-v1-rev10-1.19.0.jar" sourcepath="google-api-services-gmail-v1-rev10-1.19.0-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="google-api-client-1.19.0.jar" sourcepath="google-api-client-1.19.0-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="google-api-client-gson-1.19.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="google-api-client-jackson2-1.19.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="google-api-client-java6-1.19.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="google-api-client-servlet-1.19.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="google-http-client-1.19.0.jar" sourcepath="google-http-client-1.19.0-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="google-http-client-gson-1.19.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="google-http-client-jackson2-1.19.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="google-oauth-client-1.19.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="google-oauth-client-java6-1.19.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="google-oauth-client-jetty-1.19.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="google-oauth-client-servlet-1.19.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="tika-app-1.6.jar"/>
 	<classpathentry exported="true" kind="lib" path="jcharset-1.5.jar"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
