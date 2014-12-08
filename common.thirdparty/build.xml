@@ -16,6 +16,7 @@
 		<pathelement location="commons-codec-1.8.jar" />
 		<pathelement location="commons-collections-3.2.1.jar" />
 		<pathelement location="commons-exec-1.1.jar" />
+		<pathelement location="commons-io-2.1.jar" />
 		<pathelement location="commons-lang-2.6.jar" />
 		<pathelement location="commons-logging-1.1.1.jar" />
 		<pathelement location="gimap-1.5.2.jar" />
@@ -46,6 +47,7 @@
 		<pathelement location="jackson-databind-2.1.2.jar" />
 		<pathelement location="javax.mail-1.5.2.6.jar" />
 		<pathelement location="jcharset-1.5.jar" />
+		<pathelement location="jcl-over-slf4j-1.7.6.jar" />
 		<pathelement location="jdo2-api-2.3-eb.jar" />
 		<pathelement location="jdom-1.0.jar" />
 		<pathelement location="jetty-all-server-7.2.0.v20101020.jar" />
@@ -57,13 +59,15 @@
 		<pathelement location="maven-ant-tasks-2.0.7.jar" />
 		<pathelement location="mongo-java-driver-2.12.3.jar" />
 		<pathelement location="natty-0.7.jar" />
+		<pathelement location="noggit-0.5.jar" />
 		<pathelement location="opencsv-2.2.jar" />
 		<pathelement location="quality-check-1.3.jar" />
 		<pathelement location="scribe-1.3.0.jar" />
 		<pathelement location="serializer-2.7.1.jar" />
 		<pathelement location="servlet-api-2.5.jar" />
-		<pathelement location="slf4j-api-1.3.1.jar" />
+		<pathelement location="slf4j-api-1.7.6.jar" />
 		<pathelement location="slf4j-simple-1.3.1.jar" />
+		<pathelement location="solr-solrj-4.8.0.jar" />
 		<pathelement location="stax-api-1.0.1.jar" />
 		<pathelement location="stripe-java-1.10.0.jar" />
 		<pathelement location="svnant-1.0.0.jar" />
@@ -81,6 +85,7 @@
 		<pathelement location="uadetector-core-0.9.12.jar" />
 		<pathelement location="uadetector-json-0.1.12.jar" />
 		<pathelement location="uadetector-resources-2013.12.jar" />
+		<pathelement location="zookeeper-3.4.6.jar" />
 	</path>
 
 	<target name="test" depends="" description="test project" />
