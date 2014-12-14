@@ -101,12 +101,13 @@
 	<classpathentry exported="true" kind="lib" path="google-oauth-client-servlet-1.19.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="tika-app-1.6.jar"/>
 	<classpathentry exported="true" kind="lib" path="jcharset-1.5.jar"/>
-	<classpathentry exported="true" kind="lib" path="solr-solrj-4.8.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="commons-io-2.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="jcl-over-slf4j-1.7.6.jar"/>
 	<classpathentry exported="true" kind="lib" path="slf4j-api-1.7.6.jar"/>
 	<classpathentry exported="true" kind="lib" path="zookeeper-3.4.6.jar"/>
 	<classpathentry exported="true" kind="lib" path="noggit-0.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="solr-core-4.10.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="solr-solrj-4.10.2.jar"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry exported="true" kind="lib" path="guava-15.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="guava-gwt-15.0.jar"/>
