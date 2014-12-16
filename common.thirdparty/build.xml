@@ -65,8 +65,8 @@
 		<pathelement location="scribe-1.3.0.jar" />
 		<pathelement location="serializer-2.7.1.jar" />
 		<pathelement location="servlet-api-2.5.jar" />
-		<pathelement location="slf4j-api-1.7.6.jar" />
-		<pathelement location="slf4j-simple-1.3.1.jar" />
+		<pathelement location="slf4j-api-1.7.8.jar" />
+		<pathelement location="slf4j-simple-1.7.8.jar" />
 		<pathelement location="solr-core-4.10.2.jar" />
 		<pathelement location="solr-solrj-4.10.2.jar" />
 		<pathelement location="stax-api-1.0.1.jar" />
