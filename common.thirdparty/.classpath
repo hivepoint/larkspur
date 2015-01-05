@@ -108,6 +108,12 @@
 	<classpathentry exported="true" kind="lib" path="noggit-0.5.jar"/>
 	<classpathentry exported="true" kind="lib" path="solr-core-4.10.2.jar"/>
 	<classpathentry exported="true" kind="lib" path="solr-solrj-4.10.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="gdata-base-1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="gdata-client-1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="gdata-client-meta-1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="gdata-contacts-3.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="gdata-contacts-meta-3.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="gdata-core-1.0.jar"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry exported="true" kind="lib" path="guava-15.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="guava-gwt-15.0.jar"/>

@@ -19,6 +19,12 @@
 		<pathelement location="commons-io-2.1.jar" />
 		<pathelement location="commons-lang-2.6.jar" />
 		<pathelement location="commons-logging-1.1.1.jar" />
+		<pathelement location="gdata-base-1.0.jar" />
+		<pathelement location="gdata-client-1.0.jar" />
+		<pathelement location="gdata-client-meta-1.0.jar" />
+		<pathelement location="gdata-contacts-3.0.jar" />
+		<pathelement location="gdata-contacts-meta-3.0.jar" />
+		<pathelement location="gdata-core-1.0.jar" />
 		<pathelement location="gimap-1.5.2.jar" />
 		<pathelement location="google-api-client-1.19.0.jar" />
 		<pathelement location="google-api-client-gson-1.19.0.jar" />
