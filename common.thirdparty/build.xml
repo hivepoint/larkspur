@@ -11,6 +11,9 @@
 	<path id="common.thirdparty.classpath">
 		<pathelement location="bin" />
 		<pathelement location="activation-1.1.jar" />
+		<pathelement location="apache-jdkim-library-0.2.jar" />
+		<pathelement location="apache-jspf-resolver-1.0.0.jar" />
+		<pathelement location="apache-jspf-tester-1.0.0.jar" />
 		<pathelement location="aws-java-sdk-1.8.1.jar" />
 		<pathelement location="commons-cli-1.2.jar" />
 		<pathelement location="commons-codec-1.8.jar" />
@@ -19,6 +22,9 @@
 		<pathelement location="commons-io-2.1.jar" />
 		<pathelement location="commons-lang-2.6.jar" />
 		<pathelement location="commons-logging-1.1.1.jar" />
+		<pathelement location="dkim-for-javamail-1.3.jar" />
+		<pathelement location="dnsjava-2.1.1.jar" />
+		<pathelement location="dnsjnio-1.0.3.jar" />
 		<pathelement location="gdata-base-1.0.jar" />
 		<pathelement location="gdata-client-1.0.jar" />
 		<pathelement location="gdata-client-meta-1.0.jar" />
