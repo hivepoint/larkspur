@@ -14,11 +14,6 @@
 	</classpathentry>
 	<classpathentry exported="true" kind="lib" path="jdom-1.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="maven-ant-tasks-2.0.7.jar"/>
-	<classpathentry exported="true" kind="lib" path="servlet-api-2.5.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="http://61.154.14.234:89/tomcat-docs/servletapi"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry exported="true" kind="lib" path="stax-api-1.0.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="svnant-1.0.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="svnClientAdapter-1.0.0.jar"/>
@@ -111,11 +106,12 @@
 	<classpathentry exported="true" kind="lib" path="htmlunit-core-js-2.15.jar"/>
 	<classpathentry exported="true" kind="lib" path="httpmime-4.3.3.jar"/>
 	<classpathentry exported="true" kind="lib" path="nekohtml-1.9.21.jar"/>
-	<classpathentry exported="true" kind="lib" path="jetty-all-server-8.1.16.v20140903.jar"/>
+	<classpathentry exported="true" kind="lib" path="jetty-all-server-8.1.16.v20140903.jar" sourcepath="org.eclipse.jetty.project-jetty-8.1.16.v20140903.zip"/>
 	<classpathentry exported="true" kind="lib" path="sac-1.3.jar"/>
 	<classpathentry exported="true" kind="lib" path="xercesImpl-2.11.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="commons-lang3-3.3.2.jar"/>
 	<classpathentry exported="true" kind="lib" path="commons-logging-1.1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="servlet-api-3.0.jar"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry exported="true" kind="lib" path="guava-15.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="guava-gwt-15.0.jar"/>
