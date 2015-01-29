@@ -13,11 +13,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry exported="true" kind="lib" path="jdom-1.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="jetty-all-server-7.2.0.v20101020.jar" sourcepath="jetty-distribution-7.2.0.v20101020-src.zip">
-		<attributes>
-			<attribute name="javadoc_location" value="http://download.eclipse.org/jetty/stable-7/apidocs/"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry exported="true" kind="lib" path="maven-ant-tasks-2.0.7.jar"/>
 	<classpathentry exported="true" kind="lib" path="servlet-api-2.5.jar">
 		<attributes>
@@ -35,7 +30,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry exported="true" kind="lib" path="hamcrest-all-1.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="commons-lang3-3.0.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="scribe-1.3.0.jar" sourcepath="scribe-java-1.3.0-5-g762e100.zip"/>
 	<classpathentry exported="true" kind="lib" path="subethasmtp-3.1.6.jar" sourcepath="subethasmtp-3.1.6-sources.jar"/>
 	<classpathentry exported="true" kind="lib" path="jsr305-1.3.9.jar"/>
@@ -51,20 +45,12 @@
 	<classpathentry exported="true" kind="lib" path="jdo2-api-2.3-eb.jar"/>
 	<classpathentry exported="true" kind="lib" path="transaction-api-1.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="xpp3-1.1.4c.jar"/>
-	<classpathentry exported="true" kind="lib" path="commons-logging-1.1.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="jackson-annotations-2.2.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="jackson-core-2.2.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="jackson-databind-2.2.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="commons-codec-1.8.jar" sourcepath="commons-codec-1.8-sources.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/common.thirdparty/commons-codec-1.8-javadoc.jar!/"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry exported="true" kind="lib" path="commons-lang-2.6.jar"/>
-	<classpathentry exported="true" kind="lib" path="httpmime-4.3.2.jar"/>
 	<classpathentry exported="true" kind="lib" path="tnef.jar" sourcepath="jtnef-1_8_0.zip"/>
 	<classpathentry exported="true" kind="lib" path="xalan-2.7.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="xercesImpl-2.9.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="xml-apis-2.0.2.jar"/>
 	<classpathentry exported="true" kind="lib" path="serializer-2.7.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="stripe-java-1.10.0.jar"/>
@@ -102,7 +88,6 @@
 	<classpathentry exported="true" kind="lib" path="slf4j-simple-1.7.8.jar"/>
 	<classpathentry exported="true" kind="lib" path="tika-app-1.6.jar"/>
 	<classpathentry exported="true" kind="lib" path="jcharset-1.5.jar"/>
-	<classpathentry exported="true" kind="lib" path="commons-io-2.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="jcl-over-slf4j-1.7.6.jar"/>
 	<classpathentry exported="true" kind="lib" path="zookeeper-3.4.6.jar"/>
 	<classpathentry exported="true" kind="lib" path="noggit-0.5.jar"/>
@@ -119,6 +104,18 @@
 	<classpathentry exported="true" kind="lib" path="dnsjava-2.1.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="apache-jspf-resolver-1.0.0.jar" sourcepath="apache-jspf-1.0.0-src.zip"/>
 	<classpathentry exported="true" kind="lib" path="apache-jspf-tester-1.0.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="commons-codec-1.9.jar"/>
+	<classpathentry exported="true" kind="lib" path="commons-io-2.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="cssparser-0.9.14.jar"/>
+	<classpathentry exported="true" kind="lib" path="htmlunit-2.15.jar"/>
+	<classpathentry exported="true" kind="lib" path="htmlunit-core-js-2.15.jar"/>
+	<classpathentry exported="true" kind="lib" path="httpmime-4.3.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="nekohtml-1.9.21.jar"/>
+	<classpathentry exported="true" kind="lib" path="jetty-all-server-8.1.16.v20140903.jar"/>
+	<classpathentry exported="true" kind="lib" path="sac-1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="xercesImpl-2.11.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="commons-lang3-3.3.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="commons-logging-1.1.3.jar"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry exported="true" kind="lib" path="guava-15.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="guava-gwt-15.0.jar"/>
