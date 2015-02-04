@@ -129,8 +129,8 @@
 	              target: unzip                      
 	             - - - - - - - - - - - - - - - - - -->
 	<target name="unzip">
-		<property name="gwt.sdk.version" value="gwt-2.6.0" />
-		<get src="https://google-web-toolkit.googlecode.com/files/${gwt.sdk.version}.zip" dest="${gwt.sdk}.zip" verbose="true" usetimestamp="true" />
+		<property name="gwt.sdk.version" value="gwt-2.7.0" />
+		<get src="http://storage.googleapis.com/gwt-releases/${gwt.sdk.version}.zip" dest="${gwt.sdk}.zip" verbose="true" usetimestamp="true" />
 		<unzip src="${gwt.sdk}.zip" dest=".">
 			<globmapper from="${gwt.sdk.version}*" to="${gwt.sdk}*" />
 		</unzip>
