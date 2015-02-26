@@ -21,5 +21,4 @@ public interface MessageHandlerFactory {
      */
     public MessageHandler create(MessageContext ctx);
 
-    boolean isProxyV1Expected();
 }

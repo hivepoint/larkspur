@@ -494,4 +494,5 @@ public class Session implements Runnable, MessageContext {
     public Certificate[] getTlsPeerCertificates() {
         return tlsPeerCertificates;
     }
+
 }
