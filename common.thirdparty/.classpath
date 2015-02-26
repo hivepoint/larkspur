@@ -26,7 +26,6 @@
 	</classpathentry>
 	<classpathentry exported="true" kind="lib" path="hamcrest-all-1.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="scribe-1.3.0.jar" sourcepath="scribe-java-1.3.0-5-g762e100.zip"/>
-	<classpathentry exported="true" kind="lib" path="subethasmtp-3.1.6.jar" sourcepath="subethasmtp-3.1.6-sources.jar"/>
 	<classpathentry exported="true" kind="lib" path="jsr305-1.3.9.jar"/>
 	<classpathentry exported="true" kind="lib" path="lucene-core-3.5.0.jar" sourcepath="lucene-3.5.0.zip">
 		<attributes>
